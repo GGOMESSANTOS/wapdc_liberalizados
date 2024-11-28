@@ -1,0 +1,47 @@
+name: eolica_geracao_acr_acl
+description: Dados de geração total de usinas eólicas, separados por modalidade de
+  geração e por ambiente de comercialização - ACR e ACL.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.295746'
+source:
+- created: '2024-02-01T14:38:34.600260'
+  id: 13bcccd5-b245-473d-8ab2-96eeda3112ea
+  name: eolica_geracao_acr_acl_2023
+- created: '2024-03-04T01:21:33.818206'
+  id: 33fac927-da8c-45ab-bfdf-f428891424a2
+  name: eolica_geracao_acr_acl_2024
+last_update: 2024-11-21 18:58:00.295752
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  MODALIDADE_ENERGIA:
+    type: text
+    description: Corresponde a modalidade de energia negociada e gerada pelo empreendimento.
+    label: '40'
+    business_rule: ''
+  GERACAO_TOTAL:
+    type: numeric
+    description: Corresponde a Geração Total de energia de uma parcela de usina eólica
+      “p”, ajustada por período de comercialização “j” (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_ACR:
+    type: numeric
+    description: Corresponde a Geração Total de energia de uma parcela de usina a
+      eólica “p”, ajustada por período de comercialização “j” destinada ao Ambiente
+      de Comercialização Regulado (ACR). (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_ACL:
+    type: numeric
+    description: Corresponde a Geração Total de energia de uma parcela de usina a
+      eólica “p”, ajustada por período de comercialização “j” destinada ao Ambiente
+      de Comercialização Livre (ACL). (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

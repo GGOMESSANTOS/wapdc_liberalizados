@@ -1,0 +1,66 @@
+name: receita_venda_distribuidor_cota_nuclear
+description: Dados de receita de venda por distribuidora cotista de energia nuclear
+  por perfil de agente.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.351280'
+source:
+- created: '2024-04-03T17:27:30.174586'
+  id: a60d0066-7b6c-467b-9883-2553f110fab1
+  name: receita_venda_distribuidor_cota_nuclear_2024
+last_update: 2024-11-21 18:58:00.351286
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '40'
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  CNPJ:
+    type: text
+    description: Corresponde ao CNPJ cadastrado pelo agente nos sistemas da CCEE.
+    label: XX.XXX.XXX/0001-XX
+    business_rule: ''
+  AJUSTES_CCEN:
+    type: numeric
+    description: Corresponde ao Valor do Ajuste de CCEN para cada agente distribuidor
+      cotista “a”, no mês de referência “m” AJUSTES_CCENa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  FATOR_RATEIO_CCEN:
+    type: numeric
+    description: Corresponde ao Fator de Rateio de Contratos de Cotas de Energia Nuclear
+      de cada perfil de agente distribuidor “a”, no mês de referência “m” F_CCENa,m
+    label: (10,12)
+    business_rule: ''
+  RECEITA_VENDA_CCEN:
+    type: numeric
+    description: Corresponde a Receita de Venda Mensal associada ao CCEN, do perfil
+      de agente de distribuição cotista “a”, por mês de apuração “m"" RVM_CCENa,m
+      [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

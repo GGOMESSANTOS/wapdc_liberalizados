@@ -1,0 +1,70 @@
+name: proinfa_usina
+description: Dados de geração conforme RES n°1833/14 e fluxo de energia por gerador
+  participante do PROINFA.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.265334'
+source:
+- created: '2024-05-03T02:23:13.946422'
+  id: 022c026f-1f93-4da7-a82f-8c7bb7c50ba9
+  name: proinfa_usina_2024
+last_update: 2024-11-21 18:58:00.265340
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  COD_USINA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de usina em seus sistemas.
+    label: (20)
+    business_rule: ''
+  NOME_USINA:
+    type: text
+    description: Corresponde ao nome da usina cadastrada na CCEE.
+    label: '40'
+    business_rule: ''
+  COD_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de usina em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PARCELA_USINA:
+    type: text
+    description: Corresponde a sigla utilizada pela CCEE para identificar a parcela
+      de usina em seus sistemas.
+    label: '40'
+    business_rule: ''
+  FONTE_ENERGIA_PRIMARIA:
+    type: text
+    description: Corresponde a fonte de energia primária da usina geradora.
+    label: '40'
+    business_rule: ''
+  GERACAO_CONFORME_RES_1833_14:
+    type: numeric
+    description: Corresponde a geração conforme informações dispostas na RES. 1833/2014
+      [MW]
+    label: (10,12)
+    business_rule: ''
+  FLUXO_ENERGIA_MRE:
+    type: numeric
+    description: Corresponde ao Fluxo de Energia do MRE (FLUXO_MRE p,r,w) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

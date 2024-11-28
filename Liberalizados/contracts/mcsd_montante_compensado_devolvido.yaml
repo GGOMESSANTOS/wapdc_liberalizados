@@ -1,0 +1,56 @@
+name: mcsd_montante_compensado_devolvido
+description: Dados com os valores de compensação e devolução mensal total dos agentes
+  cedentes no MCSD.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.264016'
+source:
+- created: '2024-06-11T20:25:11.321731'
+  id: 00313571-44d2-4b85-a7ba-cf8729388f10
+  name: mcsd_montante_compensado_devolvido_2023
+- created: '2024-09-12T19:10:05.005247'
+  id: bb0ec04b-046c-4b31-8cb7-0152f20c626c
+  name: mcsd_montante_compensado_devolvido_2024
+last_update: 2024-11-21 18:58:00.264022
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PROCESSAMENTO:
+    type: text
+    description: Corresponde ao evento de MCSD realizado pela CCEE.
+    label: '40'
+    business_rule: ''
+  SIGLA_AGENTE_CEDENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente cedente
+      em seus sistemas.
+    label: '40'
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  PRODUTO:
+    type: text
+    description: Corresponde ao produto negociado entre as contrapartes em um leilão
+      de energia.
+    label: '40'
+    business_rule: ''
+  COMPENSACAO_MENSAL:
+    type: numeric
+    description: Corresponde a Compensação Mensal Total do agente cedente “ad”, do
+      produto “t”, do leilão “l”, no processamento do MCSD “x”
+    label: (10,12)
+    business_rule: ''
+  DEVOLUCAO_MENSAL:
+    type: numeric
+    description: Corresponde a Devolução Mensal do agente cedente “ad”, do produto
+      “t”, do leilão “l”, no processamento do MCSD “x”
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

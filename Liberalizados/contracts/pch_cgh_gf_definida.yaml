@@ -1,0 +1,45 @@
+name: pch_cgh_gf_definida
+description: Dados mensais consolidados para usinas de fonte CGH/PCH com garantia
+  física definida.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.241649'
+source:
+- created: '2023-11-21T13:04:09.250018'
+  id: 1f2cc645-1bb6-4c29-9a70-b5e084f05879
+  name: pch_cgh_gf_definida_2023
+- created: '2024-03-04T01:21:36.247670'
+  id: 1649b2e5-87e2-44a7-b715-336d2d813f4b
+  name: pch_cgh_gf_definida_2024
+last_update: 2024-11-21 18:58:00.241654
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_PCH_CGH:
+    type: numeric
+    description: Corresponde a Geração Final da parcela de usina "p" CGH/PCH no período
+      de comercialização "j" (Gp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_PCH_CGH:
+    type: numeric
+    description: Corresponde a Capacidade Instalada da usina "p" CGH/PCH no período
+      de comercialização "j" (CAPi,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_PCH_CGH:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina "p" CGH/PCH (GFp)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  QUANTIDADE_UG_OP:
+    type: numeric
+    description: Corresponde a Quantidade de Unidades Geradoras em Operação Comercial.
+    label: (10)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

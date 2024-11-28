@@ -1,0 +1,48 @@
+name: mcsd_montante_reduzido
+description: Dados com os valores dos montantes reduzidos em processamentos de MCSD.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.326936'
+source:
+- created: '2024-06-11T20:27:37.563267'
+  id: ddbc1aca-7537-4c62-93e8-b0ae2dba7e2d
+  name: mcsd_montante_reduzido_2023
+- created: '2024-09-12T19:10:04.791875'
+  id: f2fbd2a0-9c89-4759-8cb3-1dbcb268dc0d
+  name: mcsd_montante_reduzido_2024
+last_update: 2024-11-21 18:58:00.326942
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PROCESSAMENTO:
+    type: text
+    description: Corresponde ao evento de MCSD realizado pela CCEE.
+    label: '40'
+    business_rule: ''
+  SIGLA_AGENTE_CEDENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente cedente
+      em seus sistemas.
+    label: '40'
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  PRODUTO:
+    type: text
+    description: Corresponde ao produto negociado entre as contrapartes em um leilão
+      de energia.
+    label: '40'
+    business_rule: ''
+  MONTANTE_REDUZIDO:
+    type: numeric
+    description: Corresponde ao Montante Reduzido no evento de MCSD.
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

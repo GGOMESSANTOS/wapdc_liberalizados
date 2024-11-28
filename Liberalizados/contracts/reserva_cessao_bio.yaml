@@ -1,0 +1,52 @@
+name: reserva_cessao_bio
+description: Dados de cessão de energia de usinas com fonte biomassa e seus respectivos
+  efeitos no MCP no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.341097'
+source:
+- created: '2023-09-18T20:55:12.991561'
+  id: 9653aa98-4cf3-42bb-b417-8fa7a501f5ee
+  name: reserva_cessao_bio_2023
+- created: '2024-07-03T20:23:26.826858'
+  id: 21c0907c-5cfd-43c8-874f-d558cadbd36d
+  name: reserva_cessao_bio_2024
+last_update: 2024-11-21 18:58:00.341102
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CESSAO_ENERGIA_BIO:
+    type: numeric
+    description: Corresponde a a Cessão de Energia negociada bilateralmente entre
+      a parcela de usina cedente “pcd” e a parcela de usina cessionária “pcs”, para
+      o produto “t”, do leilão “l”, no mês de apuração “m” (CEpcd,pcs,t,l,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CESSAO_LASTRO_BIO:
+    type: numeric
+    description: Corresponde Cessão de Energia/Lastro negociada bilateralmente entre
+      a parcela de usina cedente “pcd” e a parcela de usina cessionária “pcs”, para
+      o produto “t”, do leilão “l”, no mês de apuração "m” (CELpcd,pcs,t,l,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_TOTAL_MCP_CEDENTE_BIO:
+    type: numeric
+    description: Corresponde ao Efeito Total no Mercado de Curto Prazo referente à
+      Cessão para fonte biomassa que deve ser deduzido da parcela de usina cedente
+      “pcd”, associada ao produto “t” do cedente, do leilão “l”, no mês de apuração
+      “m” (TOT_EMCP_CEDp,t,l,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_TOTAL_MCP_CESSIONARIA_BIO:
+    type: numeric
+    description: Corresponde ao Efeito Total no Mercado de Curto Prazo referente à
+      Cessão para fonte biomassa que deve ser creditado à parcela de usina cessionária
+      “pcs”, associada ao produto “t” do cessionário, do leilão “l”, no mês de apuração
+      “m” (TOT_EMCP_CESp,t,l,m) [R$]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

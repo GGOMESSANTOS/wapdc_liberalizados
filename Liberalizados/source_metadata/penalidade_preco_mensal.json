@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "e05a923f-3225-444f-9d8d-944b0ac910c8",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-08-09T21:21:19.945015",
+        "metadata_modified": "2024-10-21T20:15:39.200132",
+        "name": "penalidade_preco_mensal",
+        "notes": "Dados de preços aplicados nas penalidades apuradas pela CCEE em cada modalidade por mês de referência.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "PENALIDADE_PRECO_MENSAL",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+36du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-08-09T21:21:44.451070",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os preços aplicados nas penalidades apuradas pela CCEE em cada modalidade por mês de referência.  \n  \n**Campos contidos nesse conjunto de dados:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **PRECO_REF_INSUF_ESP** : Corresponde ao Preço de Referência para Penalização por Insuficiência de Lastro de Energia Especial no mês de apuração “m”. (PREF_PNL_ESPm) [R$/MWh]  \n* **PRECO_REF_INSUF_NESP** : Corresponde ao Preço de Referência para Penalização por Insuficiência de Lastro de Energia Não Especial no mês de apuração “m”. (PREF_PNL_NESPm) [R$/MWh]  \n* **PRECO_REF_PENAL_DISTRIB** : Corresponde ao Preço de Referência para Penalização dos Distribuidores no mês de apuração “m”. (PREF_DIS_PNLm) [R$/MWh] _(1)_  \n* **PRECO_MED_LIQ_DIF** : Corresponde ao Preço Médio de Liquidação das Diferenças para Penalização no mês de apuração “m”. (PMED_PNLm) [R$/MWh]  \n* **VALOR_REFERENCIA** : Corresponde ao Valor Anual de Referência para Penalização dos Distribuidores referente a penalidades apuradas no ano de apuração anterior “f-1”. (VRf) [R$/MWh] _(2)_  \n  \n_(1)_ Preço determinado sempre no mês de janeiro. Para os distribuidores, a aplicação de penalidades por insuficiência de lastro de energia ocorrerá sempre em janeiro de cada ano, verificando os 12 meses do ano anterior (ano civil).  \n_(2)_ Valor de Referência corresponde ao valor médio ponderado de aquisição de energia proveniente de novos empreendimentos de geração, nos leilões realizados nos anos A-5 e A-3. Este valor é apurado uma vez ao ano pela ANEEL.",
+                "format": "CSV",
+                "hash": "",
+                "id": "959ecdab-1a05-4d49-84f8-9971a53f6b9e",
+                "last_modified": "2023-08-30T16:56:08.877000",
+                "metadata_modified": "2023-10-24T03:52:16.624230",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "penalidade_preco_mensal_2023",
+                "package_id": "e05a923f-3225-444f-9d8d-944b0ac910c8",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/iqoYTIaMRHGU75aEw0wfHw/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-22T01:17:40.354824",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os preços aplicados nas penalidades apuradas pela CCEE em cada modalidade por mês de referência.    **Campos contidos nesse conjunto de dados:**    * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  * **PRECO_REF_INSUF_ESP** : Corresponde ao Preço de Referência para Penalização por Insuficiência de Lastro de Energia Especial no mês de apuração “m”. (PREF_PNL_ESPm) [R$/MWh]  * **PRECO_REF_INSUF_NESP** : Corresponde ao Preço de Referência para Penalização por Insuficiência de Lastro de Energia Não Especial no mês de apuração “m”. (PREF_PNL_NESPm) [R$/MWh]  * **PRECO_REF_PENAL_DISTRIB** : Corresponde ao Preço de Referência para Penalização dos Distribuidores no mês de apuração “m”. (PREF_DIS_PNLm) [R$/MWh] _(1)_  * **PRECO_MED_LIQ_DIF** : Corresponde ao Preço Médio de Liquidação das Diferenças para Penalização no mês de apuração “m”. (PMED_PNLm) [R$/MWh]  * **VALOR_REFERENCIA** : Corresponde ao Valor Anual de Referência para Penalização dos Distribuidores referente a penalidades apuradas no ano de apuração anterior “f-1”. (VRf) [R$/MWh] _(2)_    _(1)_ Preço determinado sempre no mês de janeiro. Para os distribuidores, a aplicação de penalidades por insuficiência de lastro de energia ocorrerá sempre em janeiro de cada ano, verificando os 12 meses do ano anterior (ano civil).  _(2)_ Valor de Referência corresponde ao valor médio ponderado de aquisição de energia proveniente de novos empreendimentos de geração, nos leilões realizados nos anos A-5 e A-3. Este valor é apurado uma vez ao ano pela ANEEL.",
+                "format": "CSV",
+                "hash": "",
+                "id": "49f239eb-6c9c-4d87-a36c-0ddf81202ea7",
+                "last_modified": "2024-10-21T17:15:39.093000",
+                "metadata_modified": "2024-10-21T20:15:39.205001",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "penalidade_preco_mensal_2024",
+                "package_id": "e05a923f-3225-444f-9d8d-944b0ac910c8",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/_M6cFpPBRk615rOnxbiikQ/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "penalidade",
+                "id": "5b6a71ee-b295-45ad-807d-ab0a50d3a023",
+                "name": "penalidade",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

@@ -1,0 +1,24 @@
+name: fator_ajuste_gf
+description: Dados referentes ao fator de ajuste da garantia física em função da média
+  de perdas internas da usina de Itaipu no ano de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.299589'
+source:
+- created: '2024-05-29T21:10:18.514780'
+  id: a8d20f18-ee64-4bf9-a995-071c579a157d
+  name: fator_ajuste_gf_2024
+last_update: 2024-11-21 18:58:00.299595
+periodice: Anual
+fields:
+  ANO_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  FATOR_AJUSTE_PDI_ITAIPU:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

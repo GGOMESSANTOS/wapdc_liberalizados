@@ -1,0 +1,71 @@
+name: repasse_risco_hidrologico
+description: Dados do repasse do risco hidrológico por perfil de agente.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.333523'
+source:
+- created: '2024-04-02T23:14:13.551552'
+  id: ee1d9d9c-9526-4693-a020-6b51fa0fa0ef
+  name: repasse_risco_hidrologico_2024
+last_update: 2024-11-21 18:58:00.333529
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '40'
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  CNPJ:
+    type: text
+    description: Corresponde ao CNPJ cadastrado pelo agente nos sistemas da CCEE.
+    label: XX.XXX.XXX/0001-XX
+    business_rule: ''
+  RESULTADO_FINAL_RRH:
+    type: numeric
+    description: Corresponde ao Resultado Final do Repasse do Risco Hidrológico por
+      perfil de agente "a", no mês de referência "m" (RFV_RRHa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  FATOR_RATEIO_RRH:
+    type: numeric
+    description: Corresponde ao Fator de Rateio do Valor Total de Repasse do Risco
+      Hidrológico do ACR do perfil de agente "a", no mês de referência "m" (F_RVRRHa,m)
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_FINAL_ACR_RRH:
+    type: numeric
+    description: Corresponde ao Resultado Final do Repasse do Risco Hidrológico do
+      perfil do agente “a”, comprador de contratos do ACR sujeitos a repassae do risco
+      hidrológico no mês de referência "m" (RFC_RRHa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_RRH:
+    type: numeric
+    description: Corresponde ao Efeito de Repasse do Risco Hidrológico do perfil de
+      agente "a", no mês de referência "m" (ERRHa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

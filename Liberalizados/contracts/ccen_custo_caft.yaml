@@ -1,0 +1,28 @@
+name: ccen_custo_caft
+description: Dados de CAFT para cotas de energia nuclear no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.235640'
+source:
+- created: '2023-09-06T21:27:59.419480'
+  id: 486e85ce-a572-432d-947d-5b6f44a5a9ec
+  name: ccen_custo_caft_2023
+- created: '2024-03-04T02:05:54.054165'
+  id: 554e08e8-3518-4f00-b2ae-d20c974e236b
+  name: ccen_custo_caft_2024
+last_update: 2024-11-21 18:58:00.235645
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CUSTO_ADM_FINAN_TRIBUT_CCEN:
+    type: numeric
+    description: Corresponde aos Custos Administrativos, Financeiros e Tributários
+      incorridos pela CCEE com a gestão dos Contratos de Cotas de Energia Nuclear,
+      no mês de apuração “m” (CAFT_CCENm) [R$]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

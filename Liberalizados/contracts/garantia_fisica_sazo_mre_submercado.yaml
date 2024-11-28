@@ -1,0 +1,36 @@
+name: garantia_fisica_sazo_mre_submercado
+description: Dados de garantia física sazonalizada para fins de MRE, proporcional
+  as unidades geradoras em operação comercial no mês de referência "m", por submercado
+  "s".
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.347452'
+source:
+- created: '2023-12-07T05:33:56.004774'
+  id: 42d474b2-0546-455d-961e-1974625e6c2a
+  name: garantia_fisica_sazo_mre_submercado_2023
+- created: '2024-03-04T01:41:17.031372'
+  id: 92b714b2-cfc9-4420-9ac7-396a4d824dcc
+  name: garantia_fisica_sazo_mre_submercado_2024
+last_update: 2024-11-21 18:58:00.347457
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  GARANTIA_FISICA_SAZO_MRE_OPCOM:
+    type: numeric
+    description: Garantia Física sazonalizada de usinas participantes do MRE. (MGFIS_Hp,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

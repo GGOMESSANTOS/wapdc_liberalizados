@@ -1,0 +1,28 @@
+name: rrh_repasse
+description: Dados com os valores do repasse do risco hidrológico do ACR de uma usina
+  participante do MRE no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.193778'
+source:
+- created: '2023-12-05T03:07:38.094563'
+  id: ac7428b6-15c6-4ae7-8ea7-eaf6843d569b
+  name: rrh_repasse_2023
+- created: '2024-03-04T02:04:55.075195'
+  id: 65a25fec-a003-4c55-ba91-2a54ff3aee35
+  name: rrh_repasse_2024
+last_update: 2024-11-21 18:58:00.193789
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  VALOR_REPASSE_RRH_ACR:
+    type: numeric
+    description: Corresponde ao Valor de Repasse do Risco Hidrológico do ACR da parcela
+      de usina “p”, no mês de apuração “m” (VRRH_ACRp,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

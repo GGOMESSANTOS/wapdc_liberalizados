@@ -1,0 +1,134 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "29776321-47ae-47b4-9e26-445adca37e14",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-08-09T21:08:14.647178",
+        "metadata_modified": "2024-10-30T20:46:14.024815",
+        "name": "ccear_balanco_energetico_mensal",
+        "notes": "Dados de balanço energético de CCEARs e os respectivos encargos por modalidade no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 4,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "CCEAR_BALANCO_ENERGETICO_MENSAL",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-08-09T21:08:36.526525",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar o balanço energético de CCEARs e os respectivos encargos por modalidade no mês de referência.  \n  \n**Campos contidos nesse conjunto de dados:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **BALANCO_ENERGETICO_PRODUTO_P** : Corresponde ao Balanço Energético do Produto positivo, de cada parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, por período de comercialização “j”. (NET_PRODp,t,l,j) [MWmed] _(1)_  \n* **BALANCO_ENERGETICO_PRODUTO_N** : Corresponde ao Balanço Energético do Produto negativo, de cada parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, por período de comercialização “j”. NET_PRODp,t,l,j) [MWmed] _(1)_  \n* **GERACAO_DESTINADA_ATEND_PRODUTO** : Corresponde a Geração Destinada para Atendimento ao Produto de cada parcela de usina “p”, referente ao produto “t”, do leilão “l”, no período de comercialização “j”. (G_PRODp,t,l,j) [MWmed] _(1)_  \n* **ENERGIA_ATENDMENTO_DESC_ATR_SUSP** : Corresponde a Energia para Atendimento aos Casos de Descasamento, Atraso ou Suspensão de Unidade Geradora de cada parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, no período de comercialização “j”. (EAPSp,t,l,j) [MWmed] _(1)_  \n* **OBRIGACAO_ENTREGA_CCEAR_D** : Corresponde a Obrigação de Entrega de Energia associado ao CCEAR por  Disponibilidade da parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, do contrato “e”, no período de comercialização “j”. (OBE_PRODp,t,l,e,j) [MWmed] _(1)_  \n* **MONTANTE_MODULADO_CONTRATO** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j”. (CQe,j) [MWmed] _(1)_  \n  \n_(1)_ Não considera montantes referentes aos leilões de energia de reserva.",
+                "format": "CSV",
+                "hash": "",
+                "id": "773d3213-fa64-41c0-9dc6-29da523da274",
+                "last_modified": "2023-08-30T15:31:49.312000",
+                "metadata_modified": "2024-01-04T14:21:47.964558",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccear_balanco_energetico_mensal_2023",
+                "package_id": "29776321-47ae-47b4-9e26-445adca37e14",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/ePC3pZI0SpWRwSR73QPj4g/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:24:08.869866",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar o balanço energético de CCEARs e os respectivos encargos por modalidade no mês de referência.    **Campos contidos nesse conjunto de dados:**    * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  * **BALANCO_ENERGETICO_PRODUTO_P** : Corresponde ao Balanço Energético do Produto positivo, de cada parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, por período de comercialização “j”. (NET_PRODp,t,l,j) [MWmed] _(1)_  * **BALANCO_ENERGETICO_PRODUTO_N** : Corresponde ao Balanço Energético do Produto negativo, de cada parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, por período de comercialização “j”. NET_PRODp,t,l,j) [MWmed] _(1)_  * **GERACAO_DESTINADA_ATEND_PRODUTO** : Corresponde a Geração Destinada para Atendimento ao Produto de cada parcela de usina “p”, referente ao produto “t”, do leilão “l”, no período de comercialização “j”. (G_PRODp,t,l,j) [MWmed] _(1)_  * **ENERGIA_ATENDMENTO_DESC_ATR_SUSP** : Corresponde a Energia para Atendimento aos Casos de Descasamento, Atraso ou Suspensão de Unidade Geradora de cada parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, no período de comercialização “j”. (EAPSp,t,l,j) [MWmed] _(1)_  * **OBRIGACAO_ENTREGA_CCEAR_D** : Corresponde a Obrigação de Entrega de Energia associado ao CCEAR por  Disponibilidade da parcela de usina “p”, comprometida com o produto “t”, do leilão “l”, do contrato “e”, no período de comercialização “j”. (OBE_PRODp,t,l,e,j) [MWmed] _(1)_  * **MONTANTE_MODULADO_CONTRATO** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j”. (CQe,j) [MWmed] _(1)_    _(1)_ Não considera montantes referentes aos leilões de energia de reserva.",
+                "format": "CSV",
+                "hash": "",
+                "id": "a3c3f5e1-ea9e-4255-b90b-c276557a001e",
+                "last_modified": "2024-10-30T17:45:22.106000",
+                "metadata_modified": "2024-10-30T20:46:14.030352",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccear_balanco_energetico_mensal_2024",
+                "package_id": "29776321-47ae-47b4-9e26-445adca37e14",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/lLZ5GnoHSESLyoVqci3b2g/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "acr",
+                "id": "fdb6955a-89b5-460a-a0ad-e39923c42068",
+                "name": "acr",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "contrato",
+                "id": "25d9deae-c6b3-4218-a36f-944f4ba12d2e",
+                "name": "contrato",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "encargo",
+                "id": "dfe2f0b6-7110-40d9-922e-29b7dbd7bccc",
+                "name": "encargo",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

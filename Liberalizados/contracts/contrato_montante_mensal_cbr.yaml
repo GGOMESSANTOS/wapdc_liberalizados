@@ -1,0 +1,44 @@
+name: contrato_montante_mensal_cbr
+description: Dados com os montantes modulados do contratos para CBR e subtipos utilizados
+  na contabilização do MCP - Mercado de Curto Prazo divididos por submercado e consolidados
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.316367'
+source:
+- created: '2023-06-26T14:25:23.451043'
+  id: c5fb5873-7838-45aa-8009-f38f45b791b0
+  name: contrato_montante_mensal_cbr_2023
+- created: '2024-03-04T01:23:08.519081'
+  id: 81c115bf-e159-4b05-abe5-a2b5e05c8dff
+  name: contrato_montante_mensal_cbr_2024
+last_update: 2024-11-21 18:58:00.316372
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  TIPO_CONTRATO:
+    type: text
+    description: 'Corresponde ao tipo de contrato existe entre comprador e vendedor,
+      conforme domínio: CCEAL - Outros Compradores, CBR, CCEAR-Q, CCEN, CCGF, CCEAR-D,
+      Itaipu, PROINFA, CCEAR-C e CEE. Nesse campo somente CBR.'
+    label: '40'
+    business_rule: ''
+  SUBTIPO_CBR:
+    type: text
+    description: 'Corresponde ao subtipo de CBR negociado. Domínios possíveis: Ant.Lei
+      nº 10.848/2004, Art. 10º Lei nº 13.182/2015, Art. 5º Lei nº 13.182/2015, Chamada
+      Publica, Desverticalizacao, Mercado Próprio, Sistema Isolado, Supridas e Supridoras
+      e Outros CBR.'
+    label: '40'
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CBR:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de CBR
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

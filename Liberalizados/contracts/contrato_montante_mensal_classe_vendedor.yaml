@@ -1,0 +1,51 @@
+name: contrato_montante_mensal_classe_vendedor
+description: Dados com os montantes de contratos por modalidade de energia, classe
+  do comprador e do vendedor e por percentual de desconto do vendedor utilizados no
+  MCP - Mercado de Curto Prazo divididos por submercado e consolidados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.353791'
+source:
+- created: '2023-08-09T20:14:49.612252'
+  id: 7623b537-ccd9-4cbb-87db-adf72b154821
+  name: contrato_montante_mensal_classe_vendedor_2023
+- created: '2024-03-04T01:24:24.440975'
+  id: bb3caed7-c224-4be5-ac32-e0470d282bca
+  name: contrato_montante_mensal_classe_vendedor_2024
+last_update: 2024-11-21 18:58:00.353797
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: "Representa o mês e o ano de referência na qual os dados foram utilizados.\r\
+      \n"
+    label: AAAAMM
+    business_rule: ''
+  MODALIDADE_ENERGIA:
+    type: text
+    description: "Determina o tipo de energia negociada no contrato.\r\n"
+    label: '40'
+    business_rule: ''
+  CLASSE_COMPRADORA:
+    type: text
+    description: "Corresponde a classe da contraparte compradora do contrato.\r\n"
+    label: '40'
+    business_rule: ''
+  CLASSE_VENDEDORA:
+    type: text
+    description: "Corresponde a classe da contraparte vendedora do contrato.\r\n"
+    label: '40'
+    business_rule: ''
+  PERCENTUAL_TIPO_ENERGIA_VENDEDOR:
+    type: text
+    description: "Corresponde ao percentual de desconto atrelado ao vendedor do contrato.\
+      \ [%]\r\n"
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_MODALIDADE_TIPO:
+    type: numeric
+    description: "Corresponde ao montante modulado de contrato “e” no período de comercialização\
+      \ “j” por modalidade, tipo de energia e classe de agente (CQe,j) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

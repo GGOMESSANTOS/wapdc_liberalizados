@@ -1,0 +1,67 @@
+name: reserva_saldo_coner
+description: Dados que compõe o saldo da conta de energia de reserva - CONER - no
+  mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.355253'
+source:
+- created: '2024-01-04T14:25:42.277826'
+  id: 7888264d-4509-417c-b060-d6cc3191f1a7
+  name: reserva_saldo_coner_2023
+- created: '2024-03-05T01:18:14.251264'
+  id: 6dce742d-f118-402f-8028-7563094bf176
+  name: reserva_saldo_coner_2024
+last_update: 2024-11-21 18:58:00.355259
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SALDO_ANTERIOR:
+    type: numeric
+    description: Corresponde ao saldo anterior disponível na conta de energia de reserva
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  PAGAMENTO_GERADOR_DISTRIBUIDORA:
+    type: numeric
+    description: Corresponde ao Pagamento realizados pelos Geradores e Distribuidores.
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  LIQUIDACAO_MCP:
+    type: numeric
+    description: Corresponde ao valor liquidado no Mercado de Curto Prazo - MCP. [R$]
+    label: (10,2)
+    business_rule: ''
+  PAGAMENTO_AO_GERADOR:
+    type: numeric
+    description: Corresponde ao pagamento aos geradores. [R$]
+    label: (10,2)
+    business_rule: ''
+  CUSTOS_ADMINISTRATIVOS_CAFT:
+    type: numeric
+    description: Corresponde ao custos administrativos, financeiros e tributários
+      incorridos pela CCEE. [R$]
+    label: (10,2)
+    business_rule: ''
+  OUTROS:
+    type: numeric
+    description: Corresponde aos valores de recuperação judicial, execução de garantia
+      de leilão e tarifas bancárias. [R$]
+    label: (10,2)
+    business_rule: ''
+  EXCEDENTE_FINANCEIRO_MCP:
+    type: numeric
+    description: Corresponde ao excedente financeiro do MCP transferido para a CONER
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  SALDO_CONER:
+    type: numeric
+    description: Corresponde ao saldo final da CONER no mês de referência "m" [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

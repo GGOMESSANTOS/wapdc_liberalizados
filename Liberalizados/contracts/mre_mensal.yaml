@@ -1,0 +1,78 @@
+name: mre_mensal
+description: Dados de MRE utilizados na contabilização do MCP - Mercado de Curto Prazo
+  consolidados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.285021'
+source:
+- created: '2023-06-26T13:41:11.211601'
+  id: cbcd5631-1a64-42f3-ad58-480c7b177388
+  name: mre_mensal_2023
+- created: '2024-03-04T01:18:28.858202'
+  id: 5665c103-8223-47de-b581-9b3853f0609f
+  name: mre_mensal_2024
+last_update: 2024-11-21 18:58:00.285026
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA_MRE:
+    type: numeric
+    description: Garantia Física sazonalizada de usinas participantes do MRE.
+    label: (10,12)
+    business_rule: ''
+  FATOR_PERDA_INTERNA:
+    type: numeric
+    description: Corresponde ao valor médio do fator de perdas internas que é aplicado
+      sobre a garantia física proporcional às unidades geradoras em operação [%]
+    label: (10,12)
+    business_rule: ''
+  FATOR_PERDA_REDE_BASICA:
+    type: numeric
+    description: Corresponde ao valor médio do fator de perdas de rede básica que
+      é aplicado sobre a garantia física mensal ajustada em função das perdas internas
+      [%]
+    label: (10,12)
+    business_rule: ''
+  FATOR_DISPONIBILIDADE:
+    type: numeric
+    description: Corresponde ao valor médio do fator de diponibilidade que é aplicado
+      sobre a garantia física modulada ajustada em função das perdas da rede básica
+      [%]
+    label: (10,12)
+    business_rule: ''
+  FATOR_REDUCAO_ACUMULADO:
+    type: numeric
+    description: Corresponde ao valor médio do fator de redução [%]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_MODULADA_FDISP:
+    type: numeric
+    description: Garantia Física Modulada Ajustada pelo Fator de Disponibilidade (GFIS_2p,r,w)
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_REDE_BASICA:
+    type: numeric
+    description: Garantia Física Modulada Ajustada em Função das Perdas da Rede Básica
+      (GFIS_RBp,j)
+    label: (10,12)
+    business_rule: ''
+  ENTREGA_MRE:
+    type: numeric
+    description: Energia entregue ao MRE, exceto por Itaipu, por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  CUSTO_MRE:
+    type: numeric
+    description: Corresponde ao custo da Tarifa de Energia de Otimização (TEOp,m)
+    label: (10,12)
+    business_rule: ''
+  VALOR_ALOCADO_MRE:
+    type: numeric
+    description: Corresponde ao valor total alocado no MRE par ao mês de referência
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

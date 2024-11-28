@@ -1,0 +1,62 @@
+name: energia_incentivada_classe
+description: Dados de montantes contratuais de consumidores e autoprodutores de energia
+  incentiva agrupados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.367316'
+source:
+- created: '2024-01-04T14:27:45.311318'
+  id: 3b34c192-836a-4f51-9fc1-39279ae140cc
+  name: energia_incentivada_classe_2023
+- created: '2024-03-04T01:27:25.043302'
+  id: 8a205a86-1c15-4342-8497-6673cf34b255
+  name: energia_incentivada_classe_2024
+last_update: 2024-11-21 18:58:00.367321
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CLASSE_AGENTE:
+    type: text
+    description: null
+    label: '40'
+    business_rule: ''
+  MONTANTE_MODULADO_ENERGIA_CE_0:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) de contratos de energia convencional especial cujo desconto na matriz
+      é de 0%
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_ENERGIA_IE_100:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) de contratos de energia incentivada especial cujo desconto na matriz
+      é de 100%
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_ENERGIA_IE_50:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) de contratos de energia incentivada especial cujo desconto na matriz
+      é de 50%
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_ENERGIA_IE_80:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) de contratos de energia incentivada especial cujo desconto na matriz
+      é de 80%
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_ENERGIA_CQ_50:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) de contratos de energia cogeração qualificada cujo desconto na matriz
+      é de 50%
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

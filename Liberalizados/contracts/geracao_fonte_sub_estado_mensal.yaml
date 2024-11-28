@@ -1,0 +1,49 @@
+name: geracao_fonte_sub_estado_mensal
+description: Dados de geração por submercado e estado no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.260152'
+source:
+- created: '2024-01-04T14:22:55.726057'
+  id: ed4404ee-9998-4933-a36e-35d5d2ab5b97
+  name: geracao_fonte_sub_estado_mensal_2023
+- created: '2024-03-04T01:41:17.978393'
+  id: 43539ac6-1048-410d-abaf-0923d8ec8ebc
+  name: geracao_fonte_sub_estado_mensal_2024
+last_update: 2024-11-21 18:58:00.260158
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  FONTE_PRIMARIA:
+    type: text
+    description: Fonte primária correspondente ao ativo de geração representado na
+      análise.
+    label: '40'
+    business_rule: ''
+  ESTADO:
+    type: text
+    description: Corresponde a UF em que a fonte está localizada.
+    label: '40'
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: Geração no centro de gravidade por fonte primária. (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA:
+    type: numeric
+    description: Capacidade instalada total por fonte primária. (CAP_T) [MW]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

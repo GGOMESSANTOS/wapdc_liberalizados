@@ -1,0 +1,35 @@
+name: fotovoltaica_acl
+description: Dados consolidados de geração e capacidade instalada de usinas fotovoltaicas
+  no ambiente de comercialização livre - ACL.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.249567'
+source:
+- created: '2024-01-04T14:22:35.670836'
+  id: 6ef90b1e-95b4-429d-a196-788f81e77223
+  name: fotovoltaica_acl_2023
+- created: '2024-03-04T02:10:22.877748'
+  id: ba62f331-b8e9-4c99-b724-521fa7cbe868
+  name: fotovoltaica_acl_2024
+last_update: 2024-11-21 18:58:00.249573
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_FOTOVOLTAICA:
+    type: numeric
+    description: Corresponde a Geração da parcela de usina fotovoltaica "p", por período
+      de comercialização "j", no ambiente de comercialização livre - ACL. (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_FOTOVOLTAICA:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina fotovoltaica
+      "p", no período de comercialização "j", no ambiente de comercialização livre
+      - ACL. (CAP_Tp,j) [MW]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

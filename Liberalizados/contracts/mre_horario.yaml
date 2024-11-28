@@ -1,0 +1,78 @@
+name: mre_horario
+description: Dados de geração utilizados na contabilização do MCP - Mercado de Curto
+  Prazo, com foco nos parâmetros de geração utilizados pelo MRE por período de comercialização.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.258833'
+source:
+- created: '2023-06-26T13:36:50.534331'
+  id: dd1d7cfc-43ff-4595-a3d8-53277fa2a02b
+  name: mre_horario_2023
+- created: '2024-03-04T02:04:54.333436'
+  id: b4465a1e-e70c-4856-8379-8b4325c38a9c
+  name: mre_horario_2024
+last_update: 2024-11-21 18:58:00.258838
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência na qual os dados foram utilizados.
+    label: (4)
+    business_rule: ''
+  ENERGIA_SECUNDARIA:
+    type: numeric
+    description: Energia secundária do MRE por período de comercialização
+    label: (10,12)
+    business_rule: ''
+  TOTAL_PAGAMENTO_MRE:
+    type: numeric
+    description: Total de pagamento ao MRE por período de comercialização
+    label: (10,12)
+    business_rule: ''
+  ENTREGA_MRE:
+    type: numeric
+    description: Energia entregue ao MRE, exceto Itaipu, por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  RECEBIDA_MRE:
+    type: numeric
+    description: Energia recebida do MRE, exceto Itaipu, por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  PAGAMENTO_MRE:
+    type: numeric
+    description: Total de pagamento do MRE, exceto Itaipu, por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  RECEBIMENTO_MRE:
+    type: numeric
+    description: Total de recebimento do MRE, exceto Itaipu, por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  ENTREGA_MRE_ITAIPU:
+    type: numeric
+    description: Energia entregue ao MRE de Itaipu por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  RECEBIDA_MRE_ITAIPU:
+    type: numeric
+    description: Energia recebida do MRE de Itaipu por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  PAGAMENTO_MRE_ITAIPU:
+    type: numeric
+    description: Pagamento do MRE de Itaipu por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+  RECEBIMENTO_MRE_ITAIPU:
+    type: numeric
+    description: Recebimento do MRE de Itaipu por período de comercialização.
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

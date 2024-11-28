@@ -1,0 +1,50 @@
+name: consumo_ramo_atividade
+description: Dados de consumo referente a parcela livre de consumidores livres, especiais
+  e autoprodutores, agrupados por ramo de atividade, utilizados na contabilização
+  do MCP - Mercado de Curto Prazo, consolidados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.262769'
+source:
+- created: '2024-05-29T21:41:34.065050'
+  id: fea766fb-e8bd-4653-b48f-581bcce78169
+  name: consumo_ramo_atividade_2024
+last_update: 2024-11-21 18:58:00.262775
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: 'Representa o mês e o ano de referência na qual os dados foram utilizados  '
+    label: AAAAMM
+    business_rule: ''
+  RAMO_ATIVIDADE:
+    type: text
+    description: 'Corresponde ao ramo de atividade no qual a empresa o segmento de
+      uma empresa foi definido  '
+    label: '40'
+    business_rule: ''
+  CONSUMO_CL_ESP_ACL:
+    type: numeric
+    description: 'Consumo de consumidores livres e especiais, no centro de gravidade,
+      por ramo de atividade (RC_ALc,j) [MWmed]  '
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_AUTOP_ACL:
+    type: numeric
+    description: 'Consumo de autoprodutores, no centro de gravidade, por ramo de atividade
+      (RC_ALc,j) [MWmed]  '
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_PONTO_CONEXAO_CL_ESP_ACL:
+    type: numeric
+    description: 'Consumo de consumidores livres e especiais, no ponto de conexão,
+      por ramo de atividade (MED_Cc,j) [MWmed]  '
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_PONTO_CONEXAO_AUTOP_ACL:
+    type: numeric
+    description: 'Consumo de autoprodutores, no ponto de conexão, por ramo de atividade
+      (MED_Cc,j) [MWmed]  '
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,105 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "Gerência de Informações ao Mercado - GAIM",
+        "author_email": null,
+        "creator_user_id": "0704eba2-c489-4cbd-b791-d29f82ebe231",
+        "id": "30421cb7-7f4f-4e00-bb3d-7c4a09b79a25",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "Gerência de Informações ao Mercado - GAIM",
+        "maintainer_email": null,
+        "metadata_created": "2024-08-01T21:14:01.211771",
+        "metadata_modified": "2024-10-28T19:37:12.974616",
+        "name": "rd_atend_prod_contab_horario",
+        "notes": "Objetivo: Detalhar os dados horários com os montentes de ofertas e o sinalizador de atendimento do produto dos participantes do programa de Resposta da Demanda no mês de apuração. Dados contabilizados.",
+        "num_resources": 1,
+        "num_tags": 3,
+        "organization": {
+            "id": "508bae40-912a-459d-b5f0-aaf041309425",
+            "name": "resposta_da_demanda",
+            "title": "Resposta da Demanda",
+            "type": "organization",
+            "description": "A Resposta da Demanda (RD) é um mecanismo que possibilita a redução ou deslocamento voluntários da demanda de energia elétrica por grandes consumidores, que estão no mercado livre de energia. Instituída a partir de outubro de 2022 pela Resolução Normativa ANEEL 1.040/22, a iniciativa se tornou um programa estrutural e compõe de modo definitivo as opções do Operador Nacional do Sistema Elétrico (ONS) para gestão dos recursos e operação do Sistema Interligado Nacional (SIN).\n\nPodem participar da oferta, desde que estejam adimplentes junto à CCEE, os consumidores livres, os consumidores parcialmente livres, os consumidores com contratos baseado no art. 5º da Lei 13.182/15, os consumidores modelados sob agentes varejistas e agregadores, que são agentes que reúnem e centralizam as cargas dos consumidores do mercado livre.  \nPara o agente que quiser participar do mecanismo como agregador será necessário o cadastramento na CCEE, assim como suas cargas agregadas devem dar anuência, conforme o caso, nos termos do Procedimento de Comercialização Provisório.\nA Resposta da Demanda possui uma referência para comparação da redução, denominada linha base, que é calculada e publicada pela CCEE mensalmente. Já as ofertas de redução serão realizadas para o ONS conforme Rotina Operacional Provisória. \n\nA Câmara de Comercialização é responsável por contabilizar mensalmente o mecanismo. ",
+            "image_url": "",
+            "created": "2024-06-03T17:08:44.480935",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "508bae40-912a-459d-b5f0-aaf041309425",
+        "private": false,
+        "state": "active",
+        "title": "RD_ATEND_PROD_CONTAB_HORARIO",
+        "type": "dataset",
+        "url": null,
+        "version": null,
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-08-01T21:15:08.258387",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados horários com os montentes de ofertas e o sinalizador de atendimento do produto dos participantes do programa de Resposta da Demanda no mês de apuração. Dados contabilizados.**Campos contidos nesse conjunto de dados:*** **MES_REFERENCIA**: Representa o ano (AAAA) e o mês (MM) de competência dos dados apurados.  * **CODIGO_PERFIL_AGENTE**: Representa o código numerico do perfil de agente, conforme cadastro nos sistemas da CCEE  * **PERFIL_AGENTE**: Representa o nome do perfil de agente atribuído pelos sistemas da CCEE  * **CNPJ_AGENTE**: Corresponde ao CNPJ do agente, conforme cadastrado nos sistemas da CCEE  * **CATEGORIA**: Corresponde a categoria de comercialização indicada pelo agente durante o cadastro nos sistemas da CCEE  * **CLASSE**: Corresponde a classe de comercialização indicada pelo agente durante o cadastro nos sistemas da CCEE  * **PRODUTO**: Representa o código dos produtos distintos do mecanismo de Resposta da Demanda que as cargas podem participar em um determinado dia   * **OFERTA**: Corresponde ao código de cada oferta realizada pelo agente no mecanismo de Resposta da Demanda.  * **SUBMERCADO**: Representa os quatro (4) submercados de atuação no SIN - Sistema Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste (SE).  * **PERIODO_COMERCIALIZACAO**: Representa o período de comercialização, equivalente a uma hora, dentro do mês e o ano de referência da contabilização do MCP na qual os dados de geração foram utilizados.  * **MONTANTE_PRELIMINAR_RD**: Corresponde ao Montante Preliminar da Redução de Resposta da Demanda associada ao perfil de agente ofertante “a”, por produto “rv”, para a oferta “o”, por submercado “s”, por período de comercialização “j” (MONT_PRE_RD a,rv,o,s,j) [MWh]  * **SINALIZADOR_HORARIO_ATEND_PROD**: Corresponde ao sinalizador de atendimento ao Produto de RD do perfil de agente ofertante “a”, associado ao produto “rv”, para a oferta “o”, por submercado “s”, por período de comercialização “j” (F_CAN_PRD a,rv,o,s,d)",
+                "format": "CSV",
+                "hash": "",
+                "id": "8e00e4b1-8b43-4350-9ed0-9e064148d072",
+                "last_modified": "2024-10-28T16:37:12.898000",
+                "metadata_modified": "2024-10-28T19:37:12.981835",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "rd_atend_prod_contab_horario_2024",
+                "package_id": "30421cb7-7f4f-4e00-bb3d-7c4a09b79a25",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/iL0hiX9XRa2pB6yEm2TCvg/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "oferta de redução",
+                "id": "bffcc5c3-7cad-4c40-86a5-834e2a355548",
+                "name": "oferta de redução",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "produto",
+                "id": "2629e62c-184c-4c40-874d-7b0e0ed4a534",
+                "name": "produto",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "resposta da demanda",
+                "id": "5630c5de-d42f-4014-a46c-89afe4c7c2ba",
+                "name": "resposta da demanda",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

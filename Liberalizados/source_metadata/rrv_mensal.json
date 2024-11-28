@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "c31c1d24-4b20-4763-bfc3-13e7ff8df933",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-09-06T20:51:35.556686",
+        "metadata_modified": "2024-10-30T20:23:48.270877",
+        "name": "rrv_mensal",
+        "notes": "Dados de de receita de venda apuradas no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "RRV_MENSAL",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-09-06T20:54:00.530014",
+                "datastore_active": true,
+                "description": "Objetivo: Detalhar os valores de receita de venda apuradas no mês de referência.  \n  \n**Campos contidos nesse conjunto de dados:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **RECEITA_FIXA** : Corresponde a Receita Fixa Atualizada e Ponderada da parcela de usina “p”, para cada produto “t”, do leilão “l”, do contrato com a Distribuidora “e”, no mês de apuração “m” (RFIX_AP_Dp,t,l,e,m) [R$/MWh]  \n* **RECEITA_VARIAVEL** : Corresponde a Parcela Variável Final da parcela de usina “p”, para cada produto “t”, do leilão “l”, do contrato “e”, no mês de apuração “m” (PVFp,t,l,e,m) [R$/MWh]  \n* **RECEITA_ATRASO** : Corresponde a Receita Fixa reduzida em função do Atraso da parcela de usina “p”, para cada produto “t”, do leilão “l”, do contrato “e”, no mês de apuração “m” (RFIX_ATSp,t,l,e,m) [R$/MWh]  \n* **REAPURACAO_AJUSTE** : Corresponde aos ajustes financeiros ralizados realizados por meio de ADDCs (Ajuste Decorrente de Deliberação do CAd, Decisões Judiciais ou Administrativas) [R$/MWh]  \n* **RECEITA_VENDA_TOTAL** : Corresponde a soma da RECEITA_FIXA, RECEITA_VARIAVEL, RECEITA_ATRASO e a REAPURACAO_AJUSTE [R$/MWh]",
+                "format": "CSV",
+                "hash": "",
+                "id": "d6b35427-d9c9-42d4-87eb-77dff4a9906a",
+                "last_modified": null,
+                "metadata_modified": "2023-10-05T13:52:55.319806",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "rrv_mensal_2023",
+                "package_id": "c31c1d24-4b20-4763-bfc3-13e7ff8df933",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/w1V3uzK0RSO4skPgcghCjw/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:55:12.385800",
+                "datastore_active": true,
+                "description": "Objetivo: Detalhar os valores de receita de venda apuradas no mês de referência.    **Campos contidos nesse conjunto de dados:**    * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  * **RECEITA_FIXA** : Corresponde a Receita Fixa Atualizada e Ponderada da parcela de usina “p”, para cada produto “t”, do leilão “l”, do contrato com a Distribuidora “e”, no mês de apuração “m” (RFIX_AP_Dp,t,l,e,m) [R$/MWh]  * **RECEITA_VARIAVEL** : Corresponde a Parcela Variável Final da parcela de usina “p”, para cada produto “t”, do leilão “l”, do contrato “e”, no mês de apuração “m” (PVFp,t,l,e,m) [R$/MWh]  * **RECEITA_ATRASO** : Corresponde a Receita Fixa reduzida em função do Atraso da parcela de usina “p”, para cada produto “t”, do leilão “l”, do contrato “e”, no mês de apuração “m” (RFIX_ATSp,t,l,e,m) [R$/MWh]  * **REAPURACAO_AJUSTE** : Corresponde aos ajustes financeiros ralizados realizados por meio de ADDCs (Ajuste Decorrente de Deliberação do CAd, Decisões Judiciais ou Administrativas) [R$/MWh]  * **RECEITA_VENDA_TOTAL** : Corresponde a soma da RECEITA_FIXA, RECEITA_VARIAVEL, RECEITA_ATRASO e a REAPURACAO_AJUSTE [R$/MWh]",
+                "format": "CSV",
+                "hash": "",
+                "id": "155f20c4-8a06-447d-a8d0-07e5a636d228",
+                "last_modified": "2024-10-30T17:23:48.219000",
+                "metadata_modified": "2024-10-30T20:23:48.277434",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "rrv_mensal_2024",
+                "package_id": "c31c1d24-4b20-4763-bfc3-13e7ff8df933",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/ZD-NXRnURvq5GAMzTaTX2Q/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "rrv",
+                "id": "c49a0fa5-a748-4ee6-a5f8-97050017de4b",
+                "name": "rrv",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

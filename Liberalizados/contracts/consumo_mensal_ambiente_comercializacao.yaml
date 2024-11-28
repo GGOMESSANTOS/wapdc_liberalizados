@@ -1,0 +1,33 @@
+name: consumo_mensal_ambiente_comercializacao
+description: Dados de consumo utilizados na contabilização do MCP - Mercado de Curto
+  Prazo totalizados por ambiente de contratação livre e regulado (ACL e ACR) consolidados
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.245563'
+source:
+- created: '2023-06-26T13:57:51.527079'
+  id: 047855cf-7e60-4e50-ac8c-e50f6957fb53
+  name: consumo_mensal_ambiente_comercializacao_2023
+- created: '2024-03-04T01:21:19.896291'
+  id: 649edf83-0d29-495c-a5de-38f22d9841b4
+  name: consumo_mensal_ambiente_comercializacao_2024
+last_update: 2024-11-21 18:58:00.245568
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CONSUMO_TOTAL_ACR:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CONSUMO_TOTAL_ACL:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

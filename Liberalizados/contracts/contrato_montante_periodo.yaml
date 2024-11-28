@@ -1,0 +1,58 @@
+name: contrato_montante_periodo
+description: Dados com os montantes modulados utilizados na contabilização do MCP
+  - Mercado de Curto Prazo classificados em período de duração do contrato na CCEE,
+  por tipo de contrato, consolidado no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.267685'
+source:
+- created: '2023-06-26T14:14:56.442824'
+  id: 76e1a4ba-ee31-4add-b85b-48c77263610a
+  name: contrato_montante_periodo_2023
+- created: '2024-03-04T01:23:07.949072'
+  id: b1b8ba8d-e308-4be2-9708-332635e59c8b
+  name: contrato_montante_periodo_2024
+last_update: 2024-11-21 18:58:00.267691
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  RANGE_DURACAO_CONTRATO:
+    type: text
+    description: 'Corresponde aos ranges de durança do contrato independente da sua
+      data. Tipos possíveis: 1 mês, 2 a 5 meses, 6 meses a 1 ano, Acima de 1 ano até
+      2 anos, Acima de 2 anos até 4 anos, Acima de 4 anos até 6 anos, Acima de 6 anos
+      até 8 anos, Acima de 8 anos até 10 anos, Acima de 10 anos, até 12 anos e Acima
+      de 12 anos.'
+    label: '40'
+    business_rule: ''
+  MONTANTE_CCEAL_COMPRA:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de compra para  CCEAL
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_CCEAL_COMPRA_CL_CE:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (Cqe,j) de compra de Consumidores Livres (CL) e Consumidores Especiais (CE)
+      para CCEAL
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_CCEAL_COMPRA_TR:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (Cqe,j) de compra por tempo remanescente (TR) para CCEAL
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_CCEAL_COMPRA_CL_CE_TR:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (Cqe,j) de compra de Consumidores Livres (CL) e Consumidores Especiais (CE)
+      por tempo remanescente para CCEAL
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

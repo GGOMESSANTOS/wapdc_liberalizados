@@ -1,0 +1,23 @@
+name: contabilizacao_fator_ajuste_financeiro
+description: Dados com o fator de ajuste financeiro por mês.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.266514'
+source:
+- created: '2024-05-03T02:23:47.067547'
+  id: ef5c32c7-0c7e-4d7f-b0cc-665368e1116c
+  name: contabilizacao_fator_ajuste_financeiro_2024
+last_update: 2024-11-21 18:58:00.266520
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  FATOR_AJUSTE_FINANCEIRO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

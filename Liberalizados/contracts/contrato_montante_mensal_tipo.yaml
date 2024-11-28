@@ -1,0 +1,35 @@
+name: contrato_montante_mensal_tipo
+description: Dados com os montantes modulados utilizados na contabilização do MCP
+  - Mercado de Curto Prazo por tipo de contrato, consolidado no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.281115'
+source:
+- created: '2023-06-26T14:11:58.870603'
+  id: ae00cc29-5c12-4da5-970f-ec1f5a251fe0
+  name: contrato_montante_mensal_tipo_2023
+- created: '2024-03-04T01:24:25.059600'
+  id: 25046884-9446-4ffe-b416-ca65d1282144
+  name: contrato_montante_mensal_tipo_2024
+last_update: 2024-11-21 18:58:00.281120
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  TIPO_CONTRATO:
+    type: text
+    description: 'Corresponde ao tipo de contrato existe entre comprador e vendedor,
+      conforme domínio: CCEAL - Outros Compradores, CBR, CCEAR-Q, CCEN, CCGF, CCEAR-D,
+      Itaipu, PROINFA, CCEAR-C e CEE.'
+    label: '40'
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j”. (CQe,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

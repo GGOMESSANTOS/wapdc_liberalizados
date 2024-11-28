@@ -1,0 +1,32 @@
+name: ccgf_cont_sazonalizado
+description: Dados de montantes sazonalizados de contratos de cotas de garantia física
+  por mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.290414'
+source:
+- created: '2023-11-21T13:04:07.424226'
+  id: caf608ce-edc9-42cf-bcd7-1d9418f08a3b
+  name: ccgf_cont_sazonalizado_2023
+- created: '2024-03-04T01:23:00.275989'
+  id: 3d234e17-8941-40d9-ba2a-73ab3421a2ef
+  name: ccgf_cont_sazonalizado_2024
+last_update: 2024-11-21 18:58:00.290420
+periodice: Mensal
+fields:
+  DATA_ATUALIZACAO:
+    type: text
+    description: Se refere a data de consulta para divulgação das informações.
+    label: AAAAMMDD
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  QUANTIDADE_SAZONALIZADA_CCGF:
+    type: numeric
+    description: Quantidade Sazonalizada dos Contratos de CCGF (QMe,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,52 @@
+name: energia_distrib_horario_submercado
+description: Dados de montantes de energia para verificação de exposição nos contratos
+  regulados, nos submercados de entrega e consumo, por período de comercialização
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.375578'
+source:
+- created: '2023-08-09T21:04:13.007322'
+  id: 8c92d75c-e4ee-49ab-9581-824dd0942ccb
+  name: energia_distrib_horario_submercado_2023
+- created: '2024-03-04T01:19:45.973838'
+  id: 393ef45b-5b02-4d82-afa9-3c3831bdfe5a
+  name: energia_distrib_horario_submercado_2024
+last_update: 2024-11-21 18:58:00.375584
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO_ENTREGA:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE) de entrega da energia.
+    label: '40'
+    business_rule: ''
+  SUBMERCADO_CONSUMO:
+    type: text
+    description: "Representa os quatro (4) submercados de atuação no SIN - Sistema\
+      \ Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e\
+      \ Sudeste (SE) de consumo da energia.\r\n"
+    label: '40'
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: "Representa o período de comercialização, equivalente a uma hora,\
+      \ dentro do mês e o ano de referência da contabilização do MCP na qual os dados\
+      \ de geração foram utilizados.\r\n"
+    label: (4)
+    business_rule: ''
+  ENERGIA_VERIF_EXPOSI_CCEAR:
+    type: numeric
+    description: Corresponde a Energia para Verificação Exposições de CCEARs, CCGFs
+      e CCENs para o perfil de agente “a” entre o submercado onde a energia está sendo
+      entregue “s\*” e o submercado onde ocorre o consumo “s”, no período de comercialização
+      “j”. (EVE_CCEARa,s,s\*,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

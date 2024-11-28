@@ -1,0 +1,43 @@
+name: leilao_acr_eol
+description: Dados de leilão de usinas de fonte eólica no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.213597'
+source:
+- created: '2023-09-06T21:18:21.399902'
+  id: 6e2d127c-ba13-432c-8d7a-cf91296697bb
+  name: leilao_acr_eol_2023
+- created: '2024-03-04T01:24:30.836235'
+  id: cd9f481d-0cd6-402d-816c-7b80ed5242d9
+  name: leilao_acr_eol_2024
+last_update: 2024-11-21 18:58:00.213602
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: 'Representa o mês e o ano de referência na qual os dados foram utilizados. '
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  GERACAO_DESTINADA_LEILAO_EOL:
+    type: numeric
+    description: Corresponde a geração destinada ao leilão de energia [MWmed].
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_TOTAL_EOL:
+    type: numeric
+    description: "Corresponde a Capacidade Instalada Total da parcela de usina \"\
+      p\", no período de comercialização \"j\" (CAP_Tp,j) [MW]\r\n"
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_EOL:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina "p" destinada ao
+      leilão de energia (GFp) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,39 @@
+name: reserva_penalidade
+description: Dados que compõe as penalidades de insuficiência de lastro para fins
+  de energia de reserva no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.310085'
+source:
+- created: '2024-06-05T00:47:34.540069'
+  id: 7a0a52b0-592d-4ef2-a8f1-081159bcbc9a
+  name: reserva_penalidade_2023
+last_update: 2024-11-21 18:58:00.310091
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  NIVEL_INSUFICIENCIA_LASTRO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  AJUSTE_CER_PNL:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  ENERGIA_NAO_FORNECIDA_ANUAL:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  PENALIDADE_INSUFICIENCIA_LASTRO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

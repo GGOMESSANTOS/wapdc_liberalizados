@@ -1,0 +1,54 @@
+name: mre_gf_modulada_usina
+description: Dados com os valores de garantia física modulada pelo fator de disponibilidade
+  e ajustada para o MRE por perfil de agente.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.315145'
+source:
+- created: '2024-06-03T02:02:11.869657'
+  id: f1584915-a623-479d-84ab-340e53c7c14c
+  name: mre_gf_modulada_usina_2024
+last_update: 2024-11-21 18:58:00.315151
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '40'
+    business_rule: ''
+  COD_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de usina em seus sistemas.
+    label: (20)
+    business_rule: ''
+  GF_MODULADA_FATOR_DISPONIBILIDADE:
+    type: numeric
+    description: Corresponde a Garantia física modulada ajustada pelo fator de disponibilidade
+      do perfil de agente (GFIS_2p,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GF_MODULADA_AJUSTADA_MRE:
+    type: numeric
+    description: Corresponde a Garantia física modulada ajustada para o MRE do perfil
+      de agente (GFIS_3p,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

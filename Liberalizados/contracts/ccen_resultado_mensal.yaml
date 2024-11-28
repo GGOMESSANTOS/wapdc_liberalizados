@@ -1,0 +1,60 @@
+name: ccen_resultado_mensal
+description: Dados referentes a apuração da liquidação dos contratos CCEN no mês de
+  referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.370207'
+source:
+- created: '2023-09-06T18:12:38.797873'
+  id: 78cdd5f8-aabc-43a7-88e6-db785270d817
+  name: ccen_resultado_mensal_2023
+- created: '2024-03-04T01:40:56.465488'
+  id: 74f66121-5169-4e47-9794-7c575e974091
+  name: ccen_resultado_mensal_2024
+last_update: 2024-11-21 18:58:00.370215
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  RESULTADO_FINAL_COTISTA_CCEN:
+    type: numeric
+    description: ' Corresponde ao Resultado Final do Rateio de Cotas de CCEN do perfil
+      de agente cotista ""a"", no mês de referência ""m"" (RFAC_CCENa,m) [R$]'
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_FINAL_ANGRA_CCEN:
+    type: numeric
+    description: Corresponde ao Resultado Final do perfil de agente ""a"" de Angra,
+      no mês de referência ""m"" (RFIN_CCENa,m)
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATO_CCEN:
+    type: numeric
+    description: Corresponde ao Efeito do CCEN para o perfil de agente ""a"", no mês
+      de referência ""m"" (ECCENa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  RESULTADO_PRELIMINAR_AJ_EF_CCEN:
+    type: numeric
+    description: Corresponde ao Resultado Preliminar de Ajustes de Exposições Financeiras
+      para o perfil de agente cotista ""a"", no mês de referência ""m"" (RPCA_EFa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_PRELIMINAR_COTISTA_MCP_CCEN:
+    type: numeric
+    description: Corresponde ao Total de Encargos Associado aos Contratos de Comercialização
+      de Energia Nuclear de cada perfil de agente cotista ""a"", no mês de referência
+      ""m"" (RPCA_ENCa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_FINAL_RATEIO_CCEN:
+    type: numeric
+    description: Corresponde ao Resultado Preliminar do Mercado de Curto Prazo do
+      perfil de agente cotista ""a"", no mês de referência ""m"" (RPCA_MCPa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

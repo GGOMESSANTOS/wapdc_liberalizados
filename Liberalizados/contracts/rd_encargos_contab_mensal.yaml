@@ -1,0 +1,34 @@
+name: rd_encargos_contab_mensal
+description: 'Objetivo: Monitorar encargo associado à RD para repasse em forma de
+  ESS para os consumidores. Dados contabilizados, consolidados por mês e submercado.'
+owner: Gerência de Informações ao Mercado - GAIM
+version:
+- '1': '2024-11-21T18:58:00.221405'
+source:
+- created: '2024-08-01T21:14:35.350433'
+  id: 8c07bd8d-76d8-4cbe-a863-a99cf666d9d2
+  name: rd_encargos_contab_mensal_2024
+last_update: 2024-11-21 18:58:00.221410
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: "Representa o ano (AAAA) e o mês (MM) de competência dos dados apurados.\
+      \  \r\n"
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: "Representa os quatro (4) submercados de atuação no SIN - Sistema\
+      \ Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e\
+      \ Sudeste (SE).  \r\n"
+    label: '20'
+    business_rule: ''
+  RECEBIMENTO_ENCARGO_RD:
+    type: numeric
+    description: Corresponde ao Recebimento via Encargos de redução da Resposta da
+      Demanda do perfil de agente ofertante “a”, no mês de contabilização “m” (R_ENC_RD
+      a,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,54 @@
+name: geracao_horaria
+description: Dados de e geração, inclusive importação, por período de comercialização
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.257495'
+source:
+- created: '2023-09-06T18:06:29.237515'
+  id: c13f034c-f5e5-4fec-8b8a-68e66500b86f
+  name: geracao_horaria_2023
+- created: '2024-03-04T01:27:27.835180'
+  id: d74e5488-bcf4-47a4-b9fd-d7dbfd9fc4e4
+  name: geracao_horaria_2024
+last_update: 2024-11-21 18:58:00.257501
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  IMPORTACAO_LIQUIDA:
+    type: numeric
+    description: Corresponde a Importação Líquida sem Garantia Física Associada, por
+      período de comercialização “j’ (IMPj) [MWh]
+    label: (10,12)
+    business_rule: ''
+  DESLOCAMENTO_HIDRAULICO_ENERGETICO:
+    type: numeric
+    description: Corresponde ao Deslocamento Hidráulico de origem Energética, por
+      período de comercialização “j” (DH_ENERj) [MWh]
+    label: (10,12)
+    business_rule: ''
+  INDISPONIBILIDADE_UTE_ORDEM_MERITO:
+    type: numeric
+    description: Corresponde ao Total de Indisponibilidade de Usinas Termelétricas
+      Despachadas por Ordem de Mérito Econômico, por período de comercialização, “j”
+      (TOT_INDj) [MWh]
+    label: (10,12)
+    business_rule: ''
+  FATOR_RATEIO_PERDA_GERACAO:
+    type: numeric
+    description: Corresponde ao Fator de Rateio de Perdas de Geração, por período
+      de comercialização “j” (XP_GLFj) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

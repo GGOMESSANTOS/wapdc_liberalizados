@@ -1,0 +1,46 @@
+name: fotovoltaica_gf_definida
+description: Dados consolidados de geração, capacidade instalada, garantia física
+  e unidades geradoras em operação comercial de usinas fotovoltaicas.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.212259'
+source:
+- created: '2024-01-04T14:24:52.936745'
+  id: cb808b1f-d894-4892-8cda-f8d07298eed1
+  name: fotovoltaica_gf_definida_2023
+- created: '2024-03-04T01:17:42.123765'
+  id: 2ac4c86a-d0f4-4b42-8f7c-f0eb60b24224
+  name: fotovoltaica_gf_definida_2024
+last_update: 2024-11-21 18:58:00.212265
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_FOTOVOLTAICA:
+    type: numeric
+    description: Corresponde ao montante de Geração da parcela de usina fotovoltaica
+      "p", no período de comercialização "j" (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_FOTOVOLTAICA:
+    type: numeric
+    description: Corresponde a Capacidade Instalada da parcela de usina fotovoltaica
+      "p", no período de comercialização "j" (CAP_Tp,j) [MW]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_FOTOVOLTAICA:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina fotovoltaica "p"
+      (GFp) [MW]
+    label: (10,12)
+    business_rule: ''
+  QUANTIDADE_UG_OP:
+    type: numeric
+    description: Corresponde a Quantidade de Unidades Geradoras em Operação Comercial
+      de usinas fotovoltaicas
+    label: (10)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

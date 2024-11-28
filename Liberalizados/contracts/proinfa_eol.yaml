@@ -1,0 +1,35 @@
+name: proinfa_eol
+description: Dados de geração e capacidade instalada de usinas eólicas participantes
+  do PROINFA no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.256200'
+source:
+- created: '2023-09-06T21:20:23.464368'
+  id: f3c519c8-740e-4734-b715-20385279f859
+  name: proinfa_eol_2023
+- created: '2024-03-04T01:24:08.333576'
+  id: 282b6dd5-c56a-4651-aa55-e29245f5f2e6
+  name: proinfa_eol_2024
+last_update: 2024-11-21 18:58:00.256205
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_PROINFA_EOL:
+    type: numeric
+    description: Corresponde a Geração da parcela de usina "p", no período de comercialização
+      "j" de usinas eólicas participantes do PROINFA (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_PROINFA_EOL:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina "p",
+      no período de comercialização "j", de usinas eólicas participantes do PROINFA
+      (CAP_Tp,j) [MW]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,56 @@
+name: usina_cotista_liquidacao_parcela
+description: Dados com os valores de receita pagos para as parcelas de usina participantes
+  do regime de cotas de garantia física.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.337206'
+source:
+- created: '2024-05-23T17:53:18.929733'
+  id: e77a90e5-8b7e-44f9-9a6c-2224c079a43f
+  name: usina_cotista_liquidacao_parcela_2024
+last_update: 2024-11-21 18:58:00.337211
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de usina em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PARCELA_USINA:
+    type: text
+    description: Corresponde a sigla utilizada pela CCEE para identificar a parcela
+      de usina em seus sistemas.
+    label: '40'
+    business_rule: ''
+  FATOR_ADEQUACAO_REAJUSTE:
+    type: numeric
+    description: Corresponde ao Fator de Adequação do Reajuste (F_REAJUp,m)
+    label: (10,12)
+    business_rule: ''
+  RECEITA_FIXA_PRELIMINAR:
+    type: numeric
+    description: Corresponde a Receita Fixa Mensal Preliminar (RFP_CCGFp,fCCGF) (R$)
+    label: (10,2)
+    business_rule: ''
+  RECEITA_FIXA_AJUSTADA:
+    type: numeric
+    description: Corresponde a Receita Fixa Ajustada (RFA_CCGFp,m) (R$)
+    label: (10,2)
+    business_rule: ''
+  RECEITA_FIXA_TOTAL:
+    type: numeric
+    description: Corresponde a Receita Fixa Total (RFT_CCGFp,m) (R$)
+    label: (10,2)
+    business_rule: ''
+  CUSTOS_ADMINISTRATIVOS:
+    type: numeric
+    description: Corresponde aos Custos Administrativos (CAFT_R_CCGFp,m) (R$)
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

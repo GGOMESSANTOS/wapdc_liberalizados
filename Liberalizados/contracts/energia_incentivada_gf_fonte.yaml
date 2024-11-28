@@ -1,0 +1,63 @@
+name: energia_incentivada_gf_fonte
+description: Dados de garantia física de usinas com energia incentivada agrupadas
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.231647'
+source:
+- created: '2024-02-22T06:29:47.039860'
+  id: 56d2ad9d-ce34-46ca-a097-97cbe5080308
+  name: energia_incentivada_gf_fonte_2023
+- created: '2024-03-22T06:45:26.121127'
+  id: 3097516b-ed39-4490-a922-985e558b39a4
+  name: energia_incentivada_gf_fonte_2024
+last_update: 2024-11-21 18:58:00.231653
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  FONTE_PRIMARIA:
+    type: text
+    description: Fonte primária correspondente ao ativo de geração representado na
+      análise.
+    label: '40'
+    business_rule: ''
+  GARANTIA_FISICA_CQ_DT_50:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m”, cuja fonte de geração é de
+      cogeração qualificada e com 50% de desconto na matriz (GFIS_DTp,m) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_IE_DT_50:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m”, cuja fonte de geração é incentivada
+      especial e com 50% de desconto na matriz (GFIS_DTp,m) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_IE_DT_100:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m”, cuja fonte de geração é incentivada
+      especial e com 100% de desconto na matriz (GFIS_DTp,m) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_IE_DT_80:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m”, cuja fonte de geração é incentivada
+      especial e com 80% de desconto na matriz (GFIS_DTp,m) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_INE_DT:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m”, cuja fonte de geração é incentivada
+      não especial (GFIS_DTp,m) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

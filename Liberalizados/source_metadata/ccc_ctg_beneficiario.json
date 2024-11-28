@@ -1,0 +1,134 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "Gerência de Contas Setoriais - GCSE",
+        "author_email": "",
+        "creator_user_id": "8ad7d8b5-cbd6-4707-bc80-4e214dbbd84c",
+        "id": "fa2e6027-085a-446b-a6af-8f338bea8c3b",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "Gerência de Contas Setoriais - GCSE",
+        "maintainer_email": "",
+        "metadata_created": "2024-03-27T20:54:03.053148",
+        "metadata_modified": "2024-04-01T23:54:34.887549",
+        "name": "ccc_ctg_beneficiario",
+        "notes": "Dados mensais de custo total de geração e reembolso mensal de CCC por beneficiário.",
+        "num_resources": 2,
+        "num_tags": 4,
+        "organization": {
+            "id": "d1d4671d-a0f7-45bd-b3ab-7eae2020c299",
+            "name": "contas_setoriais",
+            "title": "Contas Setoriais",
+            "type": "organization",
+            "description": "As Contas Setoriais é uma organização que agrupa os principais conjuntos de dados das contas setoriais do mercado brasileiro de energia elétrica, entre elas a Conta de Desenvolvimento Energético – CDE, Conta de Consumo de Combustíveis – CCC e Reserva Global de Reversão – RGR .\n\nAs partes interessadas poderão acessar os conjuntos de dados relacionados aos seguintes assuntos: custo total de geração e reembolso por beneficiário, custo de geração por usina e custo de geração de usinas com contrato CCESI.\n\nOs conjuntos de dados das Contas Setoriais referentes à CCC, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de competência relativo à finalização do cálculo do reembolso mensal da CCC e considerando-se os reprocessamentos realizados.\n\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "",
+            "created": "2024-03-27T18:38:48.003190",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "d1d4671d-a0f7-45bd-b3ab-7eae2020c299",
+        "private": false,
+        "state": "active",
+        "title": "CCC_CTG_BENEFICIARIO",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MSS+20dc"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-04-01T20:44:17.937720",
+                "datastore_active": true,
+                "description": "**Campos contidos nesse conjunto de dados: COMPETENCIA, BENEFICIARIO, TIPO_BENEFICIARIO,ULTIMO_REPROCESSAMENTO, GERACAO:** geração total reembolsada pela CCC [MWh], **CTCOMB:** custo total com combustível [R$], **CTGP:** custo total com geração própria [R$], **CTCE:** custo total com contratação de potência e energia elétrica [R$], **CTG:** custo total de geração (CTcomb + CTgp + CTce) [R$], **DESC_ACR:** desconto do ACR médio [R$], **DESC_FC:** desconto do fator de corte [R$], **REEMBOLSO:** Reembolso Mensal CCC[R$], **REPROCESSAMENTO:** Identifica se o custo de geração do beneficiário foi reprocessado (SIM/NÃO).",
+                "format": "CSV",
+                "hash": "",
+                "id": "3b23cb49-edfe-47aa-8ce2-7e7f5f0fd6c6",
+                "last_modified": null,
+                "metadata_modified": "2024-04-01T23:54:18.941079",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccc_ctg_beneficiario_2023",
+                "package_id": "fa2e6027-085a-446b-a6af-8f338bea8c3b",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/VbVJ4P6rRrmTvcmT74JIuw/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-04-01T20:55:15.140069",
+                "datastore_active": true,
+                "description": "**Campos contidos nesse conjunto de dados: COMPETENCIA, BENEFICIARIO, TIPO_BENEFICIARIO,ULTIMO_REPROCESSAMENTO, GERACAO:** geração total reembolsada pela CCC [MWh], **CTCOMB:** custo total com combustível [R$], **CTGP:** custo total com geração própria [R$], **CTCE:** custo total com contratação de potência e energia elétrica [R$], **CTG:** custo total de geração (CTcomb + CTgp + CTce) [R$], **DESC_ACR:** desconto do ACR médio [R$], **DESC_FC:** desconto do fator de corte [R$], **REEMBOLSO:** Reembolso Mensal CCC[R$], **REPROCESSAMENTO:**Identifica se o custo de geração do beneficiário foi reprocessado (SIM/NÃO).",
+                "format": "CSV",
+                "hash": "",
+                "id": "4031de3e-e049-4455-8833-70ae12d8fd0d",
+                "last_modified": null,
+                "metadata_modified": "2024-04-01T23:54:34.898175",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccc_ctg_beneficiario_2024",
+                "package_id": "fa2e6027-085a-446b-a6af-8f338bea8c3b",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/ZcjLdv_uRTmNL7kYBEJWiQ/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "beneficiário",
+                "id": "5cd4bf37-96a3-485a-89fb-145e0832fd07",
+                "name": "beneficiário",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "ccc",
+                "id": "bdab57c2-8aa5-4ecd-8413-e61d27ce78ce",
+                "name": "ccc",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "ctg",
+                "id": "6bba588c-0e9b-41be-9156-96bc0fd7a83b",
+                "name": "ctg",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "isolado",
+                "id": "a14ebc1a-cda1-441a-8166-4bc92ba8921c",
+                "name": "isolado",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

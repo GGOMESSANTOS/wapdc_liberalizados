@@ -1,0 +1,119 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": null,
+        "creator_user_id": "b769d7d0-5632-47ee-a5fa-f18004e7e791",
+        "id": "ce1c5d4c-f1a9-42fb-bd49-e825cdc83c63",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": null,
+        "metadata_created": "2024-05-02T19:05:46.898174",
+        "metadata_modified": "2024-10-30T20:42:24.281865",
+        "name": "disponibilidade_leilao_gf_geracao",
+        "notes": "Dados com os valores de garantia física, contratos, geração, geração destinada ao leilão e geração livre por leilão de energia e perfil de agente.",
+        "num_resources": 1,
+        "num_tags": 5,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "DISPONIBILIDADE_LEILAO_GF_GERACAO",
+        "type": "dataset",
+        "url": null,
+        "version": null,
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-05-03T02:20:02.041392",
+                "datastore_active": true,
+                "description": "**Objetivo:** Dados com os valores de garantia física, contratos, geração, geração destinada ao leilão e geração livre por leilão de energia e perfil de agente.   **Campos contidos nesse conjunto de dados:**  * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.   * **CEG** : Corresponde ao Código Único de Empreendimentos de Geração (CEG)   * **COD_PARCELA_USINA** : Corresponde ao código numérico inteiro utilizado pela CCEE para identificar a parcela de usina em seus sistemas.   * **SIGLA_PARCELA_USINA** : Corresponde a sigla utilizada pela CCEE para identificar a parcela de usina em seus sistemas.   * **LEILAO** : Corresponde ao leilão de energia no qual o contrato foi negociado.   * **PRODUTO** : Corresponde ao produto negociado entre as contrapartes em um leilão de energia.   * **SIGLA_LEILAO** : Corresponde a sigla atribuída para o leilão de energia no qual o contrato foi negociado.   * **FONTE_ENERGIA_PRIMARIA** : Corresponde a fonte de energia primária da usina geradora.   * **DATA_LEILAO** : Corresponde a data em que o leilão de energia foi realizado.   * **GARANTIA_FISICA** : Corresponde a garantia física do empreendimento [MW med]   * **GARANTIA_FISICA_COMPROMETIDA** : Corresponde a garantia física comprometida do empreendimento com o leilaõ [MW med]   * **CONTRATO** : Corresponde ao montante contratual negociado no leilão de energia. [MW med]   * **GERACAO** : Corresponde a geração do empreendimento participante do leilão de energia. [MW med]   * **GERACAO_DESTINADA_LEILAO** : Corresponde a geração do empreendimento destinada ao leilão de energia. [MW med]   * **GERACAO_LIVRE** : Corresponde a geração destinada ao ambiente livre de comercialização (ACL) [MW med]",
+                "format": "CSV",
+                "hash": "",
+                "id": "133cfca0-9578-4ae0-9073-69c294cbeda4",
+                "last_modified": "2024-10-30T17:42:24.226000",
+                "metadata_modified": "2024-10-30T20:42:24.285906",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "disponibilidade_leilao_gf_geracao_2024",
+                "package_id": "ce1c5d4c-f1a9-42fb-bd49-e825cdc83c63",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/o4zpplIQSouZqm6WJ_eF7w/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "contrato",
+                "id": "25d9deae-c6b3-4218-a36f-944f4ba12d2e",
+                "name": "contrato",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados individuais",
+                "id": "d217946a-fb75-4e55-8768-c7f722710554",
+                "name": "dados individuais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "garantia física",
+                "id": "8b53e68d-c351-4f45-852d-75c4bc84b2b5",
+                "name": "garantia física",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "geração",
+                "id": "3f4552c2-d88f-48d6-bf46-c9c0de0071f3",
+                "name": "geração",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "leilão",
+                "id": "1cb64cca-3864-494b-a13f-5ed8abdc2bf5",
+                "name": "leilão",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

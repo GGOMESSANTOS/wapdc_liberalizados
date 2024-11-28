@@ -1,0 +1,33 @@
+name: sumario_mensal_ajuste
+description: Dados de consolidação de ajustes do MCP.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.244294'
+source:
+- created: '2023-09-06T20:07:14.226354'
+  id: c23663c7-8a03-4ae2-bceb-fa742aaf0454
+  name: sumario_mensal_ajuste_2023
+- created: '2024-03-05T21:07:40.745477'
+  id: b0ae1be2-6350-4695-8928-a3cf73de63f1
+  name: sumario_mensal_ajuste_2024
+last_update: 2024-11-21 18:58:00.244300
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  AJUSTE_INAD_DSS:
+    type: numeric
+    description: Corresponde ao Ajuste de Inadimplência por Desligamento sem Sucessão
+      do perfil de agente “a”, no mês de apuração “m” (AJU_INAD_DSSa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTES:
+    type: numeric
+    description: Corresponde ao Valor do Ajuste para o perfil de agente “a” no mês
+      de apuração “m” (AJUSTESa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

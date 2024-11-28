@@ -1,0 +1,52 @@
+name: itaipu_balanco_energetico_mensal
+description: Dados de balanço energético para a apuração de Itaipu no MCP.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.270562'
+source:
+- created: '2023-11-21T13:04:13.612577'
+  id: 186c97c1-798b-4864-8de0-10cce01d8c5d
+  name: itaipu_balanco_energetico_mensal_2023
+- created: '2024-03-04T02:16:45.959099'
+  id: b93e2f94-6626-4efc-86c3-bdd98031f4b3
+  name: itaipu_balanco_energetico_mensal_2024
+last_update: 2024-11-21 18:58:00.270569
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  TOTAL_GERACAO_PERFIL:
+    type: numeric
+    description: Corresponde a Geração Total do perfil de agente “a” no submercado
+      “s” para o período de comercialização “j” (TGGa,s,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  TOTAL_CONSUMO_GERACAO:
+    type: numeric
+    description: Corresponde ao Consumo de Geração Total do perfil de agente “a” no
+      submercado “s” para o período de comercialização “j” (TGGCa,s,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CONSOLIDACAO_RESULTADO_MRE:
+    type: numeric
+    description: Corresponde a Consolidação do Resultado do MRE do perfil de agente
+      “a” no submercado “s” para o período de comercialização “j” (MREa,s,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_ITAIPU:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de ITAIPU (CQe,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  RATEIO_BALANCO_ENERGETICO_ITAIPU:
+    type: numeric
+    description: Corresponde ao Rateio do Balanço Energético de Itaipu para o perfil
+      de agente “a”, no submercado “s”, no período de comercialização “j” (NET_ITa,s,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

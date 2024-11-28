@@ -1,0 +1,43 @@
+name: penalidade_consumo_horario
+description: Dados de referência do consumo do agente para apuração da penalidade
+  por período de comercialização no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.305980'
+source:
+- created: '2023-08-09T21:26:45.243884'
+  id: 029b0a83-43dc-42c6-a135-3daf901dd73e
+  name: penalidade_consumo_horario_2023
+- created: '2024-03-22T01:18:10.493003'
+  id: f48ab9f9-3206-4b3c-b4e0-dd9b0331ca1d
+  name: penalidade_consumo_horario_2024
+last_update: 2024-11-21 18:58:00.305986
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  CONSUMO_PENALIDADE:
+    type: numeric
+    description: Corresponde ao Consumo Total do Agente para Apuração de Penalidade
+      do perfil de agente “a”, por submercado “s”, no período de Comercialização “j”.
+      (TRC_PNLa,s,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

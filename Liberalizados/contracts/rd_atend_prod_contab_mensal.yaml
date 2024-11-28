@@ -1,0 +1,63 @@
+name: rd_atend_prod_contab_mensal
+description: 'Objetivo:  Detalhar os sinalizadores utilizados pela Regra de Comercialização
+  de Resposta da Demanda que demonstram eventuais ultrapassagens na curva de carga
+  do mês de referência realizadas pelos participantes, podendo resultar em cancelamento
+  de ofertas. Dados contabilizados, consolidados por mês.'
+owner: Gerência de Informações ao Mercado - GAIM
+version:
+- '1': '2024-11-21T18:58:00.332166'
+source:
+- created: '2024-08-01T21:14:02.310201'
+  id: 5aedacba-cda2-4159-b1ba-68f6c57bfb58
+  name: rd_atend_prod_contab_mensal_2024
+last_update: 2024-11-21 18:58:00.332172
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o ano (AAAA) e o mês (MM) de competência dos dados apurados.
+    label: AAAAMM
+    business_rule: ''
+  CODIGO_AGENTE:
+    type: numeric
+    description: Representa o código numerico do agente, conforme cadastro nos sistemas
+      da CCEE
+    label: (10)
+    business_rule: ''
+  AGENTE:
+    type: text
+    description: Representa o nome do agente atribuído pelos sistemas da CCEE
+    label: '40'
+    business_rule: ''
+  CNPJ_AGENTE:
+    type: text
+    description: Corresponde ao CNPJ do agente, conforme cadastrado nos sistemas da
+      CCEE
+    label: '10'
+    business_rule: ''
+  CATEGORIA:
+    type: text
+    description: Corresponde a categoria de comercialização indicada pelo agente durante
+      o cadastro nos sistemas da CCEE
+    label: '40'
+    business_rule: ''
+  CLASSE:
+    type: text
+    description: Corresponde a classe de comercialização indicada pelo agente durante
+      o cadastro nos sistemas da CCEE
+    label: '40'
+    business_rule: ''
+  SINALIZADOR_CANCELAMENTO_OFERTA_RD:
+    type: text
+    description: Corresponde ao sinalizador de cancelamento das ofertas de RD do agente
+      ofertante “α”, apurado no mês de contabilização “m” (F_CAN_RD a,m)
+    label: '1'
+    business_rule: ''
+  SINALIZADOR_NAO_ATENDIMENTO_PRODUTO:
+    type: text
+    description: Corresponde ao sinalizador de não atendimento do perfil de agente
+      ofertante “a”, associado ao produto “rv” de RD, para a oferta “o”, por submercado
+      “s”, para o dia “d” (F_CAN_PRD a,rv,o,s,d)
+    label: '1'
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

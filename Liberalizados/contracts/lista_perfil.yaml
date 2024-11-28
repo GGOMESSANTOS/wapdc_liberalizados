@@ -1,0 +1,79 @@
+name: lista_perfil
+description: Lista de perfis de agente cadastrados na CCEE.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.291703'
+source:
+- created: '2024-05-02T22:34:24.297955'
+  id: 97258b2b-0b96-4573-a7ed-893b6cfe0adb
+  name: lista_perfil_2024
+last_update: 2024-11-21 18:58:00.291709
+periodice: Mensal
+fields:
+  COD_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente em
+      seus sistemas.
+    label: '40'
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '40'
+    business_rule: ''
+  CNPJ:
+    type: text
+    description: Corresponde ao CNPJ cadastrado pelo agente nos sistemas da CCEE.
+    label: XX.XXX.XXX/0001-XX
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: text
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  CLASSE_PERFIL_AGENTE:
+    type: text
+    description: 'Corresponde a classe de atividade no mercado de energia atribuída
+      ao perfil de agente. Domínios possíveis: Autoprodutor, Consumidor Especial,
+      Consumidor Livre, Distribuidor, Gerador, Comercializador, Exportador e Produtor
+      Independente.'
+    label: '40'
+    business_rule: ''
+  STATUS_PERFIL:
+    type: text
+    description: Corresponde ao status de atividade do agente nos sistemas da CCEE
+    label: '40'
+    business_rule: ''
+  CATEGORIA_AGENTE:
+    type: text
+    description: Corresponde a categoria selecionada pelo agente durante o processo
+      de adesão na CCEE
+    label: '40'
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  VAREJISTA:
+    type: text
+    description: Corresponde ao perfil varejista responsável pelas operações do agente
+      na CCEE
+    label: '40'
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

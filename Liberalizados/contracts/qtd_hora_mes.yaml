@@ -1,0 +1,28 @@
+name: qtd_hora_mes
+description: Detalhar a quantidade de horas utilizadas na contabilização do MCP -
+  Mercado de Curto Prazo, em cada mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.346128'
+source:
+- created: '2023-12-07T19:57:18.460700'
+  id: d0f109f9-7308-435c-9ea9-475824175cad
+  name: qtd_hora_mes_2023
+- created: '2024-03-04T02:04:35.254282'
+  id: 25779279-5682-4fe9-8bb8-3559272a45f0
+  name: qtd_hora_mes_2024
+last_update: 2024-11-21 18:58:00.346134
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  QTD_HORA:
+    type: numeric
+    description: Corresponde a quantidade de horas contidas no mês de referência "m"
+      (M_HORAS).
+    label: (3)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

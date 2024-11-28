@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "19df97ec-0476-451c-96f0-c851a443089e",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-06-26T14:24:50.094279",
+        "metadata_modified": "2024-10-30T20:54:46.070668",
+        "name": "contrato_montante_mensal_cbr",
+        "notes": "Dados com os montantes modulados do contratos para CBR e subtipos utilizados na contabilização do MCP - Mercado de Curto Prazo divididos por submercado e consolidados no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "CONTRATO_MONTANTE_MENSAL_CBR",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-06-26T14:25:23.451043",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados de montantes modulados por contratos CBR e seus subtipos. Os dados estão consolidados por mês de referência.  \n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n  \n* **TIPO_CONTRATO** : Corresponde ao tipo de contrato existe entre comprador e vendedor, conforme domínio: CCEAL - Outros Compradores, CBR, CCEAR-Q, CCEN, CCGF, CCEAR-D, Itaipu, PROINFA, CCEAR-C e CEE. Nesse campo somente CBR.  \n* **SUBTIPO_CBR** : Corresponde ao subtipo de CBR negociado. Domínios possíveis: Ant.Lei nº 10.848/2004, Art. 10º Lei nº 13.182/2015, Art. 5º Lei nº 13.182/2015, Chamada Publica, Desverticalizacao, Mercado Próprio, Sistema Isolado, Supridas e Supridoras e Outros CBR.  \n* **MONTANTE_MODULADO_CONTRATO_CBR** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j” de CBR (CQe,j) [MWmed] ",
+                "format": "CSV",
+                "hash": "",
+                "id": "c5fb5873-7838-45aa-8009-f38f45b791b0",
+                "last_modified": "2023-08-30T15:19:18.571000",
+                "metadata_modified": "2024-04-03T14:56:32.072595",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "contrato_montante_mensal_cbr_2023",
+                "package_id": "19df97ec-0476-451c-96f0-c851a443089e",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/epDScR7jT8qCoMFZ8_MEQA/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:23:08.519081",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados de montantes modulados por contratos CBR e seus subtipos. Os dados estão consolidados por mês de referência.  \n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n  \n* **TIPO_CONTRATO** : Corresponde ao tipo de contrato existe entre comprador e vendedor, conforme domínio: CCEAL - Outros Compradores, CBR, CCEAR-Q, CCEN, CCGF, CCEAR-D, Itaipu, PROINFA, CCEAR-C e CEE. Nesse campo somente CBR.  \n* **SUBTIPO_CBR** : Corresponde ao subtipo de CBR negociado. Domínios possíveis: Ant.Lei nº 10.848/2004, Art. 10º Lei nº 13.182/2015, Art. 5º Lei nº 13.182/2015, Chamada Publica, Desverticalizacao, Mercado Próprio, Sistema Isolado, Supridas e Supridoras e Outros CBR.  \n* **MONTANTE_MODULADO_CONTRATO_CBR** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j” de CBR (CQe,j) [MWmed] ",
+                "format": "CSV",
+                "hash": "",
+                "id": "81c115bf-e159-4b05-abe5-a2b5e05c8dff",
+                "last_modified": "2024-10-30T17:54:46.032000",
+                "metadata_modified": "2024-10-30T20:54:46.074837",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "contrato_montante_mensal_cbr_2024",
+                "package_id": "19df97ec-0476-451c-96f0-c851a443089e",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/JFJFUB0mQ62fRMcLZanwnQ/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "contrato",
+                "id": "25d9deae-c6b3-4218-a36f-944f4ba12d2e",
+                "name": "contrato",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

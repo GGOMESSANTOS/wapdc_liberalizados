@@ -1,0 +1,41 @@
+name: garantia_fisica_lastro
+description: Dados com a garantia física definida em ato regulatório, garantia física
+  apurada para parcela de usina e GF sazonalizada para fins de lastro no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.359173'
+source:
+- created: '2023-08-09T20:47:07.560595'
+  id: fc719c9f-3e81-4ea8-9082-c7c056d141be
+  name: garantia_fisica_lastro_2023
+- created: '2024-03-04T01:17:22.208197'
+  id: 1bfd2bc1-62eb-4866-91c1-a2a99b800f4b
+  name: garantia_fisica_lastro_2024
+last_update: 2024-11-21 18:58:00.359179
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GARANTIA_FISICA:
+    type: numeric
+    description: Garantia física apurada para usinas com GF de ato regulatório da
+      parcela de usina “p”, por período de comercialização “j” (GFISp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_IA_IIA:
+    type: numeric
+    description: Garantia física apurada para usinas com GF de ato regulatório e do
+      tipo 1A e 2A da parcela de usina “p”, por período de comercialização “j” (GFISp,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_APURADA:
+    type: numeric
+    description: Garantia física apurada com base na geração da parcela de usina “p”,
+      por período de comercialização “j” (GFISp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

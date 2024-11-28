@@ -1,0 +1,136 @@
+name: ccc_ctg_usina
+description: Dados mensais de custo total de geração por usina reembolsável pela CCC
+  - Conta de Consumo de Combustíveis.
+owner: Gerência de Contas Setoriais - GCSE
+version:
+- '1': '2024-11-21T18:58:00.319076'
+source:
+- created: '2024-04-01T20:41:02.757952'
+  id: 3c3f4c4a-0586-4230-8715-44950a14dcc7
+  name: ccc_ctg_usina_2023
+- created: '2024-04-01T20:54:16.547408'
+  id: 77f736e8-3ddf-4989-9f68-c17b168fd1a1
+  name: ccc_ctg_usina_2024
+last_update: 2024-11-21 18:58:00.319081
+periodice: Mensal
+fields:
+  COMPETENCIA:
+    type: numeric
+    description: Representa o ano (AAAA) e o mês (MM) de competência dos dados apurados.
+    label: AAAAMM
+    business_rule: ''
+  BENEFICIARIO:
+    type: text
+    description: É o titular de concessão, autorização ou permissão de serviço público
+      de distribuição de energia elétrica ou produtor independente de energia que,
+      atuando nos Sistemas Isolados, utiliza-se da sistemática de reembolso dos custos
+      de geração pela CCC - Conta de Consumo de Combustíveis.
+    label: '20'
+    business_rule: ''
+  CEG:
+    type: text
+    description: É o código de identificação do empreendimento de geração de energia
+      elétrica.
+    label: '21'
+    business_rule: ''
+  USINA:
+    type: text
+    description: Corresponde ao nome da unidade geradora.
+    label: '50'
+    business_rule: ''
+  TIPO_CUSTO:
+    type: text
+    description: "Campo utilizado para identificar se a usina possui custo de geração\
+      \ própria ou de contratação de energia e potência.\r\n"
+    label: '15'
+    business_rule: ''
+  TIPO_CONTRATO:
+    type: text
+    description: Campo utilizado para identificar o tipo de contrato aplicável para
+      cada usina.
+    label: '10'
+    business_rule: ''
+  ORIGEM:
+    type: text
+    description: "Corresponde a origem da fonte de geração do empreendimento.\r\n"
+    label: '10'
+    business_rule: ''
+  TIPO_COMBUSTIVEL:
+    type: text
+    description: Corresponde ao nome da fonte ou combustível do empreendimento de
+      geração.
+    label: '20'
+    business_rule: ''
+  MUNICIPIO:
+    type: text
+    description: Corresponde ao município constante no cadastro do empreendimento
+      de geração na Aneel.
+    label: '30'
+    business_rule: ''
+  UF:
+    type: text
+    description: "Corresponde a unidade federativa constante no cadastro do empreendimento\
+      \ de geração na Aneel.\r\n"
+    label: '2'
+    business_rule: ''
+  SISTEMA:
+    type: text
+    description: Informação para identificar se a usina atende à um sistema isolado
+      ou está conectada ao sistema interligado nacional.
+    label: '11'
+    business_rule: ''
+  POT_OUTORGADA:
+    type: numeric
+    description: Corresponde a potência autorizada pela Aneel constante no Sistema
+      de Informações de geração da Aneel - SIGA. [kW]
+    label: (6)
+    business_rule: ''
+  CAPACIDADE_INSTALADA:
+    type: numeric
+    description: "Corresponde a potência cadastrada pelos agentes no Sistema Integrado\
+      \ de Gestão de Ativos - SigaCCEE. [kW]\r\n"
+    label: (6)
+    business_rule: ''
+  COMBUSTIVEL:
+    type: numeric
+    description: Corresponde ao combustível apurado correspondente a energia registrada
+      ou contratada da usina no mês de apuração. [litros]
+    label: (9)
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: "Corresponde a geração liquida de energia elétrica total das usinas\
+      \ reembolsadas associadas ao beneficiário no mês de apuração. [MWh]\r\n"
+    label: (6,3)
+    business_rule: ''
+  CTCOMB:
+    type: numeric
+    description: Corresponde ao custo total com combustível, apurado em função do
+      montante de energia gerado, da quantidade de combustível consumida, do preço
+      do combustível e de despesas acessórias, de cada usina no mês de apuração. [R$]
+    label: (9,2)
+    business_rule: ''
+  CTGP:
+    type: numeric
+    description: Corresponde ao custo total com geração de energia própria do beneficiário,
+      referente à custos de locação de grupos geradores, receita fixa e operação e
+      manutenção, excluindo-se qualquer custo associado à compra e venda de combustíveis,
+      de cada usina no mês de apuração. Podem contemplar custos associados a ativos
+      próprios e/ou alugados. [R$]
+    label: (8,2)
+    business_rule: ''
+  CTCE:
+    type: numeric
+    description: Corresponde ao custo total com contratação de potência e energia
+      elétrica, apurado conforme a medição da geração de energia registrada e as condições
+      dos contratos homologados ou aprovados pela ANEEL, observadas as parcelas de
+      receita fixa e de receita variável, de cada usina no mês de apuração. [R$]
+    label: (9,2)
+    business_rule: ''
+  CTG:
+    type: numeric
+    description: Corresponde ao custo total de geração (CTCOMB + CTGP + CTCE) de cada
+      usina no mês de apuração. [R$]
+    label: (9,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

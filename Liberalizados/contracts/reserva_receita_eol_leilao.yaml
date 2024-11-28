@@ -1,0 +1,127 @@
+name: reserva_receita_eol_leilao
+description: Dados de receita mensal de usinas eólicas por leilão de energia de reserva
+  agrupados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.364575'
+source:
+- created: '2024-01-12T14:21:59.949186'
+  id: 3ba4086f-0b95-43ab-aeae-13467eadd452
+  name: reserva_receita_eol_leilao_2023
+- created: '2024-02-14T18:21:02.394566'
+  id: 95cbfe3f-1bf7-4022-b961-a27f2c43b0e7
+  name: reserva_receita_eol_leilao_2024
+last_update: 2024-11-21 18:58:00.364581
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  RECEITA_VENDA_TOTAL_EOL:
+    type: numeric
+    description: Corresponde a Receita de Venda Total do Empreendimento Comprometido
+      com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, para
+      o período de apuração da entrega de energia do CER associada ao ano de entrega
+      “fCER”, no mês de apuração “m” (RVET_CERp,t,l,fcer,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  RECEITA_FIXA_RETIDA_EOL:
+    type: numeric
+    description: Corresponde a Receita fixa retida por conta de atraso na operação
+      comercial da parcela de usina “p”, referente ao produto “t”, do leilão “l”,
+      no mês de apuração “m” (RETp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VENDA_AUSTADA_EOL:
+    type: numeric
+    description: Corresponde a Receita de Venda Ajustada do Empreendimento Comprometido
+      com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês
+      de apuração “m” (RVE_AJp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_RECEITA_EOL:
+    type: numeric
+    description: Corresponde ao valor de Ajustes aplicados na Receita de Venda [R$]
+    label: (10,2)
+    business_rule: ''
+  MULTA_MEDICAO_ANEMOMETRICA:
+    type: numeric
+    description: Corresponde a Multa referente ao sistema de medição anemométrica
+      da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de
+      apuração “m” (MULTA_ANEMp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_DELIBERACAO_CAD:
+    type: numeric
+    description: Corresponde ao Pagamento associado ao vendedor devido a Ajuste Decorrente
+      de Deliberação do CAd, Decisões Judiciais ou Administrativas, da parcela de
+      usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (PAG_ADDCp,t,l,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  RECEITA_TOTAL_RETIDA_LIQUIDA_EOL:
+    type: numeric
+    description: Corresponde a Receita Total Retida Líquida por conta do atraso na
+      operação comercial da parcela de usina “p”, referente ao produto “t”, do leilão
+      “l”, no mês de apuração “m” (RET_TPLp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  MULTA_MEDICAO_ANEMOMETRICA_REMAN:
+    type: numeric
+    description: Corresponde ao valor da Multa de Medição Anemométrica Remanescente
+      Anual da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês
+      de apuração “m” (MULTA_ANEM_RAp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  RESSARCIMENTO_GERACAO_INFERIOR_LIMITE:
+    type: numeric
+    description: Corresponde a Ressarcimento da Parcela Mensal devido à geração inferior
+      ao limite da parcela de usina “p”, referente ao produto “t”, do leilão “l”,
+      no mês de apuração “m” (RESS_GIp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  RESSARCIMENTO_SALDO_NEGATIVO:
+    type: numeric
+    description: Corresponde ao Ressarcimento devido ao saldo negativo da conta de
+      energia da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no
+      mês de apuração “m”MULTA_ANEM_RAp,t,l,m é o valor da Multa de Medição Anemométrica
+      Remanescente Anual da parcela de usina “p”, para cada produto “t”, do leilão
+      “l”, no mês de apuração “m” (RESS_SNp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_PAGO_RECEBIDO_EOL:
+    type: numeric
+    description: Corresponde ao Valor a ser Pago ou Recebido do Empreendimento Eólico
+      comprometido com CER da parcela de usina “p”, referente ao produto “t”, do leilão
+      “l”, no mês de apuração “m” (VEOLp,t,l,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VARIAVEL_ANTECIPACAO_EOL:
+    type: numeric
+    description: Corresponde a Receita Variável por Antecipação da parcela de usina
+      “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_Ap,t,l,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VARIAVEL_ANUAL_EXCEDENTE_EOL:
+    type: numeric
+    description: Corresponde a Receita Variável Anual de Excedente da parcela de usina
+      “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_A_Ep,t,l,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VARIAVEL_SALDO_ACUMULADO_EOL:
+    type: numeric
+    description: Corresponde a Receita Variável por Saldo Acumulado da parcela de
+      usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_Sap,t,l,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

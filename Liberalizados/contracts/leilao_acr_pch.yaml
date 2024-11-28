@@ -1,0 +1,44 @@
+name: leilao_acr_pch
+description: Dados de de geração, capacidade instalada e garantia física de usinas
+  PCH para os leilões de energia (ACR).
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.201586'
+source:
+- created: '2023-11-21T13:04:15.849958'
+  id: 948a328e-77bb-4bdf-bddc-1c3eef06c9db
+  name: leilao_acr_pch_2023
+- created: '2024-03-04T02:19:47.693581'
+  id: 37002f3b-e98a-4873-a9ba-dd9dea4fdd02
+  name: leilao_acr_pch_2024
+last_update: 2024-11-21 18:58:00.201592
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  GERACAO_DESTINADA_LEILAO_PCH:
+    type: numeric
+    description: Corresponde a geração destinada ao leilão de energia.
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_TOTAL_PCH:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina “p”
+      destinada ao leilão de energia (CAP_Tp,j) [MW]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_PCH:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina "p" destinada ao
+      leilão de energia (GFp) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

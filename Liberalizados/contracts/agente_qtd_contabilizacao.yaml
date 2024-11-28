@@ -1,0 +1,35 @@
+name: agente_qtd_contabilizacao
+description: Dados com a quantidade de agentes participantes da CCEE por  classe de
+  comercialização.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.387743'
+source:
+- created: '2024-02-02T19:59:05.021588'
+  id: 7bb6bd3d-29c5-4f8e-a592-ab2948d6cb40
+  name: agente_qtd_contabilizacao_2023
+- created: '2024-03-04T01:21:34.571315'
+  id: dc4fcbcd-0ab3-437d-a77b-b5a60eefcd5a
+  name: agente_qtd_contabilizacao_2024
+last_update: 2024-11-21 18:58:00.387751
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CLASSE:
+    type: text
+    description: 'Corresponde a classe de atividade no mercado de energia. Domínios
+      possíveis: Autoprodutor, Consumidor Especial, Consumidor Livre, Distribuidor,
+      Gerador, Comercializador, Exportador e Produtor Independente.'
+    label: '40'
+    business_rule: ''
+  QUANTIDADE_AGENTE_CONTABILIZACAO:
+    type: numeric
+    description: Corresponde a quantidade de agentes pertencentes a classe de comercialização
+      correspondente.
+    label: (10)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,59 @@
+name: contrato_montante_mod_proinfa_agente
+description: Dados com os montantes modulados dos contratos de PROINFA, no mês de
+  referência, por agente comprador e vendedor.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.211076'
+source:
+- created: '2024-03-04T01:24:04.316020'
+  id: c8106819-9a5e-4fa2-9168-4572358a9be9
+  name: contrato_montante_mod_proinfa_agente_2024
+last_update: 2024-11-21 18:58:00.211082
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_PERFIL_AGENTE_COMPRADOR:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (10)
+    business_rule: ''
+  PERFIL_AGENTE_COMPRADOR:
+    type: text
+    description: Corresponde ao perfil de agente cadastrado na CCEE do comprador.
+    label: '40'
+    business_rule: ''
+  CNPJ_AGENTE_COMPRADOR:
+    type: text
+    description: Corresponde ao CNPJ do agente comprador que está cadastrado na CCEE.
+    label: '14'
+    business_rule: ''
+  SIGLA_AGENTE_COMPRADOR:
+    type: text
+    description: Corresponde a sigla do perfil de agente utilizado pela CCEE em seus
+      sistemas.
+    label: '40'
+    business_rule: ''
+  PERFIL_AGENTE_VENDEDOR:
+    type: text
+    description: Corresponde ao perfil de agente cadastrado na CCEE do vendedor.
+    label: '40'
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  MONTANTE_MODULADO_PROINFA:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato do contrato "e", no
+      período de comercialização "j", de um contrato PROINFA. CQe,j [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,57 @@
+name: reserva_encargo
+description: Dados que que compõe o encargo de energia de reserva no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.339794'
+source:
+- created: '2023-11-21T13:30:15.648423'
+  id: 6dea4a22-26a6-46d7-bd86-2630b3313181
+  name: reserva_encargo_2023
+- created: '2024-02-15T00:29:04.701106'
+  id: 827214f2-8672-4da9-b50e-aa39244ef592
+  name: reserva_encargo_2024
+last_update: 2024-11-21 18:58:00.339800
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  ENCARGO_ENERGIA_RESERVA:
+    type: numeric
+    description: Corresponde ao Valor do Encargo de Energia de Reserva do perfil de
+      agente "a", no mês de referência "m" (EER_Ca,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_PAGAMENTO_LIQ_ER:
+    type: numeric
+    description: Corresponde ao Total Líquido de Pagamentos na Liquidação da Energia
+      de Reserva no mês de referrência "m" (TOT_LIQ_PAGm) [R$]
+    label: (10,2)
+    business_rule: ''
+  FUNDO_GARANTIA_OPER_CONTR_ER:
+    type: numeric
+    description: Corresponde ao Fundo de Garantia para Operacionalização da Contratação
+      da Energia de Reserva no mês de referência "m" (FGARm) [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_RECEITA_RETIDA_CONER:
+    type: numeric
+    description: Corresponde ao Total de Receita Retida a ser mantida na CONER no
+      mês de referência "m" (TOT_REC_RETm) [R$]
+    label: (10,2)
+    business_rule: ''
+  CUSTO_ADIMN_FIN_TRIB_CCEE:
+    type: numeric
+    description: Corresponde aos Custos Administrativos, Financeiros e Tributários
+      incorridos pela CCEE no mês de referência "m" (CAFTm) [R$]
+    label: (10,2)
+    business_rule: ''
+  SALDO_EFETIVO_CONER:
+    type: numeric
+    description: Corresponde ao Saldo Efetivo da CONER no mês de referência "m" (SCONER_EFm)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,119 @@
+name: sumario_mensal_resultado
+description: Dados de consolidação de resultados do MCP.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.269058'
+source:
+- created: '2023-09-06T20:03:58.119301'
+  id: 8372ee84-6243-4b3b-b8d7-3424b8a943a1
+  name: sumario_mensal_resultado_2023
+- created: '2024-03-04T01:17:08.144826'
+  id: 948a328c-25d4-4383-b4d6-87df7f2282e9
+  name: sumario_mensal_resultado_2024
+last_update: 2024-11-21 18:58:00.269064
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  TOTAL_RESULTADO_MCP:
+    type: numeric
+    description: Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo
+      do perfil de agente “a”, no mês de apuração “m” (TM_MCPa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  COMPENSACAO_MRE:
+    type: numeric
+    description: Corresponde ao Compensação do MRE do perfil de agente “a”, por mês
+      de apuração “m” (COMPENSACAO_MREa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGOS:
+    type: numeric
+    description: Corresponde ao Total de Encargos Consolidado, do perfil de agente
+      “a”, no mês de apuração “m” (ENCARGOSa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EXPOSICOES_FINANCEIRAS:
+    type: numeric
+    description: "Corresponde ao Total de Ajustes de Exposições Financeiras do perfil\
+      \ de agente “a”, no mês de apuração “m” (TAJ_EFa,m) [R$]\r\n"
+    label: (10,2)
+    business_rule: ''
+  ALIVIO_RETROATIVO:
+    type: numeric
+    description: Corresponde ao Total de Ajustes referente ao Alívio Retroativo do
+      perfil de agente “a”, no mês de apuração “m” (TAJ_ARa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRATACAO_DISP:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação por Disponibilidade, para cada
+      perfil de agente “a”, no mês de apuração “m” (ECDa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRATACAO_CCGF:
+    type: numeric
+    description: Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no
+      mês de apuração “m” (ECCGFa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRATACAO_CCEN:
+    type: numeric
+    description: Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no
+      mês de apuração “m” (ECCENa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRATACAO_QTD:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação por Quantidade, para cada perfil
+      de agente “a”, no mês de apuração “m” (ECQAa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRATACAO_ITAIPU:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação de Itaipu, para cada perfil
+      de agente “a”, no mês de apuração “m” (EC_ITa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRATACAO_RRH:
+    type: numeric
+    description: Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada
+      perfil de agente “a”, no mês de apuração “m” (ERRHa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CUSTOS_DESC:
+    type: numeric
+    description: Corresponde ao Efeito total dos custos devido ao descolamento entre
+      PLD e CMO, para cada perfil de agente “a”, no mês de apuração “m” (E_DESCa,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_RECONTAB:
+    type: numeric
+    description: Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de
+      agente “a”, no mês de apuração “m” (AJU_RECONa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_MCSD_XP:
+    type: numeric
+    description: Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente
+      “a”, no mês de apuração “m” (MCSD_XPa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  RESULTADO_EXCEDENTE_ER:
+    type: numeric
+    description: Corresponde ao Resultado Referente ao Excedente Financeiro da Energia
+      de Reserva por cada perfil de agente “a”, no mês de apuração “m” (RES_EXCD_ERa,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  RESULTADO_FINAL:
+    type: numeric
+    description: Corresponde ao Resultado Final do perfil de agente “a”, no mês de
+      apuração “m” (RESULTADOa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

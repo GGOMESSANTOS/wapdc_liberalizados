@@ -1,0 +1,29 @@
+name: parcela_consumo_ramo_atividade
+description: Dados de cadastro de parcelas de consumo e respectivo ramo de atividade
+  e CNAE
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.385897'
+source:
+- created: '2024-04-25T18:24:33.970654'
+  id: 2388fc5d-1b4a-4767-9b73-4b4003f7ee3d
+  name: parcela_consumo_ramo_atividade_2024
+last_update: 2024-11-21 18:58:00.385906
+periodice: Mensal
+fields:
+  COD_PARCELA_CARGA:
+    type: numeric
+    description: Corresponde a parcela de carga cadastrada na CCEE
+    label: (20)
+    business_rule: ''
+  RAMO_ATIVIDADE:
+    type: text
+    description: Corresponde ao ramo de atividade associado à parcela de carga
+    label: '40'
+    business_rule: ''
+  CNAE:
+    type: text
+    description: Correponde ao CNAE associado à parcela de carga
+    label: '40'
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

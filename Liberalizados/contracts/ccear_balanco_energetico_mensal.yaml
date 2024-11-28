@@ -1,0 +1,65 @@
+name: ccear_balanco_energetico_mensal
+description: Dados de balanço energético de CCEARs e os respectivos encargos por modalidade
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.372048'
+source:
+- created: '2023-08-09T21:08:36.526525'
+  id: 773d3213-fa64-41c0-9dc6-29da523da274
+  name: ccear_balanco_energetico_mensal_2023
+- created: '2024-03-04T01:24:08.869866'
+  id: a3c3f5e1-ea9e-4255-b90b-c276557a001e
+  name: ccear_balanco_energetico_mensal_2024
+last_update: 2024-11-21 18:58:00.372056
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  BALANCO_ENERGETICO_PRODUTO_P:
+    type: numeric
+    description: Corresponde ao Balanço Energético do Produto positivo, de cada parcela
+      de usina “p”, comprometida com o produto “t”, do leilão “l”, por período de
+      comercialização “j”. (NET_PRODp,t,l,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  BALANCO_ENERGETICO_PRODUTO_N:
+    type: numeric
+    description: Corresponde ao Balanço Energético do Produto negativo, de cada parcela
+      de usina “p”, comprometida com o produto “t”, do leilão “l”, por período de
+      comercialização “j”. NET_PRODp,t,l,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_DESTINADA_ATEND_PRODUTO:
+    type: numeric
+    description: Corresponde a Geração Destinada para Atendimento ao Produto de cada
+      parcela de usina “p”, referente ao produto “t”, do leilão “l”, no período de
+      comercialização “j”. (G_PRODp,t,l,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  ENERGIA_ATENDIMENTO_DESC_ATR_SUSP:
+    type: numeric
+    description: Corresponde a Energia para Atendimento aos Casos de Descasamento,
+      Atraso ou Suspensão de Unidade Geradora de cada parcela de usina “p”, comprometida
+      com o produto “t”, do leilão “l”, no período de comercialização “j”. (EAPSp,t,l,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  OBRIGACAO_ENTREGA_CCEAR_D:
+    type: numeric
+    description: Corresponde a Obrigação de Entrega de Energia associado ao CCEAR
+      por Disponibilidade da parcela de usina “p”, comprometida com o produto “t”,
+      do leilão “l”, do contrato “e”, no período de comercialização “j”. (OBE_PRODp,t,l,e,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j”. (CQe,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "ebf1a392-48f9-4f9f-9072-13d0bf05620e",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-09-06T20:02:46.999314",
+        "metadata_modified": "2024-10-30T20:45:54.501821",
+        "name": "sumario_mensal_resultado",
+        "notes": "Dados de consolidação de resultados do MCP.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "SUMARIO_MENSAL_RESULTADO",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-09-06T20:03:58.119301",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores de consolicação de resultados do MCP por mês de referência.  \n  \n**Campos contidos nesse conjunto de dados:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **TOTAL_RESULTADO_MCP** : Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo do perfil de agente “a”, no mês de apuração “m” (TM_MCPa,m) R$) [R$] (1)  \n* **COMPENSACAO_MRE** : Corresponde ao Compensação do MRE do perfil de agente “a”, por mês de apuração “m” (COMPENSACAO_MREa,m) [R$] (1)  \n  \n* **ENCARGOS** : Corresponde ao Total de Encargos Consolidado, do perfil de agente “a”, no mês de apuração “m” (ENCARGOSa,m) [R$] (1)  \n* **EXPOSICOES_FINANCEIRAS** : Corresponde ao Total de Ajustes de Exposições Financeiras do perfil de agente “a”, no mês de apuração “m” (TAJ_EFa,m) [R$] (1)  \n* **ALIVIO_RETROATIVO** : Corresponde ao Total de Ajustes referente ao Alívio Retroativo do perfil de agente “a”, no mês de apuração “m” (TAJ_ARa,m) [R$]  \n* **EFEITO_CONTRATACAO_DISP** : Corresponde ao Efeito da Contratação por Disponibilidade, para cada perfil de agente “a”, no mês de apuração “m” (ECDa,m) [R$] (1) (2)  \n* **EFEITO_CONTRATACAO_CCGF** : Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no mês de apuração “m” (ECCGFa,m) [R$] (1)  \n* **EFEITO_CONTRATACAO_CCEN** : Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no mês de apuração “m” (ECCENa,m) [R$] (1)  \n* **EFEITO_CONTRATACAO_QTD** : Corresponde ao Efeito da Contratação por Quantidade, para cada perfil de agente “a”, no mês de apuração “m” (ECQAa,m) [R$] (1)  \n* **EFEITO_CONTRATACAO_ITAIPU** : Corresponde ao Efeito da Contratação de Itaipu, para cada perfil de agente “a”, no mês de apuração “m” (EC_ITa,m) [R$] (1)  \n* **EFEITO_CONTRATACAO_RRH** : Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada perfil de agente “a”, no mês de apuração “m” (ERRHa,m) [R$] (1)  \n* **EFEITO_CUSTOS_DESC** : Corresponde ao Efeito total dos custos devido ao descolamento entre PLD e CMO, para cada perfil de agente “a”, no mês de apuração “m” (E_DESCa,m) [R$] (1)  \n* **AJUSTE_RECONTAB** : Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de agente “a”, no mês de apuração “m” (AJU_RECONa,m) [R$] (1)  \n* **AJUSTE_MCSD_XP** : Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente “a”, no mês de apuração “m” (MCSD_XPa,m) [R$]  \n* **RESULTADO_EXCEDENTE_ER** : Corresponde ao Resultado Referente ao Excedente Financeiro da Energia de Reserva por cada perfil de agente “a”, no mês de apuração “m” (RES_EXCD_ERa,m) [R$]  \n* **RESULTADO_FINAL** : Corresponde ao Resultado Final do perfil de agente “a”, no mês de apuração “m” (RESULTADOa,m) [R$] (1)  \n  \n(1) Soma dos valores positivos por perfil de agente no mês (2) Inclui valores ACER",
+                "format": "CSV",
+                "hash": "",
+                "id": "8372ee84-6243-4b3b-b8d7-3424b8a943a1",
+                "last_modified": null,
+                "metadata_modified": "2024-04-02T23:10:24.617095",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "sumario_mensal_resultado_2023",
+                "package_id": "ebf1a392-48f9-4f9f-9072-13d0bf05620e",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/DQGnHPNFQ7iPnz_e9pSM9Q/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:17:08.144826",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores de consolicação de resultados do MCP por mês de referência.    **Campos contidos nesse conjunto de dados:**    * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  * **TOTAL_RESULTADO_MCP** : Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo do perfil de agente “a”, no mês de apuração “m” (TM_MCPa,m) R$) [R$] (1)  * **COMPENSACAO_MRE** : Corresponde ao Compensação do MRE do perfil de agente “a”, por mês de apuração “m” (COMPENSACAO_MREa,m) [R$] (1)    * **ENCARGOS** : Corresponde ao Total de Encargos Consolidado, do perfil de agente “a”, no mês de apuração “m” (ENCARGOSa,m) [R$] (1)  * **EXPOSICOES_FINANCEIRAS** : Corresponde ao Total de Ajustes de Exposições Financeiras do perfil de agente “a”, no mês de apuração “m” (TAJ_EFa,m) [R$] (1)  * **ALIVIO_RETROATIVO** : Corresponde ao Total de Ajustes referente ao Alívio Retroativo do perfil de agente “a”, no mês de apuração “m” (TAJ_ARa,m) [R$]  * **EFEITO_CONTRATACAO_DISP** : Corresponde ao Efeito da Contratação por Disponibilidade, para cada perfil de agente “a”, no mês de apuração “m” (ECDa,m) [R$] (1) (2)  * **EFEITO_CONTRATACAO_CCGF** : Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no mês de apuração “m” (ECCGFa,m) [R$] (1)  * **EFEITO_CONTRATACAO_CCEN** : Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no mês de apuração “m” (ECCENa,m) [R$] (1)  * **EFEITO_CONTRATACAO_QTD** : Corresponde ao Efeito da Contratação por Quantidade, para cada perfil de agente “a”, no mês de apuração “m” (ECQAa,m) [R$] (1)  * **EFEITO_CONTRATACAO_ITAIPU** : Corresponde ao Efeito da Contratação de Itaipu, para cada perfil de agente “a”, no mês de apuração “m” (EC_ITa,m) [R$] (1)  * **EFEITO_CONTRATACAO_RRH** : Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada perfil de agente “a”, no mês de apuração “m” (ERRHa,m) [R$] (1)  * **EFEITO_CUSTOS_DESC** : Corresponde ao Efeito total dos custos devido ao descolamento entre PLD e CMO, para cada perfil de agente “a”, no mês de apuração “m” (E_DESCa,m) [R$] (1)  * **AJUSTE_RECONTAB** : Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de agente “a”, no mês de apuração “m” (AJU_RECONa,m) [R$] (1)  * **AJUSTE_MCSD_XP** : Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente “a”, no mês de apuração “m” (MCSD_XPa,m) [R$]  * **RESULTADO_EXCEDENTE_ER** : Corresponde ao Resultado Referente ao Excedente Financeiro da Energia de Reserva por cada perfil de agente “a”, no mês de apuração “m” (RES_EXCD_ERa,m) [R$]  * **RESULTADO_FINAL** : Corresponde ao Resultado Final do perfil de agente “a”, no mês de apuração “m” (RESULTADOa,m) [R$] (1)    (1) Soma dos valores positivos por perfil de agente no mês (2) Inclui valores ACER",
+                "format": "CSV",
+                "hash": "",
+                "id": "948a328c-25d4-4383-b4d6-87df7f2282e9",
+                "last_modified": "2024-10-30T17:45:54.450000",
+                "metadata_modified": "2024-10-30T20:45:54.508543",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "sumario_mensal_resultado_2024",
+                "package_id": "ebf1a392-48f9-4f9f-9072-13d0bf05620e",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/8BL2mSZcSQm5YkvKkFcZfg/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "sumário",
+                "id": "9ea282bc-ec9e-4bc1-a7ee-9aa7dcdde832",
+                "name": "sumário",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

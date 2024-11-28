@@ -1,0 +1,39 @@
+name: energia_reserva_liquidacao
+description: Dados de liquidação de energia de reserva no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.328222'
+source:
+- created: '2024-04-03T23:52:57.126543'
+  id: b0dcf91b-7f59-4dd4-9c2b-ddc9a93153a6
+  name: energia_reserva_liquidacao_2024
+last_update: 2024-11-21 18:58:00.328228
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  EFEITO_CCEAR_DISP_CER:
+    type: numeric
+    description: Corresponde ao efeito por disponibilidade ou CER (ECD a,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  REPASSE_USUARIOS_RESERVA:
+    type: numeric
+    description: Corresponde ao repasse aos usuários de energia de reserva (RES_EXCD_ER
+      a,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTE:
+    type: numeric
+    description: Corresponde ao ajuste referente à energia de reserva [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_TOTAL_LIQUID:
+    type: numeric
+    description: Corresponde ao total liquidado referente à energia de reserva [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

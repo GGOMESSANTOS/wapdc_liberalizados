@@ -1,0 +1,107 @@
+name: geracao_horaria_submercado
+description: Dados de geração utilizados na contabilização do MCP - Mercado de Curto
+  Prazo, com foco nos parâmetros de geração utilizados pelo MRE ou fora desse mecanismo.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.381058'
+source:
+- created: '2024-01-04T14:27:35.987973'
+  id: 18c785e6-ecb3-465c-af55-77dc9a374f95
+  name: geracao_horaria_submercado_2023
+- created: '2024-03-04T01:21:08.022561'
+  id: 9d619679-62fc-4afd-b725-ee63c5d511d8
+  name: geracao_horaria_submercado_2024
+last_update: 2024-11-21 18:58:00.381064
+periodice: Mensal
+fields:
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: Geração no centro de gravidade. (Gp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_MRE:
+    type: numeric
+    description: Geração no centro de gravidade de usinas do MRE correspondente a
+      parcela de usina “p”, por período de comercialização “j” (Gp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_MRE:
+    type: numeric
+    description: Garantia física no centro de gravidade de usinas do MRE correspondente
+      a parcela de usina “p”, por período de comercialização “j” (GFIS_2p,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_MODULADA_MRE:
+    type: numeric
+    description: Garantia física modulada e ajustada no centro de gravidade de usinas
+      do MRE correspondente a parcela de usina “p”, por período de comercialização
+      “j” (GFIS_3p,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  FLUXO_ENERGIA_MRE:
+    type: numeric
+    description: Fluxo de energia do MRE correspondente a parcela de usina “p”, por
+      submercado "s", por período de comercialização “j” (FLUXO_Pp,s,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA_MRE:
+    type: numeric
+    description: Garantia Física Sazonalizada das Usinas Hidroelétricas do MRE correspondente
+      a parcela de usina “p”, por período de comercialização “j” (GFISp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA_MRE_SEM_GF:
+    type: numeric
+    description: Garantia Física das Usinas Hidráulicas não participantes do MRE e
+      sem garantia física definida pelo MME correspondente a parcela de usina “p”,
+      por período de comercialização “j” (GFISp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA_MRE_COM_GF:
+    type: numeric
+    description: Garantia Física das Usinas Hidráulicas não participantes do MRE e
+      com garantia física definida pelo MME correspondente a parcela de usina “p”,
+      por período de comercialização “j” (GFISp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA_NAO_HIDRO_COM_GF:
+    type: numeric
+    description: Garantia Física das Usinas não Hidráulicas e com garantia física
+      definida pelo MME correspondente a parcela de usina “p”, por período de comercialização
+      “j” (GFISp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA_NAO_HIDRO_IA_IIA_SEM_GF:
+    type: numeric
+    description: Garantia Física das Usinas não Hidráulicas e sem garantia física
+      definida pelo MME, do tipo IA e II A correspondente a parcela de usina “p”,
+      por período de comercialização “j” (GFISp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA_NAO_HIDRO_IB_IIB_IIC_III_SEM_GF:
+    type: numeric
+    description: Garantia Física das Usinas não hidráulicas e sem garantia física
+      definida pelo MME, do tipo I B, II B, II C e III correspondente a parcela de
+      usina “p”, por período de comercialização “j” (GFISp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

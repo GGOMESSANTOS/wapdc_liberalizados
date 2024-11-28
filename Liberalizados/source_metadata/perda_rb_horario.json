@@ -1,0 +1,134 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "9ebae6d6-6e37-452c-b8e8-bc7fe5105164",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-06-26T14:03:10.263246",
+        "metadata_modified": "2024-10-30T20:22:53.223804",
+        "name": "perda_rb_horario",
+        "notes": "Dados com os totais de perdas da rede básica apurados e utilizados na contabilização do MCP - Mercado de Curto Prazo discretizados por período de comercialização no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 4,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "PERDA_RB_HORARIO",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-07-04T20:06:11.551870",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados do total de geração, consumo e perdas; total de geração, consumo considerando as perdas; fator de perdas para fins de geração e consumo. Os dados estão discretizados por período de comercialização (equivalente a 1 hora), dentro de um mês de referência.  \n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **PERIODO_COMERCIALIZACAO** : Representa o período de comercialização, equivalente a uma hora, dentro do mês e o ano de referência na qual os dados foram utilizados.  \n* **TOTAL_GERACAO_BRUTA** : Corresponde ao Geração Total da Rede Básica por período de comercialização “j” (TOT_Gj) [MWh]  \n* **TOTAL_CONSUMO_BRUTO** : Corresponde ao Consumo Total da Rede Básica por período de comercialização “j” (TOT_Cj) [MWh]  \n* **TOTAL_PERDA** : Corresponde ao Total de Perdas da Rede Básica por período de comercialização “j” (TOT_Pj) [MWh]  \n* **GERACAO_TOTAL_RATEIO_PERDA** : Corresponde a Geração Total Participante do Rateio de Perdas por período de comercialização “j” (TOT_GPj) [MWh]  \n* **CONSUMO_TOTAL_RATEIO_PERDA** : Corresponde ao Consumo Total Participante do Rateio de Perdas por período de comercialização “j”  (TOT_CPj) [MWh]",
+                "format": "CSV",
+                "hash": "",
+                "id": "35e54c9e-3761-4010-8b6e-aa0cc468941a",
+                "last_modified": "2023-08-30T15:23:17.204000",
+                "metadata_modified": "2023-10-04T20:49:16.599058",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "perda_rb_horario_2023",
+                "package_id": "9ebae6d6-6e37-452c-b8e8-bc7fe5105164",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/cFS1ISA4TzqfTLVQGJB2IQ/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T02:05:44.516054",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados do total de geração, consumo e perdas; total de geração, consumo considerando as perdas; fator de perdas para fins de geração e consumo. Os dados estão discretizados por período de comercialização (equivalente a 1 hora), dentro de um mês de referência.  \n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **PERIODO_COMERCIALIZACAO** : Representa o período de comercialização, equivalente a uma hora, dentro do mês e o ano de referência na qual os dados foram utilizados.  \n* **TOTAL_GERACAO_BRUTA** : Corresponde ao Geração Total da Rede Básica por período de comercialização “j” (TOT_Gj) [MWh]  \n* **TOTAL_CONSUMO_BRUTO** : Corresponde ao Consumo Total da Rede Básica por período de comercialização “j” (TOT_Cj) [MWh]  \n* **TOTAL_PERDA** : Corresponde ao Total de Perdas da Rede Básica por período de comercialização “j” (TOT_Pj) [MWh]  \n* **GERACAO_TOTAL_RATEIO_PERDA** : Corresponde a Geração Total Participante do Rateio de Perdas por período de comercialização “j” (TOT_GPj) [MWh]  \n* **CONSUMO_TOTAL_RATEIO_PERDA** : Corresponde ao Consumo Total Participante do Rateio de Perdas por período de comercialização “j”  (TOT_CPj) [MWh]",
+                "format": "CSV",
+                "hash": "",
+                "id": "dbc74eef-bdde-4555-8d3e-461aacf90601",
+                "last_modified": "2024-10-30T17:22:53.163000",
+                "metadata_modified": "2024-10-30T20:22:53.231581",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "perda_rb_horario_2024",
+                "package_id": "9ebae6d6-6e37-452c-b8e8-bc7fe5105164",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/8ycDNCpxTqqrYipD_niVvA/content",
+                "url_type": null
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "consumo",
+                "id": "cdf18cbb-5072-4d0e-9184-150957ce92a8",
+                "name": "consumo",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "geração",
+                "id": "3f4552c2-d88f-48d6-bf46-c9c0de0071f3",
+                "name": "geração",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "perdas",
+                "id": "1d503259-15ac-44e5-838f-3e07aae66e38",
+                "name": "perdas",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

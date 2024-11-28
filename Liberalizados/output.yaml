@@ -1,0 +1,57 @@
+!!python/object/apply:collections.OrderedDict
+- - - name
+    - acl_eol
+  - - description
+    - Dados de geração e capacidade instalada de usinas eólicas participantes do ACL
+      no mês de referência.
+  - - owner
+    - CCEE-GAIM
+  - - periodice
+    - Referência de Publicação
+  - - source
+    - - !!python/object/apply:collections.OrderedDict
+        - - - created
+            - '2023-11-21T13:04:11.271237'
+          - - id
+            - 91ea9c06-f6e1-423d-b685-e82a651ae6fd
+          - - name
+            - acl_eol_2023
+      - !!python/object/apply:collections.OrderedDict
+        - - - created
+            - '2024-03-04T01:23:10.429688'
+          - - id
+            - d7cb6384-7ca5-473e-93d7-f7ffd71f7264
+          - - name
+            - acl_eol_2024
+  - - sync
+    - s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx
+  - - version
+    - - !!python/object/apply:collections.OrderedDict
+        - - - id_increment
+            - '2024-11-18T13:35:47.597113'
+  - - fields
+    - !!python/object/apply:collections.OrderedDict
+      - - - field1
+          - !!python/object/apply:collections.OrderedDict
+            - - - type
+                - datetime
+              - - description
+                - ''
+              - - label
+                - ''
+              - - 'null'
+                - true
+              - - business_rule
+                - ''
+        - - field2
+          - !!python/object/apply:collections.OrderedDict
+            - - - type
+                - string
+              - - description
+                - ''
+              - - label
+                - ''
+              - - 'null'
+                - true
+              - - business_rule
+                - ''

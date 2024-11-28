@@ -1,0 +1,35 @@
+name: garantia_fisica_fonte
+description: Dados com os montantes de garantia física agrupados por fonte primária
+  de geração, no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.232970'
+source:
+- created: '2023-12-07T04:07:30.557214'
+  id: 77fa1370-7e90-4174-b035-30a0db6c8eaa
+  name: garantia_fisica_fonte_2023
+- created: '2024-03-04T01:27:32.790156'
+  id: 8fb51bbd-5d52-4321-89d1-2c7b0377647a
+  name: garantia_fisica_fonte_2024
+last_update: 2024-11-21 18:58:00.232975
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  FONTE_PRIMARIA:
+    type: text
+    description: Fonte primária correspondente ao ativo de geração representado na
+      análise.
+    label: '40'
+    business_rule: ''
+  GARANTIA_FISICA_CENTRO_GRAVIDADE:
+    type: numeric
+    description: Garantia física apurada para usinas com GF de ato regulatório e do
+      tipo 1A e 2A da parcela de usina “p”, por período de comercialização “j” (GFISp,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

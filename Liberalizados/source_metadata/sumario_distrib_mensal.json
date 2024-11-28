@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "d87247d0-4c34-4761-be4d-43acb5f04acc",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-09-06T20:18:12.186569",
+        "metadata_modified": "2024-10-30T20:16:01.728631",
+        "name": "sumario_distrib_mensal",
+        "notes": "Dados de  pagamentos, recebimentos, exposições, alívios, efeitos de contratação e ajustes, tanto de recontabilizações quanto de MCSD, apurados no MCP para os agentes da classe de distribuição no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "SUMARIO_DISTRIB_MENSAL",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-09-06T20:19:19.852683",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os pagamentos, recebimentos, exposições, alívios, efeitos de contratação e ajustes, tanto de recontbailizações quanto de MCSD, apurados no MCP para os agentes da classe de distribuição no mês de referência.  \n  \n**Campos contidos nesse conjunto de dados:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **RESULTADO_MCP_RECEBIMENTO** : Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (TM_MCPa,m) [R$]  \n* **RESULTADO_MCP_PAGAMENTO** : Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (TM_MCPa,m) [R$]  \n* **ENCARGOS_RECEBIMENTO_DIST** : Corresponde ao Total de Encargos Consolidado, do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ENCARGOSa,m) [R$]  \n* **ENCARGOS_PAGAMENTO_DIST** : Corresponde ao Total de Encargos Consolidado, do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ENCARGOSa,m) [R$]  \n* **EXPOSICAO_FINANCEIRA_RECEBIMENTO** : Corresponde a Exposição Financeira Positiva de CCEAR, CCGF e CCEN do perfil de agente “a” no Mês de Apuração “m” (EF_CCEAR_Pa,m) [R$]  \n* **EXPOSICAO_FINANCEIRA_PAGAMENTO** : Corresponde ao somatório entre a Exposição Financeira Negativa de CCEAR, CCGF e CCEN do perfil de agente “a” no Mês de Apuração “m” e a Total de Penalidade para Atendimento às Exposições Negativas de CCEAR, CCGF e CCEN no mês de apuração “m” (EF_CCEAR_Na,m + TPA_EF_CCEARa,m) [R$]  \n* **ALIVIO_RETROATIVO_RECEBIMENTO** : Corresponde ao Total de Ajustes referente ao Alívio Retroativo do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das dsitribuidoras (TAJ_Ara,m) [R$]  \n* **ALIVIO_RETROATIVO_PAGAMENTO** : Corresponde ao Total de Ajustes referente ao Alívio Retroativo do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das dsitribuidoras (TAJ_Ara,m) [R$]  \n* **EFEITO_CONTRATACAO_DISP_RECEBIMENTO** : Corresponde ao Efeito da Contratação por Disponibilidade, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ECDa,m) [R$]  \n* **EFEITO_CONTRATACAO_DISP_PAGAMENTO** : Corresponde ao Efeito da Contratação por Disponibilidade, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECDa,m) [R$]  \n* **EFEITO_CONTRATACAO_CCGF_RECEBIMENTO** : Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ECCGFa,m) [R$]  \n* **EFEITO_CONTRATACAO_CCGF_PAGAMENTO** : Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECCGFa,m) [R$]  \n* **EFEITO_CONTRATACAO_CCEN_RECEBIMENTO** : Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ECCENa,m) [R$]  \n* **EFEITO_CONTRATACAO_CCEN_PAGAMENTO** : Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECCENa,m) [R$]  \n* **AJUSTE_RECONTAB_RECEBIMENTO** : Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (AJU_RECONa,m) [R$]  \n* **AJUSTE_RECONTAB_PAGAMENTO** : Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (AJU_RECONa,m) [R$]  \n* **AJUSTE_MCSD_XP_RECEBIMENTO** : Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (MCSD_Xpa,m) [R$]  \n* **AJUSTE_MCSD_XP_PAGAMENTO** : Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (MCSD_Xpa,m) [R$]  \n* **RESULTADO_EXCEDENTE_ER_RECEBIMENTO** : Corresponde ao Resultado Referente ao Excedente Financeiro da Energia de Reserva por cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (RES_EXCD_Era,m) [R$]  \n* **EFEITO_CONTRATACAO_QTD_PAGAMENTO** : Corresponde ao Efeito da Contratação por Quantidade, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECQAa,m) [R$]  \n* **EFEITO_CONTRATACAO_ITAIPU_RECEBIMENTO** : Corresponde ao Efeito da Contratação de Itaipu, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (EC_ITa,m) [R$]  \n* **EFEITO_CONTRATACAO_ITAIPU_PAGAMENTO** : Corresponde ao Efeito da Contratação de Itaipu, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (EC_ITa,m) [R$]   * **EFEITO_CUSTOS_DESC** : Corresponde ao Efeito total dos custos devido ao descolamento entre PLD e CMO, para cada perfil de agente “a”, no mês de apuração “m” (E_DESCa,m) [R$]  \n* **EFEITO_CONTRATACAO_RRH_RECEBIMENTO** : Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ERRHa,m) [R$]  \n* **EFEITO_CONTRATACAO_RRH_PAGAMENTO** : Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ERRHa,m) [R$]  \n* **RESULTADO_FINAL_RECEBIMENTO** : Corresponde ao Resultado Final do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (RESULTADOa,m) [R$]  \n* **RESULTADO_FINAL_PAGAMENTO** : Corresponde ao Resultado Final do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (RESULTADOa,m) [R$]",
+                "format": "CSV",
+                "hash": "",
+                "id": "e0a4ba6b-4352-4f8a-8dff-d73508254888",
+                "last_modified": null,
+                "metadata_modified": "2023-10-05T13:52:53.245071",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "sumario_distrib_mensal_2023",
+                "package_id": "d87247d0-4c34-4761-be4d-43acb5f04acc",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/oMfSEDcLS7us15U8jLsP5g/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:21:46.952271",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os pagamentos, recebimentos, exposições, alívios, efeitos de contratação e ajustes, tanto de recontbailizações quanto de MCSD, apurados no MCP para os agentes da classe de distribuição no mês de referência.    **Campos contidos nesse conjunto de dados:**    * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  * **RESULTADO_MCP_RECEBIMENTO** : Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (TM_MCPa,m) [R$]  * **RESULTADO_MCP_PAGAMENTO** : Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (TM_MCPa,m) [R$]  * **ENCARGOS_RECEBIMENTO_DIST** : Corresponde ao Total de Encargos Consolidado, do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ENCARGOSa,m) [R$]  * **ENCARGOS_PAGAMENTO_DIST** : Corresponde ao Total de Encargos Consolidado, do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ENCARGOSa,m) [R$]  * **EXPOSICAO_FINANCEIRA_RECEBIMENTO** : Corresponde a Exposição Financeira Positiva de CCEAR, CCGF e CCEN do perfil de agente “a” no Mês de Apuração “m” (EF_CCEAR_Pa,m) [R$]  * **EXPOSICAO_FINANCEIRA_PAGAMENTO** : Corresponde ao somatório entre a Exposição Financeira Negativa de CCEAR, CCGF e CCEN do perfil de agente “a” no Mês de Apuração “m” e a Total de Penalidade para Atendimento às Exposições Negativas de CCEAR, CCGF e CCEN no mês de apuração “m” (EF_CCEAR_Na,m + TPA_EF_CCEARa,m) [R$]  * **ALIVIO_RETROATIVO_RECEBIMENTO** : Corresponde ao Total de Ajustes referente ao Alívio Retroativo do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das dsitribuidoras (TAJ_Ara,m) [R$]  * **ALIVIO_RETROATIVO_PAGAMENTO** : Corresponde ao Total de Ajustes referente ao Alívio Retroativo do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das dsitribuidoras (TAJ_Ara,m) [R$]  * **EFEITO_CONTRATACAO_DISP_RECEBIMENTO** : Corresponde ao Efeito da Contratação por Disponibilidade, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ECDa,m) [R$]  * **EFEITO_CONTRATACAO_DISP_PAGAMENTO** : Corresponde ao Efeito da Contratação por Disponibilidade, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECDa,m) [R$]  * **EFEITO_CONTRATACAO_CCGF_RECEBIMENTO** : Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ECCGFa,m) [R$]  * **EFEITO_CONTRATACAO_CCGF_PAGAMENTO** : Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECCGFa,m) [R$]  * **EFEITO_CONTRATACAO_CCEN_RECEBIMENTO** : Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ECCENa,m) [R$]  * **EFEITO_CONTRATACAO_CCEN_PAGAMENTO** : Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECCENa,m) [R$]  * **AJUSTE_RECONTAB_RECEBIMENTO** : Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (AJU_RECONa,m) [R$]  * **AJUSTE_RECONTAB_PAGAMENTO** : Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (AJU_RECONa,m) [R$]  * **AJUSTE_MCSD_XP_RECEBIMENTO** : Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (MCSD_Xpa,m) [R$]  * **AJUSTE_MCSD_XP_PAGAMENTO** : Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (MCSD_Xpa,m) [R$]  * **RESULTADO_EXCEDENTE_ER_RECEBIMENTO** : Corresponde ao Resultado Referente ao Excedente Financeiro da Energia de Reserva por cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (RES_EXCD_Era,m) [R$]  * **EFEITO_CONTRATACAO_QTD_PAGAMENTO** : Corresponde ao Efeito da Contratação por Quantidade, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ECQAa,m) [R$]  * **EFEITO_CONTRATACAO_ITAIPU_RECEBIMENTO** : Corresponde ao Efeito da Contratação de Itaipu, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (EC_ITa,m) [R$]  * **EFEITO_CONTRATACAO_ITAIPU_PAGAMENTO** : Corresponde ao Efeito da Contratação de Itaipu, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (EC_ITa,m) [R$]   * **EFEITO_CUSTOS_DESC** : Corresponde ao Efeito total dos custos devido ao descolamento entre PLD e CMO, para cada perfil de agente “a”, no mês de apuração “m” (E_DESCa,m) [R$]  * **EFEITO_CONTRATACAO_RRH_RECEBIMENTO** : Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ERRHa,m) [R$]  * **EFEITO_CONTRATACAO_RRH_PAGAMENTO** : Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ERRHa,m) [R$]  * **RESULTADO_FINAL_RECEBIMENTO** : Corresponde ao Resultado Final do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (RESULTADOa,m) [R$]  * **RESULTADO_FINAL_PAGAMENTO** : Corresponde ao Resultado Final do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (RESULTADOa,m) [R$]",
+                "format": "CSV",
+                "hash": "",
+                "id": "84d372cf-1713-443b-8089-61d1ea44c9e0",
+                "last_modified": "2024-10-30T17:16:01.671000",
+                "metadata_modified": "2024-10-30T20:16:01.734469",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "sumario_distrib_mensal_2024",
+                "package_id": "d87247d0-4c34-4761-be4d-43acb5f04acc",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/sbIP-r3NRoiPmut75O32bw/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "sumário",
+                "id": "9ea282bc-ec9e-4bc1-a7ee-9aa7dcdde832",
+                "name": "sumário",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

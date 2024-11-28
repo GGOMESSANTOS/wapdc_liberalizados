@@ -1,0 +1,32 @@
+name: pch_acl
+description: Dados de geração e capacidade instalada de usinas PCH participantes do
+  ACL no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.378302'
+source:
+- created: '2023-12-05T03:11:22.498380'
+  id: d9a89167-79d4-4093-adaa-a63da32893ce
+  name: pch_acl_2023
+- created: '2024-03-04T01:55:05.196441'
+  id: 0550e435-67e4-4fdf-9c45-7c3ab2a0c34c
+  name: pch_acl_2024
+last_update: 2024-11-21 18:58:00.378308
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  GERACAO_PCH:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CAPACIDADE_INSTALADA_PCH:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

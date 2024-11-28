@@ -1,0 +1,56 @@
+name: encargo_importacao_geracao
+description: Dados de geração remunerada via encargo e de importação líquida no mês
+  de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.242985'
+source:
+- created: '2023-08-09T20:42:43.378757'
+  id: 0bf560e5-37e4-4d8c-8b20-91ca39827867
+  name: encargo_importacao_geracao_2023
+- created: '2024-03-04T01:24:10.850350'
+  id: 63fc7a43-6630-45cd-9bee-2a85c3a63f75
+  name: encargo_importacao_geracao_2024
+last_update: 2024-11-21 18:58:00.242991
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: "Representa o mês e o ano de referência na qual os dados foram utilizados.\r\
+      \n"
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_SEGURANCA_ENERGETICA:
+    type: numeric
+    description: "Corresponde a Geração por Segurança Energética da parcela de usina\
+      \ não hidráulica “p”, por período de comercialização “j”. (G_SEp,j) [MWmed]\r\
+      \n"
+    label: (10,12)
+    business_rule: ''
+  GERACAO_CONSTRAINED_ON:
+    type: numeric
+    description: "Corresponde a Geração para atendimento a uma Restrição de Operação\
+      \ Constrained-On da parcela de usina não hidráulica “p”, por período de comercialização\
+      \ “j”. (G_CONST_ONp,j) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+  GERACAO_RESERVA_POTENCIA:
+    type: numeric
+    description: "Corresponde a Geração Realizada para Atendimento ao Despacho Compelmentar\
+      \ para Manutenção da Reserva de Potência Operativa da usina “p”, por período\
+      \ de comercialização “j”. (G_RESPOPp,j) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+  GERACAO_UNIT_COMMITMENT:
+    type: numeric
+    description: "Corresponde a Geração por Unit Commitment da parcela de usina “p”,\
+      \ no período de comercialização “j”. (G_UNITp,j) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+  IMPORTACAO_LIQUIDA:
+    type: numeric
+    description: "Corresponde a Importação Líquida sem Garantia Física Associada,\
+      \ por período de comercialização “j”. (IMPp,j) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,45 @@
+name: sazonalizacao_mre_gf_motorizacao_submercado
+description: Dados com os montantes sazonalizados de garantia física das usinas motorizadas
+  no MRE por submercado.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.240447'
+source:
+- created: '2024-02-01T20:23:02.852709'
+  id: 2bf1013b-2de6-4fc8-be9d-bc12f8f7c36e
+  name: sazonalizacao_mre_gf_motorizacao_submercado_2024
+last_update: 2024-11-21 18:58:00.240453
+periodice: Anual
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: "Representa o mês e o ano de referência na qual os dados foram utilizados.\r\
+      \n"
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  GF_HIDROELETRICA_NAO_MOTORIZADAS:
+    type: numeric
+    description: Corresponde à garantia física sazonalizada das usinas hidroelétricas
+      do MRE sem considerar motorização. (QM_GFp,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GF_HIDROELETRICA_MOTORIZADAS:
+    type: numeric
+    description: Corresponde à garantia física sazonalizada das usinas hidroelétricas
+      do MRE, considerando motorização. (MGFIS_Hp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GF_USINA_REGIME_COTAS:
+    type: numeric
+    description: Corresponde à garantia física sazonalizada de usinas do MRE participantes
+      do regime de cotas, considerando motorização. (MGFIS_Hp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

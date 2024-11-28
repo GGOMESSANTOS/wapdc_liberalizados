@@ -1,0 +1,141 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "Gerência de Contas Setoriais - GCSE",
+        "author_email": "",
+        "creator_user_id": "8ad7d8b5-cbd6-4707-bc80-4e214dbbd84c",
+        "id": "04e9924d-ae3f-49b0-aa3e-b2d5e9d2651e",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "Gerência de Contas Setoriais - GCSE",
+        "maintainer_email": "",
+        "metadata_created": "2024-03-27T20:44:07.621065",
+        "metadata_modified": "2024-04-01T23:54:58.521136",
+        "name": "ccc_ctg_usina_ccesi",
+        "notes": "Dados mensais de custo total de geração de usinas provenientes de leilão do sistema isolado da CCC.",
+        "num_resources": 2,
+        "num_tags": 5,
+        "organization": {
+            "id": "d1d4671d-a0f7-45bd-b3ab-7eae2020c299",
+            "name": "contas_setoriais",
+            "title": "Contas Setoriais",
+            "type": "organization",
+            "description": "As Contas Setoriais é uma organização que agrupa os principais conjuntos de dados das contas setoriais do mercado brasileiro de energia elétrica, entre elas a Conta de Desenvolvimento Energético – CDE, Conta de Consumo de Combustíveis – CCC e Reserva Global de Reversão – RGR .\n\nAs partes interessadas poderão acessar os conjuntos de dados relacionados aos seguintes assuntos: custo total de geração e reembolso por beneficiário, custo de geração por usina e custo de geração de usinas com contrato CCESI.\n\nOs conjuntos de dados das Contas Setoriais referentes à CCC, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de competência relativo à finalização do cálculo do reembolso mensal da CCC e considerando-se os reprocessamentos realizados.\n\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "",
+            "created": "2024-03-27T18:38:48.003190",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "d1d4671d-a0f7-45bd-b3ab-7eae2020c299",
+        "private": false,
+        "state": "active",
+        "title": "CCC_CTG_USINA_CCESI",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MSS+20dc"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-04-01T20:17:41.773276",
+                "datastore_active": true,
+                "description": "**Objetivo:** Detalhar os custos totais de geração de usinas que possuem contrato de comercialização de energia elétrica e potência nos sistemas isolados da CCC por mês de competência.\r\n\r\n**Campos contidos nesse conjunto de dados: COMPETENCIA, BENEFICIARIO, FORNECEDOR, CEG, USINA, GERACAO:** Geração de energia registrada ou contratada da usina no mês de apuração. [MWh], **RECEITA_VARIAVEL:** Custo variável da usina no mês de apuração. [R$], **RECEITA_FIXA:** Parcela da receita fixa da usina no mês de apuração. [R$], **AJUSTE_PENALIDADE:** Valores de ajustes e penalidades da usina no mês de apuração. [R$], **RECEITA_VENDA:** Receita de venda da usina no mês de apuração, composto pela Receita Variável e Receita Fixa Mensal. [R$], **TRIBUTOS:** Custo total de tributos da usina passível de reembolso no mês de apuração. [R$], **CUSTO_LIQUIDO:** Custo total líquido reembolsável da usina no mês de apuração. [R$], **CUSTO_TOTAL:** Custo total da usina passível de reembolso no mês de apuração. [R$]\r\n\r\n",
+                "format": "CSV",
+                "hash": "",
+                "id": "ccd6d4ca-f7fd-4d92-8530-b1d6deed9414",
+                "last_modified": null,
+                "metadata_modified": "2024-04-01T23:54:45.880434",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccc_ctg_usina_ccesi_2023",
+                "package_id": "04e9924d-ae3f-49b0-aa3e-b2d5e9d2651e",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/tWgs7xaqT8KqsY2sTcgW2Q/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-04-01T21:01:28.209732",
+                "datastore_active": true,
+                "description": "**Objetivo:** Detalhar os custos totais de geração de usinas que possuem contrato de comercialização de energia elétrica e potência nos sistemas isolados da CCC por mês de competência.\r\n\r\n**Campos contidos nesse conjunto de dados: COMPETENCIA, BENEFICIARIO, FORNECEDOR, CEG, USINA, GERACAO:** Geração de energia registrada ou contratada da usina no mês de apuração. [MWh], **RECEITA_VARIAVEL:** Custo variável da usina no mês de apuração. [R$], **RECEITA_FIXA:** Parcela da receita fixa da usina no mês de apuração. [R$], **AJUSTE_PENALIDADE:** Valores de ajustes e penalidades da usina no mês de apuração. [R$], **RECEITA_VENDA:** Receita de venda da usina no mês de apuração, composto pela Receita Variável e Receita Fixa Mensal. [R$], **TRIBUTOS:** Custo total de tributos da usina passível de reembolso no mês de apuração. [R$], **CUSTO_LIQUIDO:** Custo total líquido reembolsável da usina no mês de apuração. [R$], **CUSTO_TOTAL:** Custo total da usina passível de reembolso no mês de apuração. [R$]",
+                "format": "CSV",
+                "hash": "",
+                "id": "6b69d88e-a0ad-4437-87d8-86df0d9e8da0",
+                "last_modified": null,
+                "metadata_modified": "2024-04-01T23:54:58.528302",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccc_ctg_usina_ccesi_2024",
+                "package_id": "04e9924d-ae3f-49b0-aa3e-b2d5e9d2651e",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/RbOvpoG8QbCM7Y8rb_qSyg/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "ccc",
+                "id": "bdab57c2-8aa5-4ecd-8413-e61d27ce78ce",
+                "name": "ccc",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "ccesi",
+                "id": "1b40e5c6-fab4-4092-ae9f-07a8e21d4cab",
+                "name": "ccesi",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "ctg",
+                "id": "6bba588c-0e9b-41be-9156-96bc0fd7a83b",
+                "name": "ctg",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "isolado",
+                "id": "a14ebc1a-cda1-441a-8166-4bc92ba8921c",
+                "name": "isolado",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "usina",
+                "id": "f389bd23-8086-4368-939e-a1562b6516b9",
+                "name": "usina",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

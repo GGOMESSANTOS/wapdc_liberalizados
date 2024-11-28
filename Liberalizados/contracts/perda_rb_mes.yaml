@@ -1,0 +1,70 @@
+name: perda_rb_mes
+description: Dados com os totais de perdas da rede básica apurados e utilizados na
+  contabilização do MCP - Mercado de Curto Prazo consolidado no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.246975'
+source:
+- created: '2023-06-26T14:00:56.585172'
+  id: 48097a10-4115-4ec7-8464-26d309643480
+  name: perda_rb_mes_2023
+- created: '2024-03-04T02:05:34.080296'
+  id: 0dabb335-acad-43b9-b2f9-ae025b1a8b20
+  name: perda_rb_mes_2024
+last_update: 2024-11-21 18:58:00.246981
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  TOTAL_GERACAO_BRUTA:
+    type: numeric
+    description: Corresponde ao Geração Total da Rede Básica por período de comercialização
+      “j”
+    label: (10,12)
+    business_rule: ''
+  TOTAL_CONSUMO_BRUTO:
+    type: numeric
+    description: Corresponde ao Consumo Total da Rede Básica por período de comercialização
+      “j”
+    label: (10,12)
+    business_rule: ''
+  TOTAL_PERDA:
+    type: numeric
+    description: Corresponde ao Total de Perdas da Rede Básica por período de comercialização
+      “j”
+    label: (10,12)
+    business_rule: ''
+  GERACAO_CONSUMO_CENTRO_GRAVIDADE:
+    type: numeric
+    description: Corresponde ao Total de Perdas da Rede Básica por período de comercialização
+      “j”
+    label: (10,12)
+    business_rule: ''
+  GERACAO_TOTAL_RATEIO_PERDA:
+    type: numeric
+    description: Corresponde a Geração Total Participante do Rateio de Perdas por
+      período de comercialização “j”
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_TOTAL_RATEIO_PERDA:
+    type: numeric
+    description: Corresponde ao Consumo Total Participante do Rateio de Perdas por
+      período de comercialização “j”
+    label: (10,12)
+    business_rule: ''
+  FATOR_PERDA_GERACAO:
+    type: numeric
+    description: Corresponde ao Consumo Total Participante do Rateio de Perdas por
+      período de comercialização “j”  [%]
+    label: (10,12)
+    business_rule: ''
+  FATOR_PERDA_CONSUMO:
+    type: numeric
+    description: Corresponde ao Consumo Total Participante do Rateio de Perdas por
+      período de comercialização “j”  [%]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

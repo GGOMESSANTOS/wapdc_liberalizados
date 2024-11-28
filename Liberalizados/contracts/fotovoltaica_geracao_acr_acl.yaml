@@ -1,0 +1,42 @@
+name: fotovoltaica_geracao_acr_acl
+description: Dados de geração total de usinas fotovoltaicas, separados por modalidade
+  de geração e por ambiente de comercialização - ACR e ACL.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.357798'
+source:
+- created: '2024-02-01T14:24:03.817548'
+  id: 0fea6e81-a53a-4e82-bd94-f8903df7adae
+  name: fotovoltaica_geracao_acr_acl_2023
+- created: '2024-03-04T01:24:00.954000'
+  id: 72c2bedd-9ffd-4c7b-9674-3494d1686a17
+  name: fotovoltaica_geracao_acr_acl_2024
+last_update: 2024-11-21 18:58:00.357805
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  MODALIDADE_ENERGIA:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  GERACAO_TOTAL:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  GERACAO_ACR:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  GERACAO_ACL:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

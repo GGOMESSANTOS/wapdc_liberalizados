@@ -1,0 +1,31 @@
+name: sazonalizacao_contrato_ccearq
+description: Dados com os montantes sazonalizados de contrato CCEAR-Q.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.209891'
+source:
+- created: '2024-02-01T20:26:03.000864'
+  id: 0a8beeb5-4539-4f05-9e95-2887d12a8954
+  name: sazonalizacao_contrato_ccearq_2024
+last_update: 2024-11-21 18:58:00.209896
+periodice: Anual
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  MONTANTE_SAZONALIZADO:
+    type: numeric
+    description: Corresponde ao montante sazonalizado de CCEAR-Q por submercado de
+      entrega. (CQe,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

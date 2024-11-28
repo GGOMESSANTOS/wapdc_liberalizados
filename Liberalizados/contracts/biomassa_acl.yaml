@@ -1,0 +1,41 @@
+name: biomassa_acl
+description: Dados de geração e capacidade instalada de usinas a biomassa participantes
+  do ACL no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.222699'
+source:
+- created: '2023-12-05T03:14:36.501228'
+  id: b66853c9-5268-4862-8729-f0abe26ccb0f
+  name: biomassa_acl_2023
+- created: '2024-03-04T01:40:55.838734'
+  id: 2e6b51bf-a5ba-4666-9dd9-f4fc0f2740ab
+  name: biomassa_acl_2024
+last_update: 2024-11-21 18:58:00.222704
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_BIOMASSA:
+    type: numeric
+    description: Corresponde a Geração da parcela de usina "p", no período de comercialização
+      "j" de usinas a biomassa participantes do ACL. (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_BIOMASSA:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina "p",
+      no período de comercialização "j", de usinas a biomassa participantes do ACL.
+      (CAP_Tp,j) [MW]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_BIOMASSA:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina "p" de fonte a
+      biomassa participante do ACL. (GFp) [MW]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

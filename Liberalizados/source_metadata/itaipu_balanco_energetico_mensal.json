@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": null,
+        "creator_user_id": "b769d7d0-5632-47ee-a5fa-f18004e7e791",
+        "id": "6a9699c9-9ea5-41e6-b3d7-7f346058b14e",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": null,
+        "metadata_created": "2023-11-21T12:58:14.452846",
+        "metadata_modified": "2024-10-30T20:23:20.282423",
+        "name": "itaipu_balanco_energetico_mensal",
+        "notes": "Dados de balanço energético para a apuração de Itaipu no MCP.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "ITAIPU_BALANCO_ENERGETICO_MENSAL",
+        "type": "dataset",
+        "url": null,
+        "version": null,
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-21T13:04:13.612577",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores de balanço energético para a apuração de Itaipu no MCP.  \n \n **Campos contidos nesse conjunto de dados:** \n  \n * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.   \n * **TOTAL_GERACAO_PERFIL** : Corresponde a Geração Total do perfil de agente “a” no submercado “s” para o período de comercialização “j” (TGGa,s,j)   \n * **TOTAL_CONSUMO_GERACAO** : Corresponde ao Consumo de Geração Total do perfil de agente “a” no submercado “s” para o período de comercialização “j” (TGGCa,s,j)   \n * **CONSOLIDACAO_RESULTADO_MRE** : Corresponde a Consolidação do Resultado do MRE do perfil de agente “a” no submercado “s” para o período de comercialização “j” (MREa,s,j)   \n * **MONTANTE_MODULADO_CONTRATO_ITAIPU** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j” (Cqe,j) de ITAIPU   \n * **RATEIO_BALANCO_ENERGETICO_ITAIPU** : Corresponde ao Rateio do Balanço Energético de Itaipu para o perfil de agente “a”, no submercado “s”, no período de comercialização “j” (NET_ITa,s,j)",
+                "format": "CSV",
+                "hash": "",
+                "id": "186c97c1-798b-4864-8de0-10cce01d8c5d",
+                "last_modified": null,
+                "metadata_modified": "2024-04-02T23:10:26.399523",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "itaipu_balanco_energetico_mensal_2023",
+                "package_id": "6a9699c9-9ea5-41e6-b3d7-7f346058b14e",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/DR_KCBYqRCOFYxMhGZFOow/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T02:16:45.959099",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores de balanço energético para a apuração de Itaipu no MCP.    **Campos contidos nesse conjunto de dados:**    * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.    * **TOTAL_GERACAO_PERFIL** : Corresponde a Geração Total do perfil de agente “a” no submercado “s” para o período de comercialização “j” (TGGa,s,j)    * **TOTAL_CONSUMO_GERACAO** : Corresponde ao Consumo de Geração Total do perfil de agente “a” no submercado “s” para o período de comercialização “j” (TGGCa,s,j)    * **CONSOLIDACAO_RESULTADO_MRE** : Corresponde a Consolidação do Resultado do MRE do perfil de agente “a” no submercado “s” para o período de comercialização “j” (MREa,s,j)    * **MONTANTE_MODULADO_CONTRATO_ITAIPU** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j” (Cqe,j) de ITAIPU    * **RATEIO_BALANCO_ENERGETICO_ITAIPU** : Corresponde ao Rateio do Balanço Energético de Itaipu para o perfil de agente “a”, no submercado “s”, no período de comercialização “j” (NET_ITa,s,j)",
+                "format": "CSV",
+                "hash": "",
+                "id": "b93e2f94-6626-4efc-86c3-bdd98031f4b3",
+                "last_modified": "2024-10-30T17:23:20.241000",
+                "metadata_modified": "2024-10-30T20:23:20.286487",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "itaipu_balanco_energetico_mensal_2024",
+                "package_id": "6a9699c9-9ea5-41e6-b3d7-7f346058b14e",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/ccVspYr3Q0S3s_U9pwpuXg/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "itaipu",
+                "id": "1ed371a9-b088-4533-8ee1-1d537abf48a3",
+                "name": "itaipu",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

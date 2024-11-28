@@ -1,0 +1,70 @@
+name: penalidade_classe_mensal
+description: Dados de  penalidades pagas pelos agentes por classe comercialização
+  e no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.204500'
+source:
+- created: '2023-08-09T20:51:35.725408'
+  id: 817e2174-69ab-46c1-b068-e7843cb22b76
+  name: penalidade_classe_mensal_2023
+- created: '2024-03-04T01:24:34.553666'
+  id: 33b15cc6-39a3-4d63-937e-b8fd08d003c3
+  name: penalidade_classe_mensal_2024
+last_update: 2024-11-21 18:58:00.204507
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CLASSE_AGENTE:
+    type: text
+    description: 'Corresponde a classe de atividade no mercado de energia. Domínios
+      possíveis: Autoprodutor, Consumidor Especial, Consumidor Livre, Distribuidor,
+      Gerador, Comercializador, Exportador e Produtor Independente.'
+    label: '40'
+    business_rule: ''
+  TOTAL_PENALIDADE_INSUF_ENER:
+    type: numeric
+    description: "Corresponde ao Total de Penalidade por Insuficiência de Lastro de\
+      \ Energia do perfil de agente “a” no mês de apuração “m”. (TPILE_Efa,m) [R$]\r\
+      \n"
+    label: (10,2)
+    business_rule: ''
+  MONTANTE_FINANCEIRO_ENERGIA_FALTA_CMB:
+    type: numeric
+    description: Corresponde ao Montante Financeiro Efetivamente Pago pela Energia
+      não Gerada por Falta de Combustível do perfil de agente "a", no mês de apuração
+      "m", referente à penalidade apurada no mês “k”. (MFEP_FCa,m,k) [R$]
+    label: (10,2)
+    business_rule: ''
+  MONTANTE_FINANCEIRO_PENALIDADE_MED:
+    type: numeric
+    description: Corresponde ao Montante Financeiro Efetivamente Pago referente à
+      Penalidade de Medição do perfil de agente "a", no mês de apuração "m", referente
+      à penalidade apurada no mês “k”. (MFEP_PMEDa,m,k) [R$]
+    label: (10,2)
+    business_rule: ''
+  MONTANTE_FINANCEIRO_N_APORTE_GFIN:
+    type: numeric
+    description: Corresponde ao Montante Financeiro Efetivamente Pago pelo Não Aporte
+      das Garantias Financeira do perfil de agente "a", no mês de apuração "m", referente
+      à penalidade apurada no mês “k”. (MFEP_MGFINa,m,k) [R$]
+    label: (10,2)
+    business_rule: ''
+  MONTANTE_FINANCEIRO_MULTA_INAD_MCP:
+    type: numeric
+    description: Corresponde ao Montante Financeiro Efetivamente Pago referente à
+      multa por inadimplência no MCP do perfil de agente "a", no mês de apuração "m",
+      referente à penalidade apurada no mês “k”. (MFEP_INADa,m,k) [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_PENALIDADE_ABATE_ESS:
+    type: numeric
+    description: Corresponde ao Total de Demais Penalidades para Abatimento dos ESS
+      do perfil de agente "a", no mês de apuração "m". (TDP_ESSa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

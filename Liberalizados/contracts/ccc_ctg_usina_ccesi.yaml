@@ -1,0 +1,96 @@
+name: ccc_ctg_usina_ccesi
+description: Dados mensais de custo total de geração de usinas provenientes de leilão
+  do sistema isolado da CCC.
+owner: Gerência de Contas Setoriais - GCSE
+version:
+- '1': '2024-11-21T18:58:00.321746'
+source:
+- created: '2024-04-01T20:17:41.773276'
+  id: ccd6d4ca-f7fd-4d92-8530-b1d6deed9414
+  name: ccc_ctg_usina_ccesi_2023
+- created: '2024-04-01T21:01:28.209732'
+  id: 6b69d88e-a0ad-4437-87d8-86df0d9e8da0
+  name: ccc_ctg_usina_ccesi_2024
+last_update: 2024-11-21 18:58:00.321751
+periodice: Mensal
+fields:
+  COMPETENCIA:
+    type: numeric
+    description: Representa o ano (AAAA) e o mês (MM) de competência dos dados apurados.
+    label: AAAAMM
+    business_rule: ''
+  BENEFICIARIO:
+    type: text
+    description: "É o titular de concessão, autorização ou permissão de serviço público\
+      \ de distribuição de energia elétrica ou produtor independente de energia que,\
+      \ atuando nos Sistemas Isolados, utiliza-se da sistemática de reembolso dos\
+      \ custos de geração pela CCC - Conta de Consumo de Combustíveis.\r\n"
+    label: '20'
+    business_rule: ''
+  FORNECEDOR:
+    type: text
+    description: "É o produtor independente de energia proprietário do empreendimento\
+      \ de geração com vinculo contratual de fornecimento de energia elétrica, combustível\
+      \ ou prestação de serviço à um beneficiário.\r\n"
+    label: '30'
+    business_rule: ''
+  CEG:
+    type: text
+    description: "É o código de identificação do empreendimento de geração de energia\
+      \ elétrica.\r\n"
+    label: '21'
+    business_rule: ''
+  USINA:
+    type: text
+    description: "Corresponde ao nome da unidade geradora.\r\n"
+    label: '50'
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: "Corresponde à geração de energia registrada ou contratada da usina\
+      \ no mês de apuração. [MWh]\r\n"
+    label: (8,3)
+    business_rule: ''
+  RECEITA_VARIAVEL:
+    type: numeric
+    description: Corresponde ao custo variável da usina no mês de apuração. [R$]
+    label: (10,2)
+    business_rule: ''
+  RECEITA_FIXA:
+    type: numeric
+    description: "Corresponde à parcela da receita fixa mensal atualizada da usina\
+      \ no mês de apuração. [R$]\r\n"
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_PENALIDADE:
+    type: numeric
+    description: "Contempla os valores de ajustes e penalidades da usina no mês de\
+      \ apuração. [R$]\r\n"
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VENDA:
+    type: numeric
+    description: "Corresponde à receita de venda da usina no mês de apuração, composto\
+      \ pela Receita Variável, Receita Fixa Mensal e ajustes e penalidades. [R$]\r\
+      \n"
+    label: (10,2)
+    business_rule: ''
+  TRIBUTOS:
+    type: numeric
+    description: "Corresponde ao custo total de tributos da usina passível de reembolso\
+      \ no mês de apuração. [R$]\r\n"
+    label: (10,2)
+    business_rule: ''
+  CUSTO_LIQUIDO:
+    type: numeric
+    description: "Corresponde ao custo total líquido reembolsável da usina no mês\
+      \ de apuração. [R$]\r\n"
+    label: (10,2)
+    business_rule: ''
+  CUSTO_TOTAL:
+    type: numeric
+    description: "Corresponde ao custo total da usina passível de reembolso no mês\
+      \ de apuração. [R$]\r\n"
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

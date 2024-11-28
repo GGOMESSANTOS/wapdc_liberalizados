@@ -1,0 +1,44 @@
+name: fotovoltaica_leilao_acr
+description: Dados de de geração, capacidade instalada e garantia física de usinas
+  fotovoltaicas para os leilões de energia (ACR).
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.252200'
+source:
+- created: '2024-01-04T14:25:31.210827'
+  id: 8040e74d-7f9a-477c-b5d9-d6d3d59551a5
+  name: fotovoltaica_leilao_acr_2023
+- created: '2024-03-04T02:04:34.492307'
+  id: fcf53194-06e5-4d1d-93d9-1090534be325
+  name: fotovoltaica_leilao_acr_2024
+last_update: 2024-11-21 18:58:00.252206
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  GERACAO_DESTINADA_LEILAO_UFV:
+    type: numeric
+    description: Corresponde a geração destinada ao leilão de energia (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_TOTAL_UFV:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina "p",
+      no período de comercialização "j" (CAP_Tp,j) [MW]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_UFV:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina "p" destinada ao
+      leilão de energia (GFp) [MW]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

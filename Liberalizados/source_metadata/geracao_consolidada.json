@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "6037bf17-df28-4c93-9302-f0f575bbc529",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-06-22T19:26:52.409135",
+        "metadata_modified": "2024-10-30T20:17:20.242270",
+        "name": "geracao_consolidada",
+        "notes": "Dados de geração utilizados na contabilização do MCP - Mercado de Curto Prazo com foco nos parâmetros de geração para fins de custo de descolamento, reserva de potência operativa, segurança energética, constrained-on e unit commitmment.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "GERACAO_CONSOLIDADA",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-06-26T14:47:19.758429",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados dos montantes de geração de usinas cujo CVU está abaixo ou é igual ao PLD; geração de usinas cujo CVU está acima do PLD; geração inflexível; geração endereçada por segurança energética; geração por restrição de contrained-on; geração passível de custo de descolamento; geração para fins de reserva de potência operativa e geração por unit commitment.  \n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **GERACAO_CVU_MENOR_IGUAL_PLD** : Geração de usinas com CVU ≤ PLD (Gp,j) [MWmed] (1)  \n* **GERACAO_CVU_MAIOR_PLD** : Geração de usinas com CVU > PLD  (Gp,j) [MWmed] (1)  \n* **GERACAO_INFLEXIVEL** : Geração Inflexível  (G_INFp,j) [MWmed] (4)  \n* **GERACAO_SEGURANCA_ENERGETICA** : Geração por Segurança Energética   (G_SE p,j) [MWmed] (2,3,4)  \n* **GERACAO_CONSTRAINED_ON** : Geração por Restrição de Operação Constrained-On  (G_CONST_ON p,j) [MWmed] (2,3,4)  \n* **GERACAO_CUSTO_DESLOCAMENTO** : Geração Final passível de apuração de custo de descolamento CMO/PLD (G_CUSTO_DESC p,j) [MWmed]  \n* **GERACAO_RESERVA_POTENCIA** : Geração por Despacho para Manutenção da Reserva de Potência Operativa da Usina (G_RESPOP p,j) [MWmed]  \n* **GERACAO_UNIT_COMMITMENT** : Geração por Unit Commitment (G_UNIT p,j) [MWmed]  \n  \n(1) Corresponde a toda geração das usinas com CVU não nulo e sem inflexibilidade  \n(2) Corresponde a toda geração relacionada aos despachos por Segurança Energética e Restrição de Operação, independente da mesma ter ocasionado encargos.  \n(3) Excluí a inflexibilidade das usinas durante estes despachos\n(4) Valores apurados com o auxílio de infomações enviadas pelo ONS.",
+                "format": "CSV",
+                "hash": "",
+                "id": "51b5976b-7cd5-4e87-9cbf-d8f105b80c77",
+                "last_modified": "2023-08-30T15:20:58.669000",
+                "metadata_modified": "2023-10-04T20:49:17.945597",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "geracao_consolidada_2023",
+                "package_id": "6037bf17-df28-4c93-9302-f0f575bbc529",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/mWrC9OrGQ5-HyJRzPN7yLQ/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:19:31.588988",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados dos montantes de geração de usinas cujo CVU está abaixo ou é igual ao PLD; geração de usinas cujo CVU está acima do PLD; geração inflexível; geração endereçada por segurança energética; geração por restrição de contrained-on; geração passível de custo de descolamento; geração para fins de reserva de potência operativa e geração por unit commitment.  \n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **GERACAO_CVU_MENOR_IGUAL_PLD** : Geração de usinas com CVU ≤ PLD (Gp,j) [MWmed] (1)  \n* **GERACAO_CVU_MAIOR_PLD** : Geração de usinas com CVU > PLD  (Gp,j) [MWmed] (1)  \n* **GERACAO_INFLEXIVEL** : Geração Inflexível  (G_INFp,j) [MWmed] (4)  \n* **GERACAO_SEGURANCA_ENERGETICA** : Geração por Segurança Energética   (G_SE p,j) [MWmed] (2,3,4)  \n* **GERACAO_CONSTRAINED_ON** : Geração por Restrição de Operação Constrained-On  (G_CONST_ON p,j) [MWmed] (2,3,4)  \n* **GERACAO_CUSTO_DESLOCAMENTO** : Geração Final passível de apuração de custo de descolamento CMO/PLD (G_CUSTO_DESC p,j) [MWmed]  \n* **GERACAO_RESERVA_POTENCIA** : Geração por Despacho para Manutenção da Reserva de Potência Operativa da Usina (G_RESPOP p,j) [MWmed]  \n* **GERACAO_UNIT_COMMITMENT** : Geração por Unit Commitment (G_UNIT p,j) [MWmed]  \n  \n(1) Corresponde a toda geração das usinas com CVU não nulo e sem inflexibilidade  \n(2) Corresponde a toda geração relacionada aos despachos por Segurança Energética e Restrição de Operação, independente da mesma ter ocasionado encargos.  \n(3) Excluí a inflexibilidade das usinas durante estes despachos\n(4) Valores apurados com o auxílio de infomações enviadas pelo ONS.",
+                "format": "CSV",
+                "hash": "",
+                "id": "77cfee8f-a917-4679-b3f3-7506db4db8b2",
+                "last_modified": "2024-10-30T17:17:20.197000",
+                "metadata_modified": "2024-10-30T20:17:20.246266",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "geracao_consolidada_2024",
+                "package_id": "6037bf17-df28-4c93-9302-f0f575bbc529",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/abPydyhQTfiHR2uzmeAqcg/content",
+                "url_type": null
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "geração",
+                "id": "3f4552c2-d88f-48d6-bf46-c9c0de0071f3",
+                "name": "geração",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

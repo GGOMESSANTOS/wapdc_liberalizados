@@ -1,0 +1,34 @@
+name: biomassa_proinfa
+description: Dados mensais de geração e capacidade instalada de usinas a biomassa
+  participantes do PROINFA.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.228954'
+source:
+- created: '2023-11-21T13:04:26.812737'
+  id: 4e620ed6-d8fa-453d-8041-c7146ea39876
+  name: biomassa_proinfa_2023
+- created: '2024-03-04T01:19:33.158544'
+  id: 146ed583-0d73-4dfd-8f09-6640e03b93ae
+  name: biomassa_proinfa_2024
+last_update: 2024-11-21 18:58:00.228960
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_BIOMASSA:
+    type: numeric
+    description: Corresponde a Geração Final da parcela de usina biomassa “p”, por
+      período de comercialização “j” (Gp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_BIOMASSA:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina biomassa
+      “p” (CAP_Tp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

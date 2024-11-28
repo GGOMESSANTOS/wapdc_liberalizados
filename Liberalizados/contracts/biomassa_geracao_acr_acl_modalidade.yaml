@@ -1,0 +1,47 @@
+name: biomassa_geracao_acr_acl_modalidade
+description: Dados de geração total de usinas a biomassa, separados por modalidade
+  de geração e por ambiente de comercialização - ACR e ACL.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.363199'
+source:
+- created: '2024-02-02T19:59:04.426240'
+  id: e2354e42-eaef-42da-9c8f-b93d46aa3135
+  name: biomassa_geracao_acr_acl_modalidade_2023
+- created: '2024-03-04T01:24:38.541333'
+  id: cdadc3b9-78cc-4b64-83b5-5c864d8ed4a3
+  name: biomassa_geracao_acr_acl_modalidade_2024
+last_update: 2024-11-21 18:58:00.363205
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  MODALIDADE_ENERGIA:
+    type: text
+    description: Corresponde a modalidade de energia negociada e gerada pelo empreendimento.
+    label: '40'
+    business_rule: ''
+  GERACAO_TOTAL:
+    type: numeric
+    description: Corresponde a Geração Total de energia de uma parcela de usina a
+      biomassa “p”, ajustada por período de comercialização “j” (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_ACR:
+    type: numeric
+    description: Corresponde a Geração Total de energia de uma parcela de usina a
+      biomassa “p”, ajustada por período de comercialização “j” destinada ao Ambiente
+      de Comercialização Regulado (ACR). (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_ACL:
+    type: numeric
+    description: Corresponde a Geração Total de energia de uma parcela de usina a
+      biomassa “p”, ajustada por período de comercialização “j” destinada ao Ambiente
+      de Comercialização Livre (ACL). (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

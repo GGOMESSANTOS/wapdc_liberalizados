@@ -1,0 +1,57 @@
+name: garantia_fisica_sazo_submercado
+description: Dados com a quantidade mensal de garantia física e o montante proporcional
+  as unidades geradoras em operação comercial de usinas participantes do MRE e do
+  Regime de Cotas de Garantia Física com/sem motorização, por submercado "s", no mês
+  de referência "m".
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.292894'
+source:
+- created: '2024-01-04T14:22:39.209643'
+  id: 54586466-dd89-45a8-8851-7f61b9a1bb14
+  name: garantia_fisica_sazo_submercado_2023
+- created: '2024-03-04T01:22:29.786027'
+  id: 9d17ffb1-d59a-488a-9345-2f01063165b6
+  name: garantia_fisica_sazo_submercado_2024
+last_update: 2024-11-21 18:58:00.292901
+periodice: Mensal
+fields:
+  DATA_ATUALIZACAO:
+    type: text
+    description: Refere-se a data de consulta para divulgação das informações.
+    label: AAAAMMDD
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  GF_SAZO_USINAS_MRE_N_MOTORIZADA:
+    type: numeric
+    description: Corresponde a Quantidade Mensal de Garantia Física definida da parcela
+      de usina "p", no mês de referência "m", não motorizadas (QM_GFp,m) [GWh]
+    label: (10,12)
+    business_rule: ''
+  GF_SAZO_USINAS_MRE_MOTORIZADA:
+    type: numeric
+    description: Corresponde a Garantia Física Horária proporcional às Unidades Geradoras
+      em operação comercial da parcela de usina "p" participantes do MRE, no período
+      de comercialização "j", motorizadas (MGFIS_Hp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GF_SAZO_USINAS_COTAS_MOTORIZADA:
+    type: numeric
+    description: Corresponde a Garantia Física Horária proporcional às Unidades Geradoras
+      em operação comercial da parcela de usina "p" participantes do Regime de Cotas
+      de Garantia Física, no período de comercialização "j", motorizadas (MGFIS_Hp,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,54 @@
+name: sumario_be_horario_submercado
+description: Dados do balanço energético e resultado do MCP por submercado e por período
+  de comercialização.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.330815'
+source:
+- created: '2023-06-26T14:28:19.897460'
+  id: dcf50e7d-121e-4c59-a4c0-15250359a204
+  name: sumario_be_horario_submercado_2023
+- created: '2024-03-04T01:21:21.183804'
+  id: 36b58883-ed22-4c9b-9253-4cfe106a9781
+  name: sumario_be_horario_submercado_2024
+last_update: 2024-11-21 18:58:00.330820
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      foram utilizados.
+    label: (4)
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  BE_POSITIVO:
+    type: numeric
+    description: Corresponde ao Balanço Energético positivo do perfil de agente “a”
+      no submercado “s” para o período de comercialização “j”. (NETa,s,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  BE_NEGATIVO:
+    type: numeric
+    description: Corresponde ao Balanço Energético negativo do perfil de agente “a”
+      no submercado “s” para o período de comercialização “j”. (NETa,s,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_MCP:
+    type: numeric
+    description: Corresponde ao Resultado no Mercado de Curto Prazo do perfil de agente
+      “a”, no submercado “s”, por período de comercialização “j”. (MCPa,s,j) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

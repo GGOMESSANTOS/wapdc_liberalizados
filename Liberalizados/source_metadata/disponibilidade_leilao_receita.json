@@ -1,0 +1,104 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "b881b710-e6a0-4aed-9162-d254420c1096",
+        "id": "78e1a256-99d0-4028-a62b-529f8ccf6a5b",
+        "isopen": false,
+        "license_id": "",
+        "license_title": "",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2024-05-29T21:44:01.326378",
+        "metadata_modified": "2024-06-05T00:40:12.936833",
+        "name": "disponibilidade_leilao_receita",
+        "notes": "Dados com os valores de receita de venda pagos aos geradores participantes dos leilões de energia por disponibilidade.",
+        "num_resources": 1,
+        "num_tags": 3,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://operacao.ccee.org.br/cdn/icon/icon_pda-infomercado.svg",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "DISPONIBILIDADE_LEILAO_RECEITA",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+23du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-05-29T21:44:32.467257",
+                "datastore_active": true,
+                "description": "**Objetivo:** Dados com os valores de receita de venda pagos aos geradores participantes dos leilões de energia por disponibilidade.\r\n\r\n**Campos contidos nesse conjunto de dados:**\r\n\r\n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \r\n* **CEG** : Corresponde ao CEG do Empreendimento  \r\n* **COD_PARCELA_USINA** : Corresponde ao código numérico inteiro utilizado pela CCEE para identificar a parcela de usina em seus sistemas.  \r\n* **SIGLA_PARCELA_USINA** : Corresponde a sigla utilizada pela CCEE para identificar a parcela de usina em seus sistemas.  \r\n* **LEILAO** : Corresponde ao leilão de energia negociado  \r\n* **PRODUTO** : Corresponde ao produto negociado entre as contrapartes em um leilão de energia.  \r\n* **SIGLA_LEILAO** : Corresponde a sigla do leilão de energia em que a usina participou  \r\n* **FONTE_ENERGIA_PRIMARIA** : Corresponde a fonte de energia primária da usina geradora.  \r\n* **DATA_LEILAO** : Corresponde a data em que o leilão de energia foi realizado.  \r\n* **RECEITA_FIXA** : Corresponde a receita fixa apurada para o empreendimento de geração [R$]  \r\n* **RECEITA_VARIAVEL** : Corresponde a receita variável apurada para o empreendimento de geração [R$]  \r\n* **RECEITA_FIXA_ATRASO** : Corresponde a receita fixa em atraso apurada para o empreendimento de geração [R$]  \r\n* **RESSARCIMENTO** : Corresponde ao ressarcimento a ser pago pelo empreendimento de geração [R$]  \r\n* **AJUSTE** : Corresponde ao ajuste aplicado na receita de venda [R$]  \r\n* **RECEITA_VENDA** : Corresponde a receita de venda total paga ao empreendimento de geração [R$]  ",
+                "format": "CSV",
+                "hash": "",
+                "id": "eb089fb2-f98f-4678-bcff-9b8ca90fe9ca",
+                "last_modified": null,
+                "metadata_modified": "2024-06-05T00:33:18.224851",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "disponibilidade_leilao_receita_2024",
+                "package_id": "78e1a256-99d0-4028-a62b-529f8ccf6a5b",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/FEEu4CiURzG0JAfQj3lGTQ/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "agente",
+                "id": "269aa4c4-3260-48b7-b270-184ff27f1eac",
+                "name": "agente",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados individuais",
+                "id": "d217946a-fb75-4e55-8768-c7f722710554",
+                "name": "dados individuais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "leilão",
+                "id": "1cb64cca-3864-494b-a13f-5ed8abdc2bf5",
+                "name": "leilão",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

@@ -1,0 +1,45 @@
+name: geracao_fonte_despacho
+description: Dados de geração utilizados na contabilização do MCP - Mercado de Curto
+  Prazo, com foco nos parâmetros de geração detalhados com o despacho emitido pelo
+  ONS.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.379585'
+source:
+- created: '2023-06-22T13:58:07.554553'
+  id: 1854a0b2-0119-4721-aab3-fdb4f3c0f096
+  name: geracao_fonte_despacho_2023
+- created: '2024-03-04T01:21:09.158504'
+  id: acb6e87f-9d1e-4498-85d2-f6015bf330aa
+  name: geracao_fonte_despacho_2024
+last_update: 2024-11-21 18:58:00.379590
+periodice: Mensal
+fields:
+  FONTE_PRIMARIA:
+    type: text
+    description: Fonte primária correspondente ao ativo de geração representado na
+      análise.
+    label: '40'
+    business_rule: ''
+  TIPO_DESPACHO:
+    type: text
+    description: Tipo de despacho operativo atribuído pelo ONS. As modalidades possíveis
+      correspondem a lista abaixo:I - Programada e DespachadaII - Programada e Não
+      DespachadaIII - Não Programada e Não DespachadaIA - Programada e Despachada
+      com CVUIIA - Programada e Não Despachada com CVUIB - Programada e Despachada
+      sem CVUIIB - Programada e Não Despachada sem CVUIIC - Programada e Não Despachada
+      em Conjunto
+    label: '40'
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: Geração no centro de gravidade por fonte e por tipo de despacho do
+      ONS
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

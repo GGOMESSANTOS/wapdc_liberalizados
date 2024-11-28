@@ -1,0 +1,47 @@
+name: sumario_mensal_compra_venda_submercado
+description: Dados do balanço energético e resultado do MCP por submercado e por mês
+  de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.320394'
+source:
+- created: '2023-06-26T14:32:05.585086'
+  id: 20f4c465-4433-45a0-bc5f-3baa2151e3f0
+  name: sumario_mensal_compra_venda_submercado_2023
+- created: '2024-03-04T01:20:54.383564'
+  id: ecbbd534-f849-4460-bb22-25db1b086016
+  name: sumario_mensal_compra_venda_submercado_2024
+last_update: 2024-11-21 18:58:00.320399
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  BE_POSITIVO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  BE_NEGATIVO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  RESULTADO_MCP_VENDA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  RESULTADO_MCP_COMPRA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

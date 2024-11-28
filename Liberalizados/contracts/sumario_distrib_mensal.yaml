@@ -1,0 +1,206 @@
+name: sumario_distrib_mensal
+description: Dados de  pagamentos, recebimentos, exposições, alívios, efeitos de contratação
+  e ajustes, tanto de recontabilizações quanto de MCSD, apurados no MCP para os agentes
+  da classe de distribuição no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.216029'
+source:
+- created: '2023-09-06T20:19:19.852683'
+  id: e0a4ba6b-4352-4f8a-8dff-d73508254888
+  name: sumario_distrib_mensal_2023
+- created: '2024-03-04T01:21:46.952271'
+  id: 84d372cf-1713-443b-8089-61d1ea44c9e0
+  name: sumario_distrib_mensal_2024
+last_update: 2024-11-21 18:58:00.216034
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  RESULTADO_MCP_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo
+      do perfil de agente “a”, no mês de apuração “m” para fins de recebimento das
+      distribuidoras (TM_MCPa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_MCP_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo
+      do perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras
+      (TM_MCPa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  ENCARGOS_RECEBIMENTO_DIST:
+    type: numeric
+    description: "Corresponde ao Total de Encargos Consolidado, do perfil de agente\
+      \ “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (ENCARGOSa,m)\
+      \ [R$]\r\n"
+    label: (10,12)
+    business_rule: ''
+  ENCARGOS_PAGAMENTO_DIST:
+    type: numeric
+    description: Corresponde ao Total de Encargos Consolidado, do perfil de agente
+      “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (ENCARGOSa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  EXPOSICAO_FINANCEIRA_RECEBIMENTO:
+    type: numeric
+    description: Corresponde a Exposição Financeira Positiva de CCEAR, CCGF e CCEN
+      do perfil de agente “a” no Mês de Apuração “m” (EF_CCEAR_Pa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EXPOSICAO_FINANCEIRA_PAGAMENTO:
+    type: numeric
+    description: "\"Corresponde ao somatório entre a Exposição Financeira Negativa\
+      \ de CCEAR, CCGF e CCEN do perfil de agente “a” no\r\nMês de Apuração “m” e\
+      \ a Total de Penalidade para Atendimento às Exposições Negativas de CCEAR, CCGF\
+      \ e CCEN no mês de apuração “m” (EF_CCEAR_Na,m + TPA_EF_CCEARa,m) [R$]\""
+    label: (10,12)
+    business_rule: ''
+  ALIVIO_RETROATIVO_RECEBIMENTO:
+    type: numeric
+    description: "\"Corresponde ao Total de Ajustes referente ao Alívio Retroativo\
+      \ do perfil de agente “a”, no mês de apuração\r\n“m” para fins de recebimento\
+      \ das dsitribuidoras (TAJ_Ara,m) [R$]\""
+    label: (10,12)
+    business_rule: ''
+  ALIVIO_RETROATIVO_PAGAMENTO:
+    type: numeric
+    description: "\"Corresponde ao Total de Ajustes referente ao Alívio Retroativo\
+      \ do perfil de agente “a”, no mês de apuração\r\n“m” para fins de pagamento\
+      \ das dsitribuidoras (TAJ_Ara,m) [R$]\""
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_DISP_RECEBIMENTO:
+    type: numeric
+    description: "\"Corresponde ao Efeito da Contratação por Disponibilidade, para\
+      \ cada perfil de agente “a”, no mês de apuração\r\n“m” para fins de recebimento\
+      \ das distribuidoras (ECDa,m) [R$]\""
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_DISP_PAGAMENTO:
+    type: numeric
+    description: "\"Corresponde ao Efeito da Contratação por Disponibilidade, para\
+      \ cada perfil de agente “a”, no mês de apuração\r\n“m” para fins de pagamento\
+      \ das distribuidoras (ECDa,m) [R$]\""
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_CCGF_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no
+      mês de apuração “m” para fins de recebimento das distribuidoras (ECCGFa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_CCGF_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Efeito do CCGF, para cada perfil de agente “a”, no
+      mês de apuração “m” para fins de pagamento das distribuidoras (ECCGFa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_CCEN_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no
+      mês de apuração “m” para fins de recebimento das distribuidoras (ECCENa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_CCEN_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Efeito do CCEN, para cada perfil de agente “a”, no
+      mês de apuração “m” para fins de pagamento das distribuidoras (ECCENa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  AJUSTE_RECONTAB_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de
+      agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras
+      (AJU_RECONa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  AJUSTE_RECONTAB_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Ajuste Decorrente de Recontabilizações do perfil de
+      agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras
+      (AJU_RECONa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  AJUSTE_MCSD_XP_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente
+      “a”, no mês de apuração “m” para fins de recebimento das distribuidoras (MCSD_Xpa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  AJUSTE_MCSD_XP_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Ajuste Decorrente do MCSD Ex-Post do perfil do agente
+      “a”, no mês de apuração “m” para fins de pagamento das distribuidoras (MCSD_Xpa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_EXCEDENTE_ER_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Resultado Referente ao Excedente Financeiro da Energia
+      de Reserva por cada perfil de agente “a”, no mês de apuração “m” para fins de
+      recebimento das distribuidoras (RES_EXCD_Era,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_QTD_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação por Quantidade, para cada perfil
+      de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras
+      (ECQAa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_ITAIPU_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação de Itaipu, para cada perfil
+      de agente “a”, no mês de apuração “m” para fins de recebimento das distribuidoras
+      (EC_ITa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_ITAIPU_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação de Itaipu, para cada perfil
+      de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras
+      (EC_ITa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CUSTOS_DESC:
+    type: numeric
+    description: Corresponde ao Efeito total dos custos devido ao descolamento entre
+      PLD e CMO, para cada perfil de agente “a”, no mês de apuração “m” (E_DESCa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_RRH_RECEBIMENTO:
+    type: numeric
+    description: "Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada\
+      \ perfil de agente “a”, no mês de apuração “m” para fins de recebimento das\
+      \ distribuidoras (ERRHa,m) [R$]\r\n"
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_RRH_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Efeito do Repasse do Risco Hidrológico, para cada
+      perfil de agente “a”, no mês de apuração “m” para fins de pagamento das distribuidoras
+      (ERRHa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_FINAL_RECEBIMENTO:
+    type: numeric
+    description: Corresponde ao Resultado Final do perfil de agente “a”, no mês de
+      apuração “m” para fins de recebimento das distribuidoras (RESULTADOa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_FINAL_PAGAMENTO:
+    type: numeric
+    description: Corresponde ao Resultado Final do perfil de agente “a”, no mês de
+      apuração “m” para fins de pagamento das distribuidoras (RESULTADOa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

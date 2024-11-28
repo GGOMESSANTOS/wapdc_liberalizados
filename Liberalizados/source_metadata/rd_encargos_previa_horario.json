@@ -1,0 +1,98 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "Gerência de Informações ao Mercado - GAIM",
+        "author_email": null,
+        "creator_user_id": "0704eba2-c489-4cbd-b791-d29f82ebe231",
+        "id": "993c8d36-100f-481c-aa88-8ee1d44961d5",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "Gerência de Informações ao Mercado - GAIM",
+        "maintainer_email": null,
+        "metadata_created": "2024-08-01T20:55:04.753966",
+        "metadata_modified": "2024-11-18T17:38:12.974988",
+        "name": "rd_encargos_previa_horario",
+        "notes": "Objetivo: Monitorar encargo associado à RD para repasse em forma de ESS para os consumidores. Dados prévios, discretizados por hora.",
+        "num_resources": 1,
+        "num_tags": 2,
+        "organization": {
+            "id": "508bae40-912a-459d-b5f0-aaf041309425",
+            "name": "resposta_da_demanda",
+            "title": "Resposta da Demanda",
+            "type": "organization",
+            "description": "A Resposta da Demanda (RD) é um mecanismo que possibilita a redução ou deslocamento voluntários da demanda de energia elétrica por grandes consumidores, que estão no mercado livre de energia. Instituída a partir de outubro de 2022 pela Resolução Normativa ANEEL 1.040/22, a iniciativa se tornou um programa estrutural e compõe de modo definitivo as opções do Operador Nacional do Sistema Elétrico (ONS) para gestão dos recursos e operação do Sistema Interligado Nacional (SIN).\n\nPodem participar da oferta, desde que estejam adimplentes junto à CCEE, os consumidores livres, os consumidores parcialmente livres, os consumidores com contratos baseado no art. 5º da Lei 13.182/15, os consumidores modelados sob agentes varejistas e agregadores, que são agentes que reúnem e centralizam as cargas dos consumidores do mercado livre.  \nPara o agente que quiser participar do mecanismo como agregador será necessário o cadastramento na CCEE, assim como suas cargas agregadas devem dar anuência, conforme o caso, nos termos do Procedimento de Comercialização Provisório.\nA Resposta da Demanda possui uma referência para comparação da redução, denominada linha base, que é calculada e publicada pela CCEE mensalmente. Já as ofertas de redução serão realizadas para o ONS conforme Rotina Operacional Provisória. \n\nA Câmara de Comercialização é responsável por contabilizar mensalmente o mecanismo. ",
+            "image_url": "",
+            "created": "2024-06-03T17:08:44.480935",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "508bae40-912a-459d-b5f0-aaf041309425",
+        "private": false,
+        "state": "active",
+        "title": "RD_ENCARGOS_PREVIA_HORARIO",
+        "type": "dataset",
+        "url": null,
+        "version": null,
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+12du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-08-01T20:57:03.369385",
+                "datastore_active": true,
+                "description": "**Objetivo**: Monitorar encargo associado à RD para repasse em forma de ESS para os consumidores. Dados prévios, discretizados por hora.\n\n**Campos contidos no conjunto de dados:**\n\n* **MES_REFERENCIA**: Representa o ano (AAAA) e o mês (MM) de competência dos dados apurados.  \n* **SUBMERCADO**: Representa os quatro (4) submercados de atuação no SIN - Sistema Interligado  Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste (SE).  \n* **DATA**: Dia no qual foi apurado o encargo.  \n* **PERIODO_COMERCIALIZACAO**: Corresponde ao período de comercialização, equivalente a 1 hora  \n* **VALOR_ENCARGO_RD**: Corresponde ao Valor do encargo associado à redução de Resposta da Demanda para repasse em forma de encargos de serviços do sistema para os consumidores no submercado “s”, por período de comercialização “j” (VE_RD s,j) [R$]  ",
+                "format": "CSV",
+                "hash": "",
+                "id": "1dffca91-1142-450a-9f37-2adee5f95daa",
+                "last_modified": "2024-11-18T14:38:12.858000",
+                "metadata_modified": "2024-11-18T17:38:12.984830",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "rd_encargos_previa_horario_2024",
+                "package_id": "993c8d36-100f-481c-aa88-8ee1d44961d5",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/-T2mU30OQs2NFZJXQ9oiRw/content",
+                "url_type": null
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "encargos",
+                "id": "6d3ab074-8ac7-424d-82b7-5805c8266091",
+                "name": "encargos",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "resposta da demanda",
+                "id": "5630c5de-d42f-4014-a46c-89afe4c7c2ba",
+                "name": "resposta da demanda",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

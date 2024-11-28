@@ -1,0 +1,56 @@
+name: rd_atend_prod_previo_mensal
+description: 'Objetivo: Detalhar os sinalizadores utilizados pela Regra de Comercialização
+  de Resposta da Demanda que demonstram eventuais ultrapassagens na curva de carga
+  do mês de referência realizadas pelos participantes, podendo resultar em cancelamento
+  de ofertas. Dados prévios, consolidados por mês.'
+owner: Gerência de Informações ao Mercado - GAIM
+version:
+- '1': '2024-11-21T18:58:00.287728'
+source:
+- created: '2024-08-01T20:58:40.846363'
+  id: cbdf6a07-b965-439c-b4ae-9d0719c6c3fc
+  name: rd_atend_prod_previo_mensal_2024
+last_update: 2024-11-21 18:58:00.287733
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CODIGO_AGENTE:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  AGENTE:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  CNPJ_AGENTE:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CATEGORIA:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  CLASSE:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  SINALIZADOR_CANCELAMENTO_OFERTA_RD:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  SINALIZADOR_NAO_ATENDIMENTO_PRODUTO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,39 @@
+name: sumario_mensal_liquidacao
+description: Dados de consolidação da liquidação financeira do MCP.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.317751'
+source:
+- created: '2023-09-06T20:09:32.868009'
+  id: 188136ed-3274-41f1-92bf-de204220b7dd
+  name: sumario_mensal_liquidacao_2023
+- created: '2024-03-13T01:17:06.827094'
+  id: 15473ca8-940c-493d-a264-1fc7f48258fa
+  name: sumario_mensal_liquidacao_2024
+last_update: 2024-11-21 18:58:00.317757
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados
+    label: AAAAMM
+    business_rule: ''
+  VALOR_TOTAL_LIQ_PRE:
+    type: numeric
+    description: Corresponde ao Valor Total a ser Liquidado, do agente “α”, no mês
+      de apuração “m” (V_TOT_LIQUIa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_TOTAL_LIQ_POS:
+    type: numeric
+    description: Corresponde ao Valor Total Liquidado, do agente “α”, no mês de apuração
+      “m” (V_TOT_LIQUIa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_INAD:
+    type: numeric
+    description: Corresponde ao valor da inadimplência na Liquidação Financeira do
+      MCP, do agente “α”, no mês de apuração “m” (V_INADa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

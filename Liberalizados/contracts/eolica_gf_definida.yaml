@@ -1,0 +1,42 @@
+name: eolica_gf_definida
+description: Dados mensais consolidados para usinas de fonte eólica com garantia física
+  definida.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.311249'
+source:
+- created: '2023-11-21T13:04:21.795353'
+  id: d7325d13-6924-4c05-86d9-0e8dd621b64c
+  name: eolica_gf_definida_2023
+- created: '2024-03-04T01:42:28.901242'
+  id: 82a9ace0-6142-4e95-a3e8-1395b397e10a
+  name: eolica_gf_definida_2024
+last_update: 2024-11-21 18:58:00.311254
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  GERACAO_EOLICA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CAPACIDADE_INSTALADA_EOLICA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  GARANTIA_FISICA_EOLICA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  QUANTIDADE_UG_OP:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,25 @@
+name: sazonalizacao_ccgf
+description: Dados com os montantes sazonalizados de CCGF.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.214883'
+source:
+- created: '2024-02-01T20:28:15.421787'
+  id: 77ededfb-5b18-4c95-8377-bf6ba0b75e1d
+  name: sazonalizacao_ccgf_2024
+last_update: 2024-11-21 18:58:00.214889
+periodice: Anual
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: "Representa o mês e o ano de referência na qual os dados foram utilizados.\r\
+      \n"
+    label: AAAAMM
+    business_rule: ''
+  QTD_SAZONALIZADA_CONTRATO:
+    type: numeric
+    description: "Corresponde à quantidade sazonalizada dos contratos de cotas de\
+      \ garantia física CCGF. (QMe,m) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

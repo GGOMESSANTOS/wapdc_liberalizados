@@ -1,0 +1,127 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": null,
+        "creator_user_id": "b769d7d0-5632-47ee-a5fa-f18004e7e791",
+        "id": "d6d20457-4259-42e6-9acc-87b6bd0ded7e",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": null,
+        "metadata_created": "2023-11-21T12:58:08.137291",
+        "metadata_modified": "2024-10-30T20:21:46.090027",
+        "name": "contrato_montante_submercado_entrega_ccearq",
+        "notes": "Dados com os montantes modulados do contratos do tipo CCEAR-Q utilizados na contabilização do MCP - Mercado de Curto Prazo divididos por submercado e consolidados no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 3,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "CONTRATO_MONTANTE_SUBMERCADO_ENTREGA_CCEARQ",
+        "type": "dataset",
+        "url": null,
+        "version": null,
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-11-21T13:04:05.483763",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados de montantes modulados por submercado de entrega do CCEAR-Q. Os dados estão consolidados por mês de referência e divididos por submercado.  \n \n **Campos contidos nesse conjunto de dados:** \n  \n * **DATA_ATUALIZACAO** : Se refere a data de consulta para divulgação das informações.   \n * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.   \n * **SUBMERCADO** : Representa os quatro (4) submercados de atuação no SIN - Sistema Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste (SE).   \n * **MONTANTE_MODULADO_CONTRATO_CCEARQ** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j” de CCEAR-Q (CQe,j) [MWmed]",
+                "format": "CSV",
+                "hash": "",
+                "id": "b2e91b1b-917f-43b8-af89-a3c0f4f5552f",
+                "last_modified": null,
+                "metadata_modified": "2024-04-02T23:10:50.535482",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "contrato_montante_submercado_entrega_ccearq_2023",
+                "package_id": "d6d20457-4259-42e6-9acc-87b6bd0ded7e",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/o3P1zdqgRMGgbqrIUlCv3Q/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:23:18.053396",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os dados de montantes modulados por submercado de entrega do CCEAR-Q. Os dados estão consolidados por mês de referência e divididos por submercado.    **Campos contidos nesse conjunto de dados:**    * **DATA_ATUALIZACAO** : Se refere a data de consulta para divulgação das informações.    * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.    * **SUBMERCADO** : Representa os quatro (4) submercados de atuação no SIN - Sistema Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste (SE).    * **MONTANTE_MODULADO_CONTRATO_CCEARQ** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j” de CCEAR-Q (CQe,j) [MWmed]",
+                "format": "CSV",
+                "hash": "",
+                "id": "ba6b3d1a-9ade-4979-878f-179f4e95dd53",
+                "last_modified": "2024-10-30T17:21:32.902000",
+                "metadata_modified": "2024-10-30T20:21:46.095396",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "contrato_montante_submercado_entrega_ccearq_2024",
+                "package_id": "d6d20457-4259-42e6-9acc-87b6bd0ded7e",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/ocYgGsZNSJyzKVoNvrIOPg/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "contrato",
+                "id": "25d9deae-c6b3-4218-a36f-944f4ba12d2e",
+                "name": "contrato",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "submercado",
+                "id": "50db7f7f-0bf6-4cc4-a097-71902882e375",
+                "name": "submercado",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

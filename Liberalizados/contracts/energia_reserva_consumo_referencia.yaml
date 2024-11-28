@@ -1,0 +1,36 @@
+name: energia_reserva_consumo_referencia
+description: Dados de consumo de referência para fins de pagamento do Encargo de Energia
+  de Reserva.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.218793'
+source:
+- created: '2024-01-04T14:23:38.104729'
+  id: 20fa1fba-2891-42b0-8d52-3b76bf6f914f
+  name: energia_reserva_consumo_referencia_2023
+- created: '2024-03-04T01:22:30.340381'
+  id: 9dc1f192-9e16-4f1c-b56a-97c50e210ca1
+  name: energia_reserva_consumo_referencia_2024
+last_update: 2024-11-21 18:58:00.218799
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  TRC_SEG_ENER_SUC:
+    type: numeric
+    description: Corresponde ao consumo de referência para Pagamento de Encargo de
+      Energia de Reserva do perfil de agente "a", no mês de referência "m", no intervalo
+      de meses compreendidos nos 12 meses anteriores ao mês de apuração de Energia
+      de Reserva, a partir de m-2 [MWmed]
+    label: (10,12)
+    business_rule: ''
+  TRC_SEG_ENER:
+    type: numeric
+    description: Corresponde ao consumo de referência para Pagamento de Encargo de
+      Energia de Reserva do perfil de agente "a", no mês de referência "m" [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

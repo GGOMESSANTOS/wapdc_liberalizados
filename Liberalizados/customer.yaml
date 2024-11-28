@@ -1,0 +1,91 @@
+name: backoffice_xlsx_pagamentos
+  description: Table description
+  owner: product-team@neoenergia.com
+  version: 1
+  source: https://servicos.ccee.org.br/ws/v2/AtivoMedicaoBSv2
+  sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx
+  periodice: daily
+fields:
+  competencia:
+    type: datetime
+    name_in_source: mes_de_referencia 
+    name_in_sync: competencia
+    description: 
+    null: true
+  tipo_ordem:
+    type: string
+    name_in_source: tipo_faturamento 
+    name_in_sync: tipo_ordem
+    description:
+    null: true
+    business_rule: "Nesse campo há conversão de valores conforme o de para abaixo: \n De: 'Comercialização' Para: 'Energia' \n De: 'Bilateral' Para: 'Energia', \n De: 'Encargos' Para: 'Encargos', \n De: 'Prestação de serviços' Para: 'Serviço' \n De: 'Serviço' Para: 'Serviço'"
+  nome_contrato:
+    type: string
+    name_in_source: contrato 
+    name_in_sync: nome_contrato
+    description:
+    null: true
+    business_rule: "É feito tratativa a partir do nome do contrato para identificar o código do contrato. Nessa tratativa é retirado o nome de REVENDA - RATEIO, RECOMPRA - RATEIO , RATEIO, REVENDA OU RECOMPRA no nome de contrato e mantido apenas o código dele. "
+  contraparte_apelido:
+    type: string
+    name_in_source: destinatario 
+    name_in_sync: contraparte_apelido
+    description:
+    null: true
+    business_rule: 
+  contraparte_uf:
+    type: string
+    name_in_source: estado_comprador 
+    name_in_sync: contraparte_uf
+    description:
+    null: true
+    business_rule:
+  icms_aliquota:
+    type: string
+    name_in_source: aliquota_icms 
+    name_in_sync: icms_aliquota
+    description:
+    null: true
+    business_rule:
+  data_emissao_prevista:
+    type: string
+    name_in_source: data_apresentacao_ideal 
+    name_in_sync: data_emissao_prevista
+    description:
+    null: true
+    business_rule:
+  data_vencimento_ordem:
+    type: string
+    name_in_source: vencimento_ideal  
+    name_in_sync: data_vencimento_ordem
+    description:
+    null: true
+    business_rule:
+  data_parcela_1:
+    type: string
+    name_in_source: vencimento  
+    name_in_sync: data_parcela_1
+    description:
+    null: true
+    business_rule:
+  quantidade_atualizada:
+    type: string
+    name_in_source: quantidade_referencia  
+    name_in_sync: quantidade_atualizada
+    description:
+    null: true
+    business_rule:
+  quantidade_atualizada:
+    type: string
+    name_in_source: quantidade_referencia  
+    name_in_sync: quantidade_atualizada
+    description:
+    null: true
+    business_rule:
+      data_vencimento_ordem:
+        type: string
+        name_in_source: vencimento_ideal  
+        name_in_sync: data_vencimento_ordem
+        description:
+        null: true
+        business_rule:

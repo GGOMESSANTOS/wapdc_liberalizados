@@ -1,0 +1,82 @@
+name: geracao_fonte_primaria
+description: Dados de geração utilizados na contabilização do MCP - Mercado de Curto
+  Prazo, com foco nos parâmetros do gerador.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.342444'
+source:
+- created: '2024-03-04T01:24:25.763548'
+  id: 67c881c2-8583-4c9e-8b52-a36f82313934
+  name: geracao_fonte_primaria_2024
+last_update: 2024-11-21 18:58:00.342450
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  FONTE_PRIMARIA:
+    type: text
+    description: Fonte primária correspondente ao ativo de geração representado na
+      análise.
+    label: '40'
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: Geração no centro de gravidade por fonte primária (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_GF_DEFINIDA:
+    type: numeric
+    description: Geração de usinas com garantia física definida em ato regulatório
+      (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_FINAL_TESTE:
+    type: numeric
+    description: Geração em teste no centro de gravidade por fonte primária (GFTp,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_COTA_GF:
+    type: numeric
+    description: Geração no centro de gravidade das usinas participantes do regime
+      de cotas de garantia física (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA:
+    type: numeric
+    description: Capacidade instalada por fonte primária (CAP_Tp,j) [MW]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA:
+    type: numeric
+    description: Garantia Física definida em ato regulatório por fonte primária (GFp)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_APURADA:
+    type: numeric
+    description: Garantia Física Apurada da parcela de usina “p”, por período de comercialização
+      “j” (GFISp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  MEDICAO_G_NAO_AJUSTADA:
+    type: numeric
+    description: Medição de geração não ajustada no ponto de conexão por fonte primária
+      (MED_Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  MEDICAO_G_TESTE_NAO_AJUSTADA:
+    type: numeric
+    description: Medição de geração em teste no ponto de conexão por fonte (MED_GTp,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  QUANTIDADE_USINA_FONTE:
+    type: numeric
+    description: Quantidade de usinas por fonte primária presentes no SIN
+    label: (10)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

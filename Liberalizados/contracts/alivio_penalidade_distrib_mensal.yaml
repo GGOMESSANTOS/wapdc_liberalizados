@@ -1,0 +1,66 @@
+name: alivio_penalidade_distrib_mensal
+description: Dados de exposição, tanto positivas quanto negativas, e as coberturas
+  e recursos para alívio no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.361832'
+source:
+- created: '2023-08-09T20:57:13.477195'
+  id: ac27785b-325c-45d5-9332-dca917d415ac
+  name: alivio_penalidade_distrib_mensal_2023
+- created: '2024-03-04T01:27:33.447942'
+  id: 9106e7d5-edae-4d87-a468-064cfe74bfaa
+  name: alivio_penalidade_distrib_mensal_2024
+last_update: 2024-11-21 18:58:00.361838
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  EXPOSICAO_FINANCEIRA_POSITIVA:
+    type: numeric
+    description: Corresponde a Exposição Financeira Positiva de CCEAR, CCGF e CCEN
+      do perfil de agente “a” no Mês de Apuração “m”. (EF_CCEAR_Pa,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  EXPOSICAO_FINANCEIRA_NEGATIVA:
+    type: numeric
+    description: Corresponde a Exposição Financeira Negativa de CCEAR, CCGF e CCEN
+      do perfil de agente “a” no mês de apuração “m”. (EF_CCEAR_Na,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_PENALIDADE_EF_NEGATIVA:
+    type: numeric
+    description: Corresponde ao Total de Penalidade para Atendimento às Exposições
+      Negativas de CCEAR, CCGF e CCEN no mês de apuração “m”. (TPA_EF_CCEARm) [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_RECURSO_DISP_ALIVIO_EF_CCEAR:
+    type: numeric
+    description: Corresponde ao Total de Recursos Disponíveis para Alívio de Exposições
+      de CCEAR, CCGF e CCEN no mês de Apuração “m”. (RECDISP_CCEARm) [R$]
+    label: (10,2)
+    business_rule: ''
+  COBERTURA_EXPOSICAO_NEGATIVA_CCEAR:
+    type: numeric
+    description: Corresponde a Cobertura de Exposições Financeiras Negativas de CCEAR,
+      CCGF e CCEN do perfil de agente “a” no mês de apuração “m”. (COB_EF_CCEAR_Na,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_EXPOSICAO_NEGATIVA_REM_CCEAR:
+    type: numeric
+    description: Corresponde ao Total de Exposições Negativas Remanescente de CCEAR,
+      CCGF e CCEN de todos os agentes, no mês de apuração “m”. (TEF_CCEAR_N_REMm)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_RECURSO_DISP_RATEIO_COMPR_CCEAR:
+    type: numeric
+    description: Corresponde ao Total de Recurso Disponível para Rateio entre os Compradores
+      de CCEAR, CCGF e CCEN do mercado, no mês de apuração “m”. (TRD_CCEARm) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

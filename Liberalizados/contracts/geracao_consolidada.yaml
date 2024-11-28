@@ -1,0 +1,66 @@
+name: geracao_consolidada
+description: Dados de geração utilizados na contabilização do MCP - Mercado de Curto
+  Prazo com foco nos parâmetros de geração para fins de custo de descolamento, reserva
+  de potência operativa, segurança energética, constrained-on e unit commitmment.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.382528'
+source:
+- created: '2023-06-26T14:47:19.758429'
+  id: 51b5976b-7cd5-4e87-9cbf-d8f105b80c77
+  name: geracao_consolidada_2023
+- created: '2024-03-04T01:19:31.588988'
+  id: 77cfee8f-a917-4679-b3f3-7506db4db8b2
+  name: geracao_consolidada_2024
+last_update: 2024-11-21 18:58:00.382534
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_CVU_MENOR_IGUAL_PLD:
+    type: numeric
+    description: Geração de usinas com CVU ≤ PLD. (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_CVU_MAIOR_PLD:
+    type: numeric
+    description: Geração de usinas com CVU > PLD. (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_INFLEXIVEL:
+    type: numeric
+    description: Geração Inflexível. (G_INFp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_SEGURANCA_ENERGETICA:
+    type: numeric
+    description: Geração por Segurança Energética. (G_SE p,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_CONSTRAINED_ON:
+    type: numeric
+    description: Geração por Restrição de Operação Constrained-On. (G_CONST_ON p,j)
+      [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_CUSTO_DESLOCAMENTO:
+    type: numeric
+    description: Geração Final passível de apuração de custo de descolamento CMO/PLD.
+      (G_CUSTO_DESC p,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_RESERVA_POTENCIA:
+    type: numeric
+    description: Geração por Despacho para Manutenção da Reserva de Potência Operativa
+      da Usina. (G_RESPOP p,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_UNIT_COMMITMENT:
+    type: numeric
+    description: Geração por Unit Commitment. (G_UNIT p,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

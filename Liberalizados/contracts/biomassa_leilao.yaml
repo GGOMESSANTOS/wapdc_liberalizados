@@ -1,0 +1,45 @@
+name: biomassa_leilao
+description: Dados mensais de geração e capacidade instalada de usinas biomassa em
+  leilões de energia.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.206192'
+source:
+- created: '2023-11-21T13:04:28.335227'
+  id: dbad086b-0fb6-46eb-87ed-b2e7ca5276f6
+  name: biomassa_leilao_2023
+- created: '2024-03-04T01:19:43.396727'
+  id: 139d1d68-9a92-4fb4-8f68-5f8819d27434
+  name: biomassa_leilao_2024
+last_update: 2024-11-21 18:58:00.206197
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  GERACAO_BIOMASSA:
+    type: numeric
+    description: Corresponde a Geração Final da parcela de usina biomassa “p”, por
+      período de comercialização “j” (Gp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_BIOMASSA:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina biomassa
+      “p” (CAP_Tp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_BIOMASSA:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina a biomassa "p"
+      (GFp) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,56 @@
+name: ccear_resultado_mensal
+description: Dados de resultados mensais de CCEARs.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.279849'
+source:
+- created: '2023-11-21T13:04:06.338326'
+  id: fce61054-9983-40e0-8df0-662daf7f5ba7
+  name: ccear_resultado_mensal_2023
+- created: '2024-03-04T02:06:04.182463'
+  id: 9d7e3430-fd33-454e-a2c4-bc1b69d9cc48
+  name: ccear_resultado_mensal_2024
+last_update: 2024-11-21 18:58:00.279855
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  RESULTADO_FINAL_COMPRADOR_CCEAR:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  EFEITO_MCP_PRODUTO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  ENCARGO_CONST_ON:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  ENCARGO_CONST_OFF:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  ENCARGO_SEG_ENER:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  ENCARGO_DIF_CVU:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  TOTAL_ENCARGO_PRODUTO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

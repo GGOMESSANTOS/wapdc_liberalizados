@@ -1,0 +1,79 @@
+name: contrato_montante_submercado_horario
+description: Dados com os montantes modulados por tipo de contrato comercializado
+  e utilizado na contabilização do MCP - Mercado de Curto Prazo divididos por submercado
+  e consolidados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.286350'
+source:
+- created: '2024-01-04T17:06:33.603076'
+  id: 67390467-e175-402f-8bf1-491a80d01a01
+  name: contrato_montante_submercado_horario_2023
+- created: '2024-03-04T01:52:25.049876'
+  id: 05c25b5e-aeed-4494-a203-93d68d070b2a
+  name: contrato_montante_submercado_horario_2024
+last_update: 2024-11-21 18:58:00.286356
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN  - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CCEARQ:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de CCEAR-Q
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CCEARD:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de CCEAR-D
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_PROINFA:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de PROINFA
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_ITAIPU:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de ITAIPU
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CCEAL:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de CCEAL
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CCGF:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de CCGF
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CCEN:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de CCEN
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

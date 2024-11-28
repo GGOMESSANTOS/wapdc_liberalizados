@@ -1,0 +1,70 @@
+name: encargo_pgto_mensal
+description: Dados de pagamento mensal de encargos por mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.254926'
+source:
+- created: '2023-11-21T13:04:25.292341'
+  id: d72cd70c-81d5-4407-bbea-aab58100b992
+  name: encargo_pgto_mensal_2023
+- created: '2024-03-04T01:21:35.438704'
+  id: fd544bed-b47f-48b2-8975-4ee449d4e3ce
+  name: encargo_pgto_mensal_2024
+last_update: 2024-11-21 18:58:00.254932
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  RESERVA_ALIVIO_ESS:
+    type: numeric
+    description: Corresponde ao Total de Recursos Utilizados para Alívio de ESS do
+      mês de apuração “m” (TRU_ESSm) [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_PENALIDADES_ESS:
+    type: numeric
+    description: Corresponde ao Total de Penalidades Aplicadas para Alívio do ESS
+      no mês de apuração “m” (TPAP_ESSm) [R$]
+    label: (10,2)
+    business_rule: ''
+  SOBRA_EXCED_FINANCEIRO_MA:
+    type: numeric
+    description: Corresponde a Sobra Financeira do Mês Anterior utilizada no mês de
+      apuração “m" (SF_MAm) [R$]
+    label: (10,2)
+    business_rule: ''
+  FATOR_AJUSTE_ESS:
+    type: numeric
+    description: Corresponde ao Fator de Ajuste dos Encargos de Serviços do Sistema
+      do mês de apuração “m” (F_AJUSTE_ESSm) [R$]
+    label: (10,12)
+    business_rule: ''
+  PAGAMENTO_ENCARGO_ESS:
+    type: numeric
+    description: Corresponde ao Total de Pagamento por Encargos de Serviços do Sistema,
+      do perfil de agente “a”, no mês de apuração “m” (P_ENC_ESSm) [R$]
+    label: (10,2)
+    business_rule: ''
+  PAGAMENTO_ENCARGO_SE:
+    type: numeric
+    description: Corresponde ao Total de Pagamento por Encargos de Serviços do Sistema,
+      do perfil de agente “a”, no mês de apuração “m” (P_ENC_SEm) [R$]
+    label: (10,2)
+    business_rule: ''
+  EXCEDENTE_FINANCEIRO_IMPORT:
+    type: numeric
+    description: Corresponde ao Excedente Financeiro de Importação de energia total
+      do perfil de agente “a”, no mês de apuração “m” (EXCD_FIN_IMP_Ma,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_CUSTO_RAZAO_IMPORT:
+    type: numeric
+    description: Corresponde ao Valor referente aos Custos por Razão de Importação
+      Energética do perfil de agente “a”, no mês de apuração “m” (V_CUSTO_IMP_Ma,m)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

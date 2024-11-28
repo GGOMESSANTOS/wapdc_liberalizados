@@ -1,0 +1,105 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "b881b710-e6a0-4aed-9162-d254420c1096",
+        "id": "4649558b-d2ac-4e6a-9efd-9babef53ed09",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2024-05-29T20:25:15.249840",
+        "metadata_modified": "2024-06-11T20:50:41.767246",
+        "name": "reserva_penalidade",
+        "notes": "Dados que compõe as penalidades de insuficiência de lastro para fins de energia de reserva no mês de referência.",
+        "num_resources": 1,
+        "num_tags": 3,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://operacao.ccee.org.br/cdn/icon/icon_pda-infomercado.svg",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "RESERVA_PENALIDADE",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "1º dia útil de setembro"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-06-05T00:47:34.540069",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores que compõe as penalidades de insuficiência de lastro para fins de energia de reserva no mês de referência.\r\n\r\n**Campos contidos nesse conjunto de dados:** \r\n\r\n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \r\n* **NIVEL_INSUFICIENCIA_LASTRO** : Corresponde ao Nível de Insuficiência de Lastro da parcela de usina \"\"p\"\", no produto \"\"t\"\", do leilão \"\"l\"\", no mês de referência \"\"m\"\" (NILE_CERp,t,l,m) [MWmed]  \r\n* **AJUSTE_CER_PNL** : Corresponde ao Ajuste decorrente de deliberação do Cad da parcela de usina \"\"p\"\", no produto \"\"t\"\", do leilão \"\"l\"\", no mês de referência \"\"m\"\" (ADDC_CER_PNLp,t,l,m) [MWmed]  \r\n* **ENERGIA_NAO_FORNECIDA_ANUAL** : Corresponde a Energia não fornecida anual da parcela de usina \"\"p\"\", no produto \"\"t\"\", do leilão \"\"l\"\", referente ao ano anterior \"\"f-1\"\" (ENFA_DTp,t,l,f-1) [MWmed]  \r\n* **PENALIDADE_INSUFICIENCIA_LASTRO** : Corresponde a Penalidade por insuficiência de lastro anual da parcela de usina \"\"p\"\", no produto \"\"t\"\", do leilão \"\"l\"\", referente ao ano anterior \"\"f-1\"\" (PILE_CERp,t,l,f-1) [R$] ",
+                "format": "CSV",
+                "hash": "",
+                "id": "7a0a52b0-592d-4ef2-a8f1-081159bcbc9a",
+                "last_modified": null,
+                "metadata_modified": "2024-06-11T20:50:41.771312",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "reserva_penalidade_2023",
+                "package_id": "4649558b-d2ac-4e6a-9efd-9babef53ed09",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/V3XpEhz5QGCDcUo0Ug3GGQ/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "energia reserva",
+                "id": "fd01b447-a015-4549-a988-b09dba382dfd",
+                "name": "energia reserva",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "penalidade",
+                "id": "5b6a71ee-b295-45ad-807d-ab0a50d3a023",
+                "name": "penalidade",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

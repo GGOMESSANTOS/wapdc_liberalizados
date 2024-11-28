@@ -1,0 +1,42 @@
+name: biomassa_submercado_uf
+description: Dados mensais consolidados de usinas biomassa por submercado e unidade
+  federativa (UF).
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.376960'
+source:
+- created: '2023-11-21T13:04:12.367012'
+  id: de252cc8-f3e9-4007-b055-cdf54b1076e2
+  name: biomassa_submercado_uf_2023
+- created: '2024-03-04T02:04:44.825502'
+  id: 49299ea5-d7df-41e6-8ceb-9a771a56eccb
+  name: biomassa_submercado_uf_2024
+last_update: 2024-11-21 18:58:00.376966
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  ESTADO:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  GERACAO_BIOMASSA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CAPACIDADE_INSTALADA_BIOMASSA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

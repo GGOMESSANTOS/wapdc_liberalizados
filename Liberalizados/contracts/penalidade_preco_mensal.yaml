@@ -1,0 +1,52 @@
+name: penalidade_preco_mensal
+description: Dados de preços aplicados nas penalidades apuradas pela CCEE em cada
+  modalidade por mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.197347'
+source:
+- created: '2023-08-09T21:21:44.451070'
+  id: 959ecdab-1a05-4d49-84f8-9971a53f6b9e
+  name: penalidade_preco_mensal_2023
+- created: '2024-03-22T01:17:40.354824'
+  id: 49f239eb-6c9c-4d87-a36c-0ddf81202ea7
+  name: penalidade_preco_mensal_2024
+last_update: 2024-11-21 18:58:00.197355
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PRECO_REF_INSUF_ESP:
+    type: numeric
+    description: Corresponde ao Preço de Referência para Penalização por Insuficiência
+      de Lastro de Energia Especial no mês de apuração “m”. (PREF_PNL_ESPm) [R$/MWh]
+    label: (10,12)
+    business_rule: ''
+  PRECO_REF_INSUF_NESP:
+    type: numeric
+    description: Corresponde ao Preço de Referência para Penalização por Insuficiência
+      de Lastro de Energia Não Especial no mês de apuração “m”. (PREF_PNL_NESPm) [R$/MWh]
+    label: (10,12)
+    business_rule: ''
+  PRECO_REF_PENAL_DISTRIB:
+    type: numeric
+    description: Corresponde ao Preço de Referência para Penalização dos Distribuidores
+      no mês de apuração “m”. (PREF_DIS_PNLm) [R$/MWh]
+    label: (10,12)
+    business_rule: ''
+  PRECO_MED_LIQ_DIF:
+    type: numeric
+    description: Corresponde ao Preço Médio de Liquidação das Diferenças para Penalização
+      no mês de apuração “m”. (PMED_PNLm) [R$/MWh]
+    label: (10,12)
+    business_rule: ''
+  VALOR_REFERENCIA:
+    type: numeric
+    description: Corresponde ao Valor Anual de Referência para Penalização dos Distribuidores
+      referente a penalidades apuradas no ano de apuração anterior “f-1”. (VRf) [R$/MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

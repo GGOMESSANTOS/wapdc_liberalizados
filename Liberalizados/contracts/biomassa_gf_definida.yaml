@@ -1,0 +1,42 @@
+name: biomassa_gf_definida
+description: Dados mensais consolidados para usinas de fonte biomassa com garantia
+  física definida.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.360536'
+source:
+- created: '2023-11-21T13:04:20.015129'
+  id: f61859e6-d881-4429-916b-98a45894acb9
+  name: biomassa_gf_definida_2023
+- created: '2024-03-04T02:05:34.676902'
+  id: ad16696b-bb77-4208-ab81-67ed113e8c43
+  name: biomassa_gf_definida_2024
+last_update: 2024-11-21 18:58:00.360542
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  GERACAO_BIO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CAPACIDADE_INSTALADA_BIO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  GARANTIA_FISICA_BIO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  QUANTIDADE_UG_OP:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

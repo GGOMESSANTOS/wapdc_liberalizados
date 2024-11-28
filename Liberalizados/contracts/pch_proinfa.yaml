@@ -1,0 +1,34 @@
+name: pch_proinfa
+description: Dados mensais de geração e capacidade instalada de Pequenas Centrais
+  Hidrelétricas - PCH participantes do PROINFA.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.303404'
+source:
+- created: '2023-11-21T13:04:24.208878'
+  id: 625619a0-b640-4ddd-bea2-b4330628419e
+  name: pch_proinfa_2023
+- created: '2024-03-04T01:21:59.791448'
+  id: b101832b-946b-44e2-a6f9-83880fbcdcaa
+  name: pch_proinfa_2024
+last_update: 2024-11-21 18:58:00.303409
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_PCH:
+    type: numeric
+    description: Corresponde a Geração Final da parcela de usina PCH “p”, por período
+      de comercialização “j” (Gp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_PCH:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina PCH
+      “p” (CAP_Tp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

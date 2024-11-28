@@ -1,0 +1,59 @@
+name: consumo_mensal_perfil_agente
+description: Dados de montante de consumo mensal por perfil de agente.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.313818'
+source:
+- created: '2024-04-02T23:19:46.677032'
+  id: 3211839f-54b1-460e-92f3-e4c4b307f376
+  name: consumo_mensal_perfil_agente_2024
+last_update: 2024-11-21 18:58:00.313823
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '40'
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  CNPJ:
+    type: text
+    description: Corresponde ao CNPJ cadastrado pelo agente nos sistemas da CCEE.
+    label: XX.XXX.XXX/0001-XX
+    business_rule: ''
+  VALOR_TRC:
+    type: numeric
+    description: Corresponde ao Consumo Total do perfil do agente “a”, por submercado
+      “s”, no período de comercialização “j” TRCa,s,j [MWh]
+    label: (10,12)
+    business_rule: ''
+  VALOR_TGGC:
+    type: numeric
+    description: Corresponde a Informação consolidada correspondente ao consumo da
+      geração de cada perfil de agente “a” no submercado “s” (Sul, Sudeste/Centro-Oeste,
+      Norte e Nordeste), por período de comercialização “j” TGGCa,s,j [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

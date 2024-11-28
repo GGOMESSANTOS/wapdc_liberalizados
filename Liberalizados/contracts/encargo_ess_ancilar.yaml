@@ -1,0 +1,127 @@
+name: encargo_ess_ancilar
+description: Dados de encargos gerados no MCP no mês de referência e destinados ao
+  pagamento de serviços ancilares.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.302091'
+source:
+- created: '2023-09-06T22:14:47.626042'
+  id: 2a7994d6-cf6e-4f7f-af0e-3d8f0ef7cf5f
+  name: encargo_ess_ancilar_2023
+- created: '2024-03-04T01:24:28.841585'
+  id: b06431bc-e509-4d65-94cc-6d81b0f1db5c
+  name: encargo_ess_ancilar_2024
+last_update: 2024-11-21 18:58:00.302097
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  ENCARGO_CONST_ON:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-On da
+      parcela de usina não hidráulica “p”, por período de comercialização “j” (ENC_CONST_ONp,j)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  ENCARGO_CONST_OFF:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-Off
+      da parcela de usina não hidráulica “p”, por período de comercialização “j” (ENC_CONST_OFFp,j)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  OUTROS_SERVICOS_ANCILARES:
+    type: numeric
+    description: Corresponde a somatória do Encargo por Outros Serviços Ancilares
+      da parcela de usina “p”, no mês de apuração “m” e o Ressarcimento pelo Custo
+      de Implantação, Operação e Manutenção de SEP (Sistema Especial de Proteção)
+      da parcela de usina “p”, no mês de apuração “m” (ENC_OSAp,m + RSEP_Da,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  ENCARGO_CS:
+    type: numeric
+    description: Corresponde ao Encargo por Compensação Síncrona, da parcela de usina
+      “p”, por período de comercialização “j” (ENC_CSp,j) [R$]
+    label: (10,12)
+    business_rule: ''
+  ENCARGO_SEG_ENER:
+    type: numeric
+    description: Corresponde ao Encargo por Razão de Segurança Energética da parcela
+      de usina não hidráulica “p”, por período de comercialização “j” (ENC_SEG_ENERp,j)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  RECEBIMENTO_ENCARGO_DH:
+    type: numeric
+    description: Corresponde ao Total de Recebimento por Encargos de Deslocamento
+      Hidráulico, do perfil de agente “a”, no mês de apuração “m” (R_ENC_DHa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  ENCARGO_REST_OP_UNIT_COMT:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Unit Commitment
+      da parcela de usina não hidráulica “p”, por período de comercialização “j” (ENC_REST_UNITp,j)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  ENCARGO_IMPORTACAO:
+    type: numeric
+    description: Corresponde ao Encargo de Importação do intercâmbio de energia da
+      parcela de usina substituta “p*”, por período de comercialização “j” (ENC_IMPp,j)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  RECEBIMENTO_ENCARGO_RESERVA_OP:
+    type: numeric
+    description: Corresponde ao Total de Recebimento por Encargo para Atendimento
+      ao Despacho Complementar para Manutenção da Reserva de Potência Operativa, do
+      perfil de agente “a”, no mês de apuração “m” (R_ENC_RESPOPa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESSARCIMENTO_SERVICOS_ANCILARES:
+    type: numeric
+    description: "Corresponde ao Ressarcimento por Investimentos para Prestação de\
+      \ Serviços Ancilares da parcela de usina\r\n“p”, no mês de apuração “m” (RISAp,m)\
+      \ [R$]"
+    label: (10,12)
+    business_rule: ''
+  RESSARCIMENTO_CUSTO_OP_MNT_EQUIP:
+    type: numeric
+    description: Corresponde ao Ressarcimento pelo Custo de Operação e Manutenção
+      dos Equipamentos de Autorrestabelecimento da parcela de usina “p”, no mês de
+      apuração “m” (RARTp,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESSARCIMENTO_CUSTO_OP_MNT_EQUIP_CAG:
+    type: numeric
+    description: Corresponde ao Ressarcimento pelo Custo de Operação e Manutenção
+      dos Equipamentos de Supervisão e Controle e de Comunicação Necessários à Participação
+      no CAG (Controle Automático de Geração) da parcela de usina “p”, no mês de apuração
+      “m” (RCAGp,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESSARCIMENTO_CUSTO_IMPL_OP_MNT_SEP:
+    type: numeric
+    description: "\"Corresponde ao Ressarcimento pelo Custo de Implantação, Operação\
+      \ e Manutenção de SEP (Sistema Especial\r\nde Proteção) da parcela de usina\
+      \ “p”, no mês de apuração “m” (RSEPp,m) [R$]\""
+    label: (10,12)
+    business_rule: ''
+  RESSARCIMENTO_CUSTO_EMERGENCIAL:
+    type: numeric
+    description: Corresponde ao Ressarcimento pelo Custo de Usinas Emergenciais da
+      parcela de usina “p”, no mês de apuração “m” (RCUEp,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESSARCIMENTO_DIST_IMPL_OP_MNT:
+    type: numeric
+    description: Corresponde ao Ressarcimento ao Agente Distribuidor ou Consumidor
+      pelo Custo de Implementação, Operação e Manutenção de Sistema Especial de Proteção
+      (SEP) ou por Reposição dos Sistemas Existentes do perfil de agente “a”, no mês
+      de Apuração “m” (RSEP_Da,m) [R$]
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

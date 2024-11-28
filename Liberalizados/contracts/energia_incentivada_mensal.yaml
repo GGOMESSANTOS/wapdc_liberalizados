@@ -1,0 +1,144 @@
+name: energia_incentivada_mensal
+description: Dados de geração, capacidade, número de usinas, distribuição de garantia
+  física, montantes contratuais e desconto médio e consumo de energia incentivada
+  agrupadas por mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.207513'
+source:
+- created: '2024-05-22T19:43:36.954929'
+  id: 0acd7834-a6ee-446a-9af6-48a3a4f66201
+  name: energia_incentivada_mensal_2024
+last_update: 2024-11-21 18:58:00.207518
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_ENERGIA_INCENTIVADA:
+    type: numeric
+    description: Corresponde a Geração Final da parcela de usina “p”, por período
+      de comercialização “j” (Gp,j) de usinas com fonte incentivada.
+    label: (10,12)
+    business_rule: ''
+  QUANTIDADE_USINA_INCENTIVADA_ESPECIAL_CONV:
+    type: numeric
+    description: Quantidade de usinas cuja fonte de energia primária corresponde a
+      energia incentiva ou convencional especial.
+    label: (10)
+    business_rule: ''
+  CAPACIDADE_INSTALADA_ENERGIA_INCENTIVADA:
+    type: numeric
+    description: Corresponde a Capacidade Instalada associada ao ponto de medição
+      “i” das unidades geradoras associadas à parcela de usina “p” no período de comercialização
+      “j”total de usinas de fonte incentivada (CAPi,j)
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_DT_50:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m” (GFIS_DTp,m) com 50% de desconto
+      na matriz
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_DT_80:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m” (GFIS_DTp,m) com 80% de desconto
+      na matriz
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_DT_100:
+    type: numeric
+    description: Corresponde a Garantia Física para Fins de Desconto na TUSD/TUST
+      da parcela de usina “p”, no mês de apuração “m” (GFIS_DTp,m) com 100% de desconto
+      na matriz
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_EI_0:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) cujo desconto na matriz é de 0%
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_EI_50:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) cujo desconto na matriz é de 50%
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_EI_100:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” (CQe,j) cujo desconto na matriz é de 100%
+    label: (10,12)
+    business_rule: ''
+  DESCONTO_MEDIO_EI_50:
+    type: numeric
+    description: Corresponde ao Desconto Final de 50% do perfil de agente “a” no mês
+      de apuração “m” (DESC_CCEIa,m)
+    label: (10,12)
+    business_rule: ''
+  DESCONTO_MEDIO_EI_80:
+    type: numeric
+    description: Corresponde ao Desconto Final de 80% do perfil de agente “a” no mês
+      de apuração “m” (DESC_CCEIa,m)
+    label: (10,12)
+    business_rule: ''
+  DESCONTO_MEDIO_EI_100:
+    type: numeric
+    description: Corresponde ao Desconto Final de 100% do perfil de agente “a” no
+      mês de apuração “m” (DESC_CCEIa,m)
+    label: (10,12)
+    business_rule: ''
+  DESCONTO_MEDIO_EI_AUTOPRODUTOR:
+    type: numeric
+    description: Corresponde ao Desconto Final do perfil de agente “a” no mês de apuração
+      “m” (DESC_CCEIa,m) para a classe de Autoprodutor
+    label: (10,12)
+    business_rule: ''
+  DESCONTO_MEDIO_EI_CONSUMIDOR_ESPECIAL:
+    type: numeric
+    description: Corresponde ao Desconto Final do perfil de agente “a” no mês de apuração
+      “m” (DESC_CCEIa,m) para a classe de Consumidor Especial
+    label: (10,12)
+    business_rule: ''
+  DESCONTO_MEDIO_EI_CONSUMIDOR_LIVRE:
+    type: numeric
+    description: Corresponde ao Desconto Final do perfil de agente “a” no mês de apuração
+      “m” (DESC_CCEIa,m) para a classe de Consumidor Livre
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_APURADA_0:
+    type: numeric
+    description: Garantia Física Apurada da parcela de usina “p”, por período de comercialização
+      “j” (GFISp,j) cujo desconto na matriz é igual a 0%
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_APURADA_50:
+    type: numeric
+    description: Garantia Física Apurada da parcela de usina “p”, por período de comercialização
+      “j” (GFISp,j) cujo desconto na matriz é igual a 50%
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_APURADA_80:
+    type: numeric
+    description: Garantia Física Apurada da parcela de usina “p”, por período de comercialização
+      “j” (GFISp,j) cujo desconto na matriz é igual a 80%
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_APURADA_100:
+    type: numeric
+    description: Garantia Física Apurada da parcela de usina “p”, por período de comercialização
+      “j” (GFISp,j) cujo desconto na matriz é igual a 100%
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_CONSUMIDOR_ESPECIAL:
+    type: numeric
+    description: Consumo no centro de gravidade por classe de perfil de agente - MW
+      médios (TRCa,s,j) referente aos consumidores especiais
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

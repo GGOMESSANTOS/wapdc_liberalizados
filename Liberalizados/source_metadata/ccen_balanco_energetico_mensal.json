@@ -1,0 +1,120 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "08bb46ea-324c-47b2-84b7-76a0ebb05a3f",
+        "id": "f28d78b9-743a-4ae0-a104-24afaddf5f54",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2023-06-26T14:43:53.307432",
+        "metadata_modified": "2024-10-30T20:19:25.763792",
+        "name": "ccen_balanco_energetico_mensal",
+        "notes": "Dados de Balanço Energético para Cotas de Energia Nuclear no mês de referência e período de comercialização.",
+        "num_resources": 2,
+        "num_tags": 2,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "CCEN_BALANCO_ENERGETICO_MENSAL",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+22du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2023-06-26T14:44:20.307803",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar o balanço energético da contratação de energia nuclear (CCEN) no mês de referência  \n\n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **GERACAO_FINAL_CCEN** : Corresponde a Geração Final a ser destinado a cada perfil de agente distribuidor “a”, por meio dos Contratos de Cota de Energia Nuclear no submercado “s”, no período de comercialização “j”  (G_CCENa,s,j)  \n \n* **CONSUMO_GERACAO_CCEN** : Corresponde ao Consumo de Geração a ser destinado a cada perfil de agente distribuidor “a”, por meio dos Contratos de Cota de Energia Nuclear no submercado “s”, no período de comercialização “j” (CG_CCENa,s,j)  \n \n* **MONTANTE_MODULADO_CONTRATO_CCEN** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j”  de CCEN (Cqe,j)  \n \n* **BALANCO_ENERGETICO_CCEN** : Corresponde ao Balanço Energético de cada perfil de agente cotista “a”, por meio do Contratos de Cota de Energia Nuclear no submercado “s”, no período de comercialização “j”  (NET_CCENa,s,j)  ",
+                "format": "CSV",
+                "hash": "",
+                "id": "f85ca395-b423-4699-936e-e49c7fe156dd",
+                "last_modified": "2023-08-30T15:16:34.023000",
+                "metadata_modified": "2024-04-02T23:06:44.059087",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccen_balanco_energetico_mensal_2023",
+                "package_id": "f28d78b9-743a-4ae0-a104-24afaddf5f54",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/lvUVvHQcSACDY91EqXCjsg/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-04T01:37:20.425305",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar o balanço energético da contratação de energia nuclear (CCEN) no mês de referência  \n\n  \n**Campos contidos nesse Dataset:**  \n  \n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \n* **GERACAO_FINAL_CCEN** : Corresponde a Geração Final a ser destinado a cada perfil de agente distribuidor “a”, por meio dos Contratos de Cota de Energia Nuclear no submercado “s”, no período de comercialização “j”  (G_CCENa,s,j)  \n \n* **CONSUMO_GERACAO_CCEN** : Corresponde ao Consumo de Geração a ser destinado a cada perfil de agente distribuidor “a”, por meio dos Contratos de Cota de Energia Nuclear no submercado “s”, no período de comercialização “j” (CG_CCENa,s,j)  \n \n* **MONTANTE_MODULADO_CONTRATO_CCEN** : Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização “j”  de CCEN (Cqe,j)  \n \n* **BALANCO_ENERGETICO_CCEN** : Corresponde ao Balanço Energético de cada perfil de agente cotista “a”, por meio do Contratos de Cota de Energia Nuclear no submercado “s”, no período de comercialização “j”  (NET_CCENa,s,j)  ",
+                "format": "CSV",
+                "hash": "",
+                "id": "f2013767-7bcf-4e4c-8c5c-887223f73d13",
+                "last_modified": "2024-10-30T17:18:34.430000",
+                "metadata_modified": "2024-10-30T20:19:25.768141",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "ccen_balanco_energetico_mensal_2024",
+                "package_id": "f28d78b9-743a-4ae0-a104-24afaddf5f54",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/2sK47mNhQ-q59qmhm4HM2A/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "ccen",
+                "id": "0500e11e-4529-45c4-a03b-7d35fee1048d",
+                "name": "ccen",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

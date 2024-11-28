@@ -1,0 +1,56 @@
+name: mcsd_cedente_cessionario
+description: Dados com os valores de compensação entre cedentes e cessionários no
+  processo de MCSD.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.227533'
+source:
+- created: '2024-06-11T20:30:14.461979'
+  id: 811f3832-a81d-4eb1-bfae-0c6449425b8c
+  name: mcsd_cedente_cessionario_2023
+- created: '2024-09-12T19:10:23.240415'
+  id: 25389829-7213-49f0-aeae-0c96f7049858
+  name: mcsd_cedente_cessionario_2024
+last_update: 2024-11-21 18:58:00.227538
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PROCESSAMENTO:
+    type: text
+    description: Corresponde ao evento de MCSD realizado pela CCEE.
+    label: '40'
+    business_rule: ''
+  SIGLA_AGENTE_CEDENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente cedente
+      em seus sistemas.
+    label: '40'
+    business_rule: ''
+  SIGLA_AGENTE_CESSIONARIO:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente cessionário
+      em seus sistemas.
+    label: '40'
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  PRODUTO:
+    type: text
+    description: Corresponde ao produto negociado entre as contrapartes em um leilão
+      de energia.
+    label: '40'
+    business_rule: ''
+  COMPENSACAO_CEDENTE_CESSIONARIO:
+    type: numeric
+    description: Corresponde a Compensação entre Cedente e Cessionário no evento de
+      MCSD.
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,39 @@
+name: consumo_horario_perfil_agente
+description: Dados de  consumo bruto, ajustado e no ponto de conexão por agente, ativo
+  de carga, ramo de atividade, distribuidora conectada por período de comercialização
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.224056'
+source:
+- created: '2024-05-21T16:42:30.095443'
+  id: a3fe1d58-fce0-4ce9-825c-939c75e0ebe6
+  name: consumo_horario_perfil_agente_202403
+- created: '2024-06-03T20:32:52.509817'
+  id: 284b181c-0853-411f-b0e9-b2375be3b7e5
+  name: consumo_horario_perfil_agente_202404
+- created: '2024-07-02T16:44:11.112423'
+  id: 24f8f051-974d-4796-9450-28df809d97ed
+  name: consumo_horario_perfil_agente_202405
+- created: '2024-07-31T01:47:52.543663'
+  id: c0d2e17f-558a-4050-af2c-9114e5c95915
+  name: consumo_horario_perfil_agente_202406
+- created: '2024-09-03T03:27:20.995582'
+  id: 76588672-3366-4415-9caa-97170064304a
+  name: consumo_horario_perfil_agente_202407
+- created: '2024-10-04T18:03:55.092950'
+  id: 8b1332df-abbe-4c45-9964-42dd3c8a9836
+  name: consumo_horario_perfil_agente_202408
+- created: '2024-10-31T15:09:39.530119'
+  id: 6334eb2a-a5a5-458c-8f69-ac460bbfb424
+  name: consumo_horario_perfil_agente_202409
+last_update: 2024-11-21 18:58:00.224062
+periodice: Mensal
+fields:
+  field1:
+    type: datetime
+    description: ''
+    label: ''
+    'null': true
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

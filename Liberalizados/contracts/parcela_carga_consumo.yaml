@@ -1,0 +1,114 @@
+name: parcela_carga_consumo
+description: Dados de consumo de parcelas de carga.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.273534'
+source:
+- created: '2024-05-29T21:46:55.717663'
+  id: b854f7bc-94a3-423a-96b7-2d4756ec77d1
+  name: parcela_carga_consumo_2024
+last_update: 2024-11-21 18:58:00.273539
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '40'
+    business_rule: ''
+  COD_PARCELA_CARGA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de carga.
+    label: (20)
+    business_rule: ''
+  SIGLA_PARCELA_CARGA:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar a parcela
+      de carga.
+    label: '40'
+    business_rule: ''
+  CNPJ_CARGA:
+    type: text
+    description: Corresponde ao CNPJ cadastrado pelo agente nos sistemas da CCEE.
+    label: XX.XXX.XXX/0001-XX
+    business_rule: ''
+  CIDADE:
+    type: text
+    description: Corresponde a cidade da parcela de carga.
+    label: '40'
+    business_rule: ''
+  ESTADO_UF:
+    type: text
+    description: Corresponde a Unidade Federativa (UF) da parcela de carga.
+    label: '2'
+    business_rule: ''
+  RAMO_ATIVIDADE:
+    type: text
+    description: Corresponde ao ramo de atividade no qual a empresa o segmento de
+      uma empresa foi definido.
+    label: '40'
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  DATA_MIGRACAO:
+    type: text
+    description: Corresponde a data de migração do consumidor
+    label: DD/MM/AAAA
+    business_rule: ''
+  COD_PERF_AGENTE_CONECTADO:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a o perfil do agente conectado.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE_CONECTADO:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente conectado.
+    label: '40'
+    business_rule: ''
+  CAPACIDADE_CARGA:
+    type: numeric
+    description: Corresponde a capacidade instalada da carga.
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_ACL:
+    type: numeric
+    description: Corresponde ao consumo no ambiente de comercialização livre (ACL)
+      da parcela de carga. (RC_AL c,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_CATIVO_PARC_LIVRE:
+    type: numeric
+    description: Corresponde ao consumo de energia ajustado da parcela cativa da carga
+      parcialmente livre (RC_CAT c,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_TOTAL:
+    type: numeric
+    description: Corresponde ao consumo de energia ajustado de uma parcela de carga
+      (RC c,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

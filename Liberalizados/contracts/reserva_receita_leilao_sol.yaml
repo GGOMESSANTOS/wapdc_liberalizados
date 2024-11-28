@@ -1,0 +1,35 @@
+name: reserva_receita_leilao_sol
+description: Dados mensais de receita de venda total apurados no processo de Energia
+  de Reserva para usinas com fonte solar.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.324247'
+source:
+- created: '2023-09-06T21:12:54.040053'
+  id: 32877a06-4844-4600-ad40-60c92e775587
+  name: reserva_receita_leilao_sol_2023
+- created: '2024-03-04T01:27:34.157568'
+  id: 5bf16196-9836-419d-900b-cba690a374fb
+  name: reserva_receita_leilao_sol_2024
+last_update: 2024-11-21 18:58:00.324252
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  RECEITA_VENDA_TOTAL_SOL:
+    type: numeric
+    description: Corresponde a Receita de Venda Total do Empreendimento Comprometido
+      com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, para
+      o período de apuração da entrega de energia do CER associada ao ano de entrega
+      “fCER”, no mês de apuração “m” (RVET_CERp,t,l,fcer,m) [R$]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,119 @@
+name: encargo_recebido_perfil_agente_usina
+description: Dados de  de encargos por agente e usina no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.352476'
+source:
+- created: '2023-09-06T20:57:36.054973'
+  id: 7f29f0f8-196a-4d78-a6d7-c2e832119665
+  name: encargo_recebido_perfil_agente_usina_2023
+- created: '2024-03-04T01:21:20.503829'
+  id: 50a2c053-1bc7-40b0-bb5f-581183f3e5ae
+  name: encargo_recebido_perfil_agente_usina_2024
+last_update: 2024-11-21 18:58:00.352481
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CODIGO_PERFIL_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (10)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '100'
+    business_rule: ''
+  CODIGO_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de usina em seus sistemas.
+    label: (10)
+    business_rule: ''
+  NOME_USINA:
+    type: text
+    description: Corresponde ao nome da usina cadastrada na CCEE.
+    label: '40'
+    business_rule: ''
+  ENCARGO_CONSTRAINED_ON:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-On da
+      parcela de usina "p", no período de comercialização "j" (ENC_CONST_ONp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_CONSTRAINED_OFF:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-Off
+      da parcela de usina "p", no período de comercialização "j" (ENC_CONST_OFFp,j)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_COMPENSACAO_SINCRONA:
+    type: numeric
+    description: Corresponde a Compensação Síncrona da parcela de usina "p", no período
+      de comercialização "j" (ENC_CSp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_PRESTACAO_SERVICO_ANCILAR:
+    type: numeric
+    description: Corresponde ao Ressarcimento devido à parcela de usina “p”, no mês
+      de apuração “m”, por outros serviços ancilares autorizados pela ANEEL tais como
+      custos de O&M dos equipamentos de autorrestabelecimento, sistemas especiais
+      de proteção, equipamentos de supervisão e controle de serviços ancilares, além
+      de investimentos realizados pelas usinas para prestação desses serviços ao sistema
+      (ENC_OSAp,m) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_SEGURANCA_ENERGETICA:
+    type: numeric
+    description: Corresponde ao Encargo por Razão de Segurança Energética da parcela
+      de usina não hidráulica “p”, por período de comercialização “j” (ENC_SEG_ENERp,j)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_DESLOCAMENTO_HIDRAULICO:
+    type: numeric
+    description: Corresponde ao Encargo de Deslocamento Energético de uma Usina Hidrelétrica,
+      da parcela de usina “p”, no período de comercialização “j” (ENC_DH_ENERp,j)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  RESSARCIMENTO_DESLOCAMENTO_HIDRAULICO:
+    type: numeric
+    description: Corresponde ao Ressarcimento de Deslocamento Elétrico da parcela
+      de usina "p", no período de comercialização "j" (VR_DH_ELEp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  RESSARCIMENTO_RESERVA_OPERATIVA:
+    type: numeric
+    description: Corresponde ao Ressarcimento para Atendimento ao Despacho para Manutenção
+      da Reserva de Potência Operativa da Usina da parcela de usina "p", no período
+      de comercialização "j" (ENC_RESPOPp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_IMPORTACAO:
+    type: numeric
+    description: Corresponde ao Encargo de Importação do intercâmbio de energia da
+      parcela de usina substituta “p*”, por período de comercialização “j” (ENC_IMPp,j)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_REST_OP_UNIT_COMT:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Unit Commitment
+      da parcela de usina "p", no período de comercialização "j" (ENC_REST_UNITp,j)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

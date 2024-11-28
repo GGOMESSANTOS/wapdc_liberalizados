@@ -1,0 +1,127 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": "",
+        "creator_user_id": "b769d7d0-5632-47ee-a5fa-f18004e7e791",
+        "id": "b334ead2-ca71-4d29-86ad-ef8ebf36a203",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": "",
+        "metadata_created": "2024-01-04T14:23:57.679871",
+        "metadata_modified": "2024-10-31T20:16:29.324622",
+        "name": "reserva_saldo_coner",
+        "notes": "Dados que compõe o saldo da conta de energia de reserva - CONER - no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 3,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "RESERVA_SALDO_CONER",
+        "type": "dataset",
+        "url": "",
+        "version": "",
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+23du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-01-04T14:25:42.277826",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores que compõe o saldo da conta de energia de reserva - CONER - no mês de referência.. \r\n\r\n **Campos contidos nesse conjunto de dados:**   \r\n\r\n* **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.  \r\n * **SALDO_ANTERIOR** : Corresponde ao saldo anterior disponível na conta de energia de reserva [R$]  \r\n * **PAGAMENTO_GERADOR_DISTRIBUIDORA** : Corresponde ao Pagamento realizados pelos Geradores e Distribuidores. [R$] (1)   * **LIQUIDACAO_MCP** : Corresponde ao valor liquidado no Mercado de Curto Prazo - MCP. [R$] (2)   \r\n* **PAGAMENTO_AO_GERADOR** : Corresponde ao pagamento aos geradores. [R$] (3)   \r\n* **CUSTOS_ADMINISTRATIVOS_CAFT** : Corresponde ao custos administrativos, financeiros e tributários incorridos pela CCEE. [R$] (4)  \r\n * **OUTROS** : Corresponde aos valores de recuperação judicial, execução de garantia de leilão e tarifas bancárias. [R$] (5)   \r\n* **EXCEDENTE_FINANCEIRO_MCP** : Corresponde ao execedente financeiro do MCP transferido para a CONER [R$] (6)   \r\n* **SALDO_CONER** : Corresponde ao saldo final da CONER no mês de referência \"\"m\"\" [R$]    (1) Valores pagos pelos geradores referentes a ressarcimento, multas e eventuais processos de ordem jurídica. (2) Geração destinada ao produto liquidada no MCP de m-2. (3) Receitas fixas e variáveis ajustadas. (4) Apuração de Energia de Reserva de m-1. (5) Rendimentos, recuperação judicial, execução de garantia de leilão e tarifas bancárias. (6) Excedente Financeiro do MCP transferido para a CONER.",
+                "format": "CSV",
+                "hash": "",
+                "id": "7888264d-4509-417c-b060-d6cc3191f1a7",
+                "last_modified": null,
+                "metadata_modified": "2024-03-04T14:08:29.120508",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "reserva_saldo_coner_2023",
+                "package_id": "b334ead2-ca71-4d29-86ad-ef8ebf36a203",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/FK8rbB-1RDuU16-OpdgSJQ/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-03-05T01:18:14.251264",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores que compõe o saldo da conta de energia de reserva - CONER - no mês de referência..    **Campos contidos nesse conjunto de dados:**     * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.    * **SALDO_ANTERIOR** : Corresponde ao saldo anterior disponível na conta de energia de reserva [R$]    * **PAGAMENTO_GERADOR_DISTRIBUIDORA** : Corresponde ao Pagamento realizados pelos Geradores e Distribuidores. [R$] (1)    * **LIQUIDACAO_MCP** : Corresponde ao valor liquidado no Mercado de Curto Prazo - MCP. [R$] (2)    * **PAGAMENTO_AO_GERADOR** : Corresponde ao pagamento aos geradores. [R$] (3)    * **CUSTOS_ADMINISTRATIVOS_CAFT** : Corresponde ao custos administrativos, financeiros e tributários incorridos pela CCEE. [R$] (4)    * **OUTROS** : Corresponde aos valores de recuperação judicial, execução de garantia de leilão e tarifas bancárias. [R$] (5)    * **EXCEDENTE_FINANCEIRO_MCP** : Corresponde ao execedente financeiro do MCP transferido para a CONER [R$] (6)    * **SALDO_CONER** : Corresponde ao saldo final da CONER no mês de referência \"\"m\"\" [R$]    (1) Valores pagos pelos geradores referentes a ressarcimento, multas e eventuais processos de ordem jurídica. (2) Geração destinada ao produto liquidada no MCP de m-2. (3) Receitas fixas e variáveis ajustadas. (4) Apuração de Energia de Reserva de m-1. (5) Rendimentos, recuperação judicial, execução de garantia de leilão e tarifas bancárias. (6) Excedente Financeiro do MCP transferido para a CONER.",
+                "format": "CSV",
+                "hash": "",
+                "id": "6dce742d-f118-402f-8028-7563094bf176",
+                "last_modified": "2024-10-31T17:15:38.299000",
+                "metadata_modified": "2024-10-31T20:16:29.328782",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "reserva_saldo_coner_2024",
+                "package_id": "b334ead2-ca71-4d29-86ad-ef8ebf36a203",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/8ewiCJ71T3y4Pu1khrzmwg/content",
+                "url_type": null
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "coner",
+                "id": "db73116b-32b8-4cf5-a970-e5899a5b94c0",
+                "name": "coner",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "energia de reserva",
+                "id": "da77703c-3f07-4c36-88d4-3b7b2f0f9ad1",
+                "name": "energia de reserva",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

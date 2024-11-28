@@ -1,0 +1,60 @@
+name: perda_rb_horario
+description: Dados com os totais de perdas da rede básica apurados e utilizados na
+  contabilização do MCP - Mercado de Curto Prazo discretizados por período de comercialização
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.230289'
+source:
+- created: '2023-07-04T20:06:11.551870'
+  id: 35e54c9e-3761-4010-8b6e-aa0cc468941a
+  name: perda_rb_horario_2023
+- created: '2024-03-04T02:05:44.516054'
+  id: dbc74eef-bdde-4555-8d3e-461aacf90601
+  name: perda_rb_horario_2024
+last_update: 2024-11-21 18:58:00.230295
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  TOTAL_GERACAO_BRUTA:
+    type: numeric
+    description: Corresponde ao Geração Total da Rede Básica por período de comercialização
+      “j”
+    label: (10,12)
+    business_rule: ''
+  TOTAL_CONSUMO_BRUTO:
+    type: numeric
+    description: Corresponde ao Consumo Total da Rede Básica por período de comercialização
+      “j”
+    label: (10,12)
+    business_rule: ''
+  TOTAL_PERDA:
+    type: numeric
+    description: Corresponde ao Total de Perdas da Rede Básica por período de comercialização
+      “j”
+    label: (10,12)
+    business_rule: ''
+  GERACAO_TOTAL_RATEIO_PERDA:
+    type: numeric
+    description: Corresponde a Geração Total Participante do Rateio de Perdas por
+      período de comercialização “j”
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_TOTAL_RATEIO_PERDA:
+    type: numeric
+    description: Corresponde ao Consumo Total Participante do Rateio de Perdas por
+      período de comercialização “j”
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

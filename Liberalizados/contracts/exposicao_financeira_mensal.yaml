@@ -1,0 +1,80 @@
+name: exposicao_financeira_mensal
+description: Dados de exposição financeira no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.334730'
+source:
+- created: '2023-06-26T14:36:28.489845'
+  id: db66c083-781e-4b3d-aeeb-a5fc40a5fe52
+  name: exposicao_financeira_mensal_2023
+- created: '2024-03-04T01:17:48.500165'
+  id: 8799406a-47e2-4dfa-8d05-152107d6b327
+  name: exposicao_financeira_mensal_2024
+last_update: 2024-11-21 18:58:00.334736
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  EXCEDENTE_FINANCEIRO:
+    type: numeric
+    description: Corresponde ao Excedente Financeiro no mês de apuração “m” (EXCFm)
+    label: (10,2)
+    business_rule: ''
+  EXCEDENTE_FINANCEIRO_POSITIVO:
+    type: numeric
+    description: Corresponde ao Exposição Financeira Positiva do perfil de agente
+      “a” no mês de apuração “m” (EF_Pa,m)
+    label: (10,2)
+    business_rule: ''
+  TOTAL_RECURSO_DISPONIVEL:
+    type: numeric
+    description: Corresponde ao Total de Recursos Disponível no mês de apuração “m”
+      (RECDISPm)
+    label: (10,2)
+    business_rule: ''
+  TOTAL_EXPOSICAO_NEGATIVA:
+    type: numeric
+    description: Corresponde ao Total de Exposições Financeiras Negativas no mês de
+      apuração “m” (TOTAL_EF_Nm)
+    label: (10,2)
+    business_rule: ''
+  COBERTURA_EXPOSICAO_NEGATIVA:
+    type: numeric
+    description: Corresponde a Cobertura das Exposições Negativas do perfil de agente
+      “a” no mês de apuração “m” (COB_EF_Nm)
+    label: (10,2)
+    business_rule: ''
+  TOTAL_EXPOSICAO_NEGATIVA_REM:
+    type: numeric
+    description: Corresponde a Total de Exposição Financeira Negativa Remanescente
+      no mês de apuração “m” (TEF_N_REMm)
+    label: (10,2)
+    business_rule: ''
+  TOTAL_EXPOSICAO_NEGATIVA_LIQ:
+    type: numeric
+    description: Corresponde ao Total de Exposições Negativas Líquidas no mês de apuração
+      “m” (TEF_N_LFm)
+    label: (10,2)
+    business_rule: ''
+  TOTAL_RECURSO_DISPONIVEL_EF_ANT:
+    type: numeric
+    description: Corresponde ao Total de Recurso Disponível para Alívio de Exposições
+      Anteriores no mês de apuração “m” (TRD_EFAm)
+    label: (10,2)
+    business_rule: ''
+  TOTAL_RECURSO_COMPENSACAO_EF_N:
+    type: numeric
+    description: Corresponde ao Total de Recursos Utilizados para Compensação de Exposições
+      Negativas do mês anterior ao mês de apuração “m” (TRUC_EFAm)
+    label: (10,2)
+    business_rule: ''
+  RESERVA_ALIVIO_ESS:
+    type: numeric
+    description: Corresponde ao Total de Recursos Utilizados para Alívio de ESS do
+      mês de apuração “m” (TRU_ESSm)
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

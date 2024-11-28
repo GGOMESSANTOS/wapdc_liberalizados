@@ -1,0 +1,46 @@
+name: geracao_horaria_fonte_submercado
+description: Dados de geração utilizados na contabilização do MCP - Mercado de Curto
+  Prazo com foco nos parâmetros de geração por fonte primária.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.308697'
+source:
+- created: '2023-06-22T20:31:38.171597'
+  id: 3b7c285f-3169-4b0b-a96b-ad0dd5974f87
+  name: geracao_horaria_fonte_submercado_2023
+- created: '2024-03-04T01:22:58.173154'
+  id: 1330bfce-0db9-4149-842f-d95a69cfe1fe
+  name: geracao_horaria_fonte_submercado_2024
+last_update: 2024-11-21 18:58:00.308703
+periodice: Mensal
+fields:
+  FONTE_PRIMARIA:
+    type: text
+    description: Fonte primária correspondente ao ativo de geração representado na
+      análise.
+    label: '40'
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN  - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência na qual os dados foram utilizados.
+    label: (4)
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: ' Geração no centro de gravidade'
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

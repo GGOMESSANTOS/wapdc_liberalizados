@@ -1,0 +1,44 @@
+name: acl_eol
+description: Dados de geração e capacidade instalada de usinas eólicas participantes
+  do ACL no mês de referência.
+owner: CCEE-GAIM
+version:
+- id_1: '2024-11-18T19:42:49.222618'
+source:
+- created: '2023-11-21T13:04:11.271237'
+  id: 91ea9c06-f6e1-423d-b685-e82a651ae6fd
+  name: acl_eol_2023
+- created: '2024-03-04T01:23:10.429688'
+  id: d7cb6384-7ca5-473e-93d7-f7ffd71f7264
+  name: acl_eol_2024
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    'null': true
+    business_rule: ''
+  GERACAO_ACL_EOL:
+    type: numeric
+    description: Corresponde a Geração da parcela de usina "p", no período de comercialização
+      "j" de usinas eólicas participantes do ACL. (Gp,j) [MWmed]
+    label: (10,12)
+    'null': true
+    business_rule: ''
+  CAPACIDADE_INSTALADA_TOTAL_ACL_EOL:
+    type: numeric
+    description: Corresponde a Capacidade Instalada Total da parcela de usina "p",
+      no período de comercialização "j", de usinas eólicas participantes do ACL. (CAP_Tp,j)
+      [MW]
+    label: (10,12)
+    'null': true
+    business_rule: ''
+  GARANTIA_FISICA_ACL_EOL:
+    type: numeric
+    description: Corresponde a Garantia Física da parcela de usina "p" de fonte eólica
+      participante do ACL. (GFp) [MWmed]
+    label: (10,12)
+    'null': true
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

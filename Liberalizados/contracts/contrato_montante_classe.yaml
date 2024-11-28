@@ -1,0 +1,51 @@
+name: contrato_montante_classe
+description: Dados com os montantes modulados utilizados na contabilização do MCP
+  - Mercado de Curto Prazo por tipo de contrato, de acordo com as relações de contraparte
+  por tipo de contrato, consolidado no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.365912'
+source:
+- created: '2023-08-09T20:01:26.437690'
+  id: f05a17f3-ee2e-45e8-829a-672d2d1e52fa
+  name: contrato_montante_classe_2023
+- created: '2024-03-04T01:21:21.967964'
+  id: 52c3d6af-9471-44c9-9ac9-7d29c27e434c
+  name: contrato_montante_classe_2024
+last_update: 2024-11-21 18:58:00.365917
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  TIPO_CONTRATO:
+    type: text
+    description: 'Corresponde ao tipo de contrato existe entre comprador e vendedor,
+      conforme domínio: CCEAL - Outros Compradores, CBR, CCEAR-Q, CCEN, CCGF, CCEAR-D,
+      Itaipu, PROINFA, CCEAR-C e CEE.'
+    label: '40'
+    business_rule: ''
+  CLASSE_VENDEDORA:
+    type: text
+    description: Corresponde a classe da contraparte vendedora do contrato.
+    label: '40'
+    business_rule: ''
+  CLASSE_COMPRADORA:
+    type: text
+    description: Corresponde a classe da contraparte compradora do contrato.
+    label: '40'
+    business_rule: ''
+  QUANTIDADE_CONTRATO_RELACAO_CLASSE:
+    type: numeric
+    description: Quantidade de contratos por classe de agente.
+    label: (10)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO:
+    type: numeric
+    description: Corresponde ao montante modulado de contrato “e” no período de comercialização
+      “j”. (CQe,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

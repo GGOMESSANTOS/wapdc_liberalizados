@@ -1,0 +1,103 @@
+name: rrh_agente
+description: Dados com a apuração do repasse do risco hidrológico por perfil de agente
+  no mês.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.323103'
+source:
+- created: '2024-05-03T02:24:20.000511'
+  id: 20324f6c-d7f6-4baf-841b-e50bd04140bc
+  name: rrh_agente_2024
+last_update: 2024-11-21 18:58:00.323108
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  COD_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de usina em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PARCELA_USINA:
+    type: text
+    description: Corresponde a sigla utilizada pela CCEE para identificar a parcela
+      de usina em seus sistemas.
+    label: '40'
+    business_rule: ''
+  GF_REPASSE_RRH_GFIS_2_RRH:
+    type: numeric
+    description: Corresponde a Garantia Física de Repasse do Risco Hidrológico Modulada
+      e Ajustada da parcela de usina (GFIS_2_RRHp,j)
+    label: (10,12)
+    business_rule: ''
+  GF_REPASSE_RRH_GFIS_3_RRH:
+    type: numeric
+    description: Corresponde a Garantia Física Modulada Ajustada de Repasse do Risco
+      Hidrológico da parcela de usina (GFIS_3_RRHp,j)
+    label: (10,12)
+    business_rule: ''
+  RISCO_HIDROLOGICO_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao Valor do Risco Hidrológico do ACR da parcela de usina
+      (VRHp,j)
+    label: (10,12)
+    business_rule: ''
+  ALOCACAO_SECUNDARIA_PROPRIO_SUBMERCADO_RRH:
+    type: numeric
+    description: Corresponde a Quantidade Alocada do Próprio Submercado de Energia
+      Secundária de Repasse do Risco Hidrológico para a parcela de usina (COBSEC_PS_RRHp,j)
+    label: (10,12)
+    business_rule: ''
+  DIREITO_ENERGIA_SECUNDARIA_RRH:
+    type: numeric
+    description: Corresponde ao Direito à Energia Secundária para Repasse do Risco
+      Hidrológico (DSEC_P_RRHp,j)
+    label: (10,12)
+    business_rule: ''
+  ALOCACAO_SECUNDARIA_OUTRO_SUBMERCADO_RRH:
+    type: numeric
+    description: Corresponde a Quantidade Alocada de Outros Submercados de Energia
+      Secundária de Repasse do Risco Hidrológico para a parcela de usina (COBSEC_P_RRHp,s,j)
+    label: (10,12)
+    business_rule: ''
+  ENERGIA_SECUNDARIA_RRH:
+    type: numeric
+    description: Corresponde a Energia Secundária para fins de Repasse do Risco Hidrológico
+      (SEC_RHp,s,j)
+    label: (10,12)
+    business_rule: ''
+  CONTRATOS_ACR_RRH:
+    type: numeric
+    description: Corresponde ao Montante de Contratos do Ambiente Regulado de Repasse
+      do Risco Hidrológico da parcela de usina (MONT_CVRp,m)
+    label: (10,12)
+    business_rule: ''
+  GF_REPASSE_RRH:
+    type: numeric
+    description: Corresponde a Quantidade de Garantia Física de Repasse do Risco Hidrológico
+      (QM_GF_RRHp,m)
+    label: (10,12)
+    business_rule: ''
+  REPASSE_RRH_ACR_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao Valor de Repasse do Risco Hidrológico do ACR da parcela
+      de usina (VRRH_ACRp,m)
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

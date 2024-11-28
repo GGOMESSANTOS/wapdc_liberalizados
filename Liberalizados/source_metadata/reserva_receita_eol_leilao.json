@@ -1,0 +1,141 @@
+{
+    "help": "https://dadosabertos.ccee.org.br/api/3/action/help_show?name=package_show",
+    "success": true,
+    "result": {
+        "author": "CCEE-GAIM",
+        "author_email": null,
+        "creator_user_id": "b769d7d0-5632-47ee-a5fa-f18004e7e791",
+        "id": "1d084696-fe86-4ad3-b682-7d77728ac452",
+        "isopen": true,
+        "license_id": "CC-BY-4.0",
+        "license_title": "Creative Commons Attribution 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "maintainer": "CCEE-GAIM",
+        "maintainer_email": null,
+        "metadata_created": "2024-01-12T14:19:54.987883",
+        "metadata_modified": "2024-11-13T20:15:43.105554",
+        "name": "reserva_receita_eol_leilao",
+        "notes": "Dados de receita mensal de usinas eólicas por leilão de energia de reserva agrupados no mês de referência.",
+        "num_resources": 2,
+        "num_tags": 5,
+        "organization": {
+            "id": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+            "name": "infomercado",
+            "title": "Infomercado",
+            "type": "organization",
+            "description": "O Infomercado é uma organização que agrupa os principais conjuntos de dados referentes ao resultado da contabilização do mercado de energia brasileiro.\r\n\r\nAs partes interessadas poderão acessar conjuntos de dados relacionados aos seguintes assuntos: geração; consumo; MRE; contratos; PLD; e demais temas do Mercado de Curto Prazo - MCP.\r\n\r\nOs conjuntos de dados do informercado, seus recursos e APIs são atualizados periodicamente nesse portal de dados, para o mês de referência relativo à finalização da liquidação do MCP (não são considerados eventos de recontabilização).\r\n\r\nPara consulta ao acervo de dados públicos, a parte interessada poderá consultar o portal da CCEE > dados e análises.",
+            "image_url": "https://www.ccee.org.br/documents/20121/1583681/icon_pda-infomercado.svg/029872ce-13b0-9153-3d63-0501ca687dff?t=1724955920662",
+            "created": "2023-03-02T11:15:44.108398",
+            "is_organization": true,
+            "approval_status": "approved",
+            "state": "active"
+        },
+        "owner_org": "e898a06e-6d25-486f-ba0e-209f66c975ce",
+        "private": false,
+        "state": "active",
+        "title": "RESERVA_RECEITA_EOL_LEILAO",
+        "type": "dataset",
+        "url": null,
+        "version": null,
+        "extras": [
+            {
+                "key": "Frequência de Atualização",
+                "value": "Mensal"
+            },
+            {
+                "key": "Referência de Publicação",
+                "value": "MS+9du"
+            },
+            {
+                "key": "Termo Legal",
+                "value": "O acesso a este site e/ou a utilização de conteúdos, dados e bases de dados nele disponibilizados se sujeita ao aceite dos termos e condições da licença aberta Creative Commons Attribution 4.0 International (CC-BY-4.0), bem como aos Termos de Uso do site e do aplicativo mobile (App) da CCEE (Link - https://www.ccee.org.br/en/web/guest/termos-de-uso). Ao utilizar esses recursos, você concorda em cumprir todos os requisitos dessa licença, que permitem que os reutilizadores distribuam, modifiquem, adaptem e desenvolvam o material sobre os dados, desde que seja atribuído o crédito apropriado ao criador (CCEE) e que sejam informadas as alterações. O Material Licenciado é disponibilizado no \"estado em que se encontra\" e \"como disponível\" apenas para fins informativos, sendo possível a interrupção da disponibilidade do conjunto de dados a qualquer momento e por qualquer motivo, sendo a sua utilização de livre iniciativa, não sendo atribuível qualquer tipo de responsabilização à CCEE por seu uso."
+            }
+        ],
+        "resources": [
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-01-12T14:21:59.949186",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores de receita de venda para empreendimentos eólicas que participaram em leilões de energia de reserva.  \n \n **Campos contidos nesse conjunto de dados:** \n  \n * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.   \n * **LEILAO** : Corresponde ao leilão de energia no qual o contrato foi negociado.   \"\"\n * **RECEITA_VENDA_TOTAL_EOL** : Corresponde a Receita de Venda Total do Empreendimento Comprometido com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, para o período de apuração da entrega de energia do CER associada ao ano de entrega “fCER”, no mês de apuração “m” (RVET_CERp,t,l,fcer,m) [R$]  \"\" \"\"\n * **RECEITA_FIXA_RETIDA_EOL** : Corresponde a Receita fixa retida por conta de atraso na operação comercial da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RETp,t,l,m) [R$]  \"\" \n * **RECEITA_VENDA_AUSTADA_EOL** : Corresponde a Receita de Venda Ajustada do Empreendimento Comprometido com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (RVE_AJp,t,l,m) [R$]   \n * **AJUSTE_RECEITA_EOL** : Corresponde ao valor de Ajustes aplicados na Receita de Venda [R$]   \n * **MULTA_MEDICAO_ANEMOMETRICA** : Corresponde a Multa referente ao sistema de medição anemométrica da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (MULTA_ANEMp,t,l,m) [R$]   \n * **AJUSTE_DELIBERACAO_CAD** : Corresponde ao Pagamento associado ao vendedor devido a Ajuste Decorrente de Deliberação do CAd, Decisões Judiciais ou Administrativas, da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (PAG_ADDCp,t,l,m) [R$]   \"\"\n * **RECEITA_TOTAL_RETIDA_LIQUIDA_EOL** : Corresponde a Receita Total Retida Líquida por conta do atraso na operação comercial da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RET_TPLp,t,l,m) [R$]  \"\" \"\"\n * **MULTA_MEDICAO_ANEMOMETRICA_REMAN** : Corresponde ao valor da Multa de Medição Anemométrica Remanescente Anual da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (MULTA_ANEM_RAp,t,l,m) [R$]  \"\" \"\"\n * **RESSARCIMENTO_GERACAO_INFERIOR_LIMITE** : Corresponde a Ressarcimento da Parcela Mensal devido à geração inferior ao limite da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RESS_GIp,t,l,m) [R$]  \"\" \"\"\n * **RESSARCIMENTO_SALDO_NEGATIVO** : Corresponde ao Ressarcimento devido ao saldo negativo da conta de energia da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m”MULTA_ANEM_RAp,t,l,m é o valor da Multa de Medição Anemométrica Remanescente Anual da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (RESS_SNp,t,l,m) [R$]  \"\" \n * **VALOR_PAGO_RECEBIDO_EOL** : Corresponde ao Valor a ser Pago ou Recebido do Empreendimento Eólico comprometido com CER da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (VEOLp,t,l,m) [R$]   \"\"\n * **RECEITA_VARIAVEL_ANTECIPACAO_EOL** : Corresponde a Receita Variável por Antecipação da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_Ap,t,l,m) [R$]  \"\" \"\"\n * **RECEITA_VARIAVEL_ANUAL_EXCEDENTE_EOL** : Corresponde a Receita Variável Anual de Excedente da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_A_Ep,t,l,m) [R$]  \"\" \"\"\n * **RECEITA_VARIAVEL_SALDO_ACUMULADO_EOL** : Corresponde a Receita Variável por Saldo Acumulado da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_Sap,t,l,m) [R$]",
+                "format": "CSV",
+                "hash": "",
+                "id": "3ba4086f-0b95-43ab-aeae-13467eadd452",
+                "last_modified": null,
+                "metadata_modified": "2024-03-13T20:27:41.986796",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "reserva_receita_eol_leilao_2023",
+                "package_id": "1d084696-fe86-4ad3-b682-7d77728ac452",
+                "position": 0,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/S7vS27RuShG-ER3Q7Yf2lg/content",
+                "url_type": ""
+            },
+            {
+                "cache_last_updated": null,
+                "cache_url": null,
+                "created": "2024-02-14T18:21:02.394566",
+                "datastore_active": true,
+                "description": "**Objetivo**: Detalhar os valores de receita de venda para empreendimentos eólicas que participaram em leilões de energia de reserva.  \n \n **Campos contidos nesse conjunto de dados:** \n  \n * **MES_REFERENCIA** : Representa o mês e o ano de referência na qual os dados foram utilizados.   \n * **LEILAO** : Corresponde ao leilão de energia no qual o contrato foi negociado.   \"\"\n * **RECEITA_VENDA_TOTAL_EOL** : Corresponde a Receita de Venda Total do Empreendimento Comprometido com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, para o período de apuração da entrega de energia do CER associada ao ano de entrega “fCER”, no mês de apuração “m” (RVET_CERp,t,l,fcer,m) [R$]  \"\" \"\"\n * **RECEITA_FIXA_RETIDA_EOL** : Corresponde a Receita fixa retida por conta de atraso na operação comercial da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RETp,t,l,m) [R$]  \"\" \n * **RECEITA_VENDA_AUSTADA_EOL** : Corresponde a Receita de Venda Ajustada do Empreendimento Comprometido com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (RVE_AJp,t,l,m) [R$]   \n * **AJUSTE_RECEITA_EOL** : Corresponde ao valor de Ajustes aplicados na Receita de Venda [R$]   \n * **MULTA_MEDICAO_ANEMOMETRICA** : Corresponde a Multa referente ao sistema de medição anemométrica da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (MULTA_ANEMp,t,l,m) [R$]   \n * **AJUSTE_DELIBERACAO_CAD** : Corresponde ao Pagamento associado ao vendedor devido a Ajuste Decorrente de Deliberação do CAd, Decisões Judiciais ou Administrativas, da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (PAG_ADDCp,t,l,m) [R$]   \"\"\n * **RECEITA_TOTAL_RETIDA_LIQUIDA_EOL** : Corresponde a Receita Total Retida Líquida por conta do atraso na operação comercial da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RET_TPLp,t,l,m) [R$]  \"\" \"\"\n * **MULTA_MEDICAO_ANEMOMETRICA_REMAN** : Corresponde ao valor da Multa de Medição Anemométrica Remanescente Anual da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (MULTA_ANEM_RAp,t,l,m) [R$]  \"\" \"\"\n * **RESSARCIMENTO_GERACAO_INFERIOR_LIMITE** : Corresponde a Ressarcimento da Parcela Mensal devido à geração inferior ao limite da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RESS_GIp,t,l,m) [R$]  \"\" \"\"\n * **RESSARCIMENTO_SALDO_NEGATIVO** : Corresponde ao Ressarcimento devido ao saldo negativo da conta de energia da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m”MULTA_ANEM_RAp,t,l,m é o valor da Multa de Medição Anemométrica Remanescente Anual da parcela de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” (RESS_SNp,t,l,m) [R$]  \"\" \n * **VALOR_PAGO_RECEBIDO_EOL** : Corresponde ao Valor a ser Pago ou Recebido do Empreendimento Eólico comprometido com CER da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (VEOLp,t,l,m) [R$]   \"\"\n * **RECEITA_VARIAVEL_ANTECIPACAO_EOL** : Corresponde a Receita Variável por Antecipação da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_Ap,t,l,m) [R$]  \"\" \"\"\n * **RECEITA_VARIAVEL_ANUAL_EXCEDENTE_EOL** : Corresponde a Receita Variável Anual de Excedente da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_A_Ep,t,l,m) [R$]  \"\" \"\"\n * **RECEITA_VARIAVEL_SALDO_ACUMULADO_EOL** : Corresponde a Receita Variável por Saldo Acumulado da parcela de usina “p”, referente ao produto “t”, do leilão “l”, no mês de apuração “m” (RVA_Sap,t,l,m) [R$]",
+                "format": "CSV",
+                "hash": "",
+                "id": "95cbfe3f-1bf7-4022-b961-a27f2c43b0e7",
+                "last_modified": "2024-11-13T17:15:43.049000",
+                "metadata_modified": "2024-11-13T20:15:43.113313",
+                "mimetype": null,
+                "mimetype_inner": null,
+                "name": "reserva_receita_eol_leilao_2024",
+                "package_id": "1d084696-fe86-4ad3-b682-7d77728ac452",
+                "position": 1,
+                "resource_type": null,
+                "size": null,
+                "state": "active",
+                "url": "https://pda-download.ccee.org.br/1oghf1OXSiCP24Y6vcyE8g/content",
+                "url_type": ""
+            }
+        ],
+        "tags": [
+            {
+                "display_name": "dados gerais",
+                "id": "608eaa47-92c5-460b-a3d0-2069bff3b41d",
+                "name": "dados gerais",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "energia de reserva",
+                "id": "da77703c-3f07-4c36-88d4-3b7b2f0f9ad1",
+                "name": "energia de reserva",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "fonte",
+                "id": "77061713-7087-4154-a459-cc47d5e5f0b7",
+                "name": "fonte",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "leilão",
+                "id": "1cb64cca-3864-494b-a13f-5ed8abdc2bf5",
+                "name": "leilão",
+                "state": "active",
+                "vocabulary_id": null
+            },
+            {
+                "display_name": "rrv",
+                "id": "c49a0fa5-a748-4ee6-a5f8-97050017de4b",
+                "name": "rrv",
+                "state": "active",
+                "vocabulary_id": null
+            }
+        ],
+        "groups": [],
+        "relationships_as_subject": [],
+        "relationships_as_object": []
+    }
+}

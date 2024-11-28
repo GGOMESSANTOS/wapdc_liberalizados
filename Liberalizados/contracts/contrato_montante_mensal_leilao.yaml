@@ -1,0 +1,48 @@
+name: contrato_montante_mensal_leilao
+description: Dados com os montantes de contratos por tipo de contrato, leilão e produto
+  utilizados no MCP - Mercado de Curto Prazo divididos por submercado e consolidados
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.253521'
+source:
+- created: '2023-08-09T20:27:21.687768'
+  id: 119ce407-7bb4-4ce4-ac29-9adc5dc5d77c
+  name: contrato_montante_mensal_leilao_2023
+- created: '2024-03-04T01:27:22.171507'
+  id: 8adfc582-9d73-4ba7-85a5-ab4a0b41c347
+  name: contrato_montante_mensal_leilao_2024
+last_update: 2024-11-21 18:58:00.253526
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: "Representa o mês e o ano de referência na qual os dados foram utilizados.\r\
+      \n"
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: "Corresponde ao leilão de energia no qual o contrato foi negociado.\r\
+      \n"
+    label: '40'
+    business_rule: ''
+  PRODUTO:
+    type: text
+    description: "Corresponde ao produto negociado entre as contrapartes em um leilão\
+      \ de energia.\r\n"
+    label: '40'
+    business_rule: ''
+  TIPO_CONTRATO:
+    type: text
+    description: "Corresponde ao tipo de contrato existe entre comprador e vendedor\
+      \ em um leilão de energia.\r\n"
+    label: '40'
+    business_rule: ''
+  MONTANTE_MODULADO_MODALIDADE_TIPO:
+    type: numeric
+    description: "Corresponde ao montante modulado de contrato “e” no período de comercialização\
+      \ “j” por tipo, leilão e produto (CQe,j) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,55 @@
+name: rrv_mensal
+description: Dados de de receita de venda apuradas no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.389881'
+source:
+- created: '2023-09-06T20:54:00.530014'
+  id: d6b35427-d9c9-42d4-87eb-77dff4a9906a
+  name: rrv_mensal_2023
+- created: '2024-03-04T01:55:12.385800'
+  id: 155f20c4-8a06-447d-a8d0-07e5a636d228
+  name: rrv_mensal_2024
+last_update: 2024-11-21 18:58:00.389889
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  RECEITA_FIXA:
+    type: numeric
+    description: Corresponde a Receita Fixa Atualizada e Ponderada da parcela de usina
+      “p”, para cada produto “t”, do leilão “l”, do contrato com a Distribuidora “e”,
+      no mês de apuração “m” (RFIX_AP_Dp,t,l,e,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RECEITA_VARIAVEL:
+    type: numeric
+    description: Corresponde a Parcela Variável Final da parcela de usina “p”, para
+      cada produto “t”, do leilão “l”, do contrato “e”, no mês de apuração “m” (PVFp,t,l,e,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  RECEITA_ATRASO:
+    type: numeric
+    description: Corresponde a Receita Fixa reduzida em função do Atraso da parcela
+      de usina “p”, para cada produto “t”, do leilão “l”, do contrato “e”, no mês
+      de apuração “m” (RFIX_ATSp,t,l,e,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  REAPURACAO_AJUSTE:
+    type: numeric
+    description: Corresponde aos ajustes financeiros realizados por meio de ADDCs
+      (Ajuste Decorrente de Deliberação do CAd, Decisões Judiciais ou Administrativas)
+      [R$]
+    label: ''
+    business_rule: ''
+  RECEITA_VENDA_TOTAL:
+    type: numeric
+    description: Corresponde a soma da RECEITA_FIXA, RECEITA_VARIAVEL, RECEITA_ATRASO
+      e a REAPURACAO_AJUSTE [R$]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

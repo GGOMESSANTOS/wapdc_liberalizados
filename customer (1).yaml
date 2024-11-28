@@ -1,0 +1,31 @@
+sla:
+  checks:
+    - type: completeness
+      field: id
+      threshold: 100            # Expectativa de completude
+      alert_on_failure: true    # Alerta em caso de falha
+    - type: consistency
+      field: category
+      expected_values: ["A", "B", "C", "D"]
+      alert_on_failure: true
+    - type: accuracy
+      field: value
+      min: 0
+      max: 1000
+      alert_on_failure: true
+    - type: integrity
+      field: category_ref
+      foreign_key: category
+      reference_table: app.reference_tables.reference_category
+      alert_on_failure: true
+    - type: uniqueness
+      field: id
+      alert_on_failure: true
+    - type: conformity
+      field: category
+      pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+      alert_on_failure: true
+    - tyoe: timelineness
+      field: created_at
+      threshold: 100
+      alert_on_failure: true

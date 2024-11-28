@@ -1,0 +1,42 @@
+name: consumo_classe_agente
+description: Dados de consumo utilizados na contabilização do MCP - Mercado de Curto
+  Prazo consolidados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.312530'
+source:
+- created: '2023-06-22T20:19:25.365046'
+  id: 5e477df5-e232-4792-a80d-386fb06337a3
+  name: consumo_classe_agente_2023
+- created: '2024-03-06T20:18:36.963765'
+  id: 97071cee-17d9-4477-b338-9a610892c8da
+  name: consumo_classe_agente_2024
+last_update: 2024-11-21 18:58:00.312535
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CLASSE_AGENTE:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  CONSUMO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CONSUMO_PONTO_CONEXAO_CLASSE_ACR:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CONSUMO_PONTO_CONEXAO_CLASSE_ACL:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

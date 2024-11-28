@@ -1,0 +1,97 @@
+name: disponibilidade_leilao_receita
+description: Dados com os valores de receita de venda pagos aos geradores participantes
+  dos leilões de energia por disponibilidade.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.356559'
+source:
+- created: '2024-05-29T21:44:32.467257'
+  id: eb089fb2-f98f-4678-bcff-9b8ca90fe9ca
+  name: disponibilidade_leilao_receita_2024
+last_update: 2024-11-21 18:58:00.356564
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: 'Representa o mês e o ano de referência na qual os dados foram utilizados.  '
+    label: AAAAMM
+    business_rule: ''
+  CEG:
+    type: text
+    description: 'Corresponde ao CEG do Empreendimento  '
+    label: '40'
+    business_rule: ''
+  COD_PARCELA_USINA:
+    type: numeric
+    description: 'Corresponde ao código numérico inteiro utilizado pela CCEE para
+      identificar a parcela de usina em seus sistemas.  '
+    label: (20)
+    business_rule: ''
+  SIGLA_PARCELA_USINA:
+    type: text
+    description: 'Corresponde a sigla utilizada pela CCEE para identificar a parcela
+      de usina em seus sistemas.  '
+    label: '40'
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: 'Corresponde ao leilão de energia negociado  '
+    label: '40'
+    business_rule: ''
+  PRODUTO:
+    type: text
+    description: 'Corresponde ao produto negociado entre as contrapartes em um leilão
+      de energia.  '
+    label: '40'
+    business_rule: ''
+  SIGLA_LEILAO:
+    type: text
+    description: 'Corresponde a sigla do leilão de energia em que a usina participou  '
+    label: '40'
+    business_rule: ''
+  FONTE_ENERGIA_PRIMARIA:
+    type: text
+    description: 'Corresponde a fonte de energia primária da usina geradora.  '
+    label: '40'
+    business_rule: ''
+  DATA_LEILAO:
+    type: text
+    description: 'Corresponde a data em que o leilão de energia foi realizado.  '
+    label: DD/MM/AAAA
+    business_rule: ''
+  RECEITA_FIXA:
+    type: numeric
+    description: 'Corresponde a receita fixa apurada para o empreendimento de geração
+      [R$]  '
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VARIAVEL:
+    type: numeric
+    description: 'Corresponde a receita variável apurada para o empreendimento de
+      geração [R$]  '
+    label: (10,2)
+    business_rule: ''
+  RECEITA_FIXA_ATRASO:
+    type: numeric
+    description: 'Corresponde a receita fixa em atraso apurada para o empreendimento
+      de geração [R$]  '
+    label: (10,2)
+    business_rule: ''
+  RESSARCIMENTO:
+    type: numeric
+    description: 'Corresponde ao ressarcimento a ser pago pelo empreendimento de geração
+      [R$]  '
+    label: (10,2)
+    business_rule: ''
+  AJUSTE:
+    type: numeric
+    description: 'Corresponde ao ajuste aplicado na receita de venda [R$]  '
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VENDA:
+    type: numeric
+    description: 'Corresponde a receita de venda total paga ao empreendimento de geração
+      [R$]  '
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

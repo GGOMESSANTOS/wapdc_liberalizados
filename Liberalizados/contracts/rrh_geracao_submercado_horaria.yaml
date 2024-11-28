@@ -1,0 +1,71 @@
+name: rrh_geracao_submercado_horaria
+description: Dados de sobras e déficit de geração; contribuição, direito e excedente
+  de energia secundária no mecanismo de Repasse do Risco Hidrológico.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.226181'
+source:
+- created: '2024-02-01T21:23:05.489058'
+  id: c207f4af-1eb5-4087-a6e2-aba73141a900
+  name: rrh_geracao_submercado_horaria_2023
+- created: '2024-03-04T01:17:53.154334'
+  id: 7337a47b-641f-48b0-9542-b420c488e20a
+  name: rrh_geracao_submercado_horaria_2024
+last_update: 2024-11-21 18:58:00.226186
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  SOBRA_GERACAO_MRE_RRH:
+    type: numeric
+    description: Corresponde a Sobra de Geração do MRE de Repasse do Risco Hidrológico
+      em um Submercado calculado para o submercado "s", no período de comercialização
+      "j" (SOBRA_MRE_S_RRHs,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  DEFICIT_GERACAO_MRE_RRH:
+    type: numeric
+    description: Corresponde ao Déficit de Geração do MRE de Repasse do Risco Hidrológico
+      em um Submercado calculado para o submercado "s", no período de comercialização
+      "j" (DEFICIT_MRE_S_RRHs,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CONTRIBUICAO_ENERGIA_SECUNDARIA_RRH:
+    type: numeric
+    description: Corresponde a Contribuição do Submercado no Atendimento da Energia
+      Secundária de Repasse do Risco Hidrológico para o sistema no submercado "s",
+      no período de comercialização "j" (SEC_S_RRHs,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  DIREITO_ENERGIA_SECUNDARIA_RRH:
+    type: numeric
+    description: Corresponde ao Direito à Energia Secundária para Repasse do Risco
+      Hidrológico da parcela de usina "p", no período de comercialização "j" (DSEC_P_RRHp,j)
+      [MWh]
+    label: (10,12)
+    business_rule: ''
+  EXCEDENTE_ENERGIA_SECUNDARIA_RRH:
+    type: numeric
+    description: Corresponde ao Excedente de Energia Secundária de Repasse do Risco
+      Hidrológico do submercado "s", no período de comercialização "j" (EXCED_SEC_RRHs,j)
+      [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

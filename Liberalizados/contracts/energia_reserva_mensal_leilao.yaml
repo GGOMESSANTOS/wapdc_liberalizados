@@ -1,0 +1,40 @@
+name: energia_reserva_mensal_leilao
+description: Dados de valores mensais de geração por leilão de energia de reserva
+  agrupadas no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.272212'
+source:
+- created: '2023-11-21T13:04:17.407229'
+  id: 9fe69d9b-09a2-4a2d-98e6-370f05c713ec
+  name: energia_reserva_mensal_leilao_2023
+- created: '2024-03-04T01:17:58.716101'
+  id: 28bbd4b2-29c4-4c1b-b862-5bc885a708c5
+  name: energia_reserva_mensal_leilao_2024
+last_update: 2024-11-21 18:58:00.272218
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_FONTE_PRIMARIA:
+    type: text
+    description: Fonte primária correspondente ao ativo de geração representado na
+      análise.
+    label: '40'
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  BALANCO_ENERGETICO_CER:
+    type: numeric
+    description: Corresponde ao Balanço Energético do Produto de Energia de Reserva,
+      de cada parcela de usina “p”, comprometida com o produto “t”, do leilão “l”,
+      por período de comercialização “j” (NET_PRODp,t,l,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

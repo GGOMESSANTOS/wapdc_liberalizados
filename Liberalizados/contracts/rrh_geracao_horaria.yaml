@@ -1,0 +1,61 @@
+name: rrh_geracao_horaria
+description: Dados de de geração e garantia física referentes ao mecanismo de Repactuação
+  do Risco Hidrológico.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.329424'
+source:
+- created: '2023-11-21T13:04:23.438799'
+  id: 55c69890-67b6-46a9-989b-80be9a6051e6
+  name: rrh_geracao_horaria_2023
+- created: '2024-03-04T02:04:44.280818'
+  id: 930230f5-fcd9-494a-9827-72da12096d85
+  name: rrh_geracao_horaria_2024
+last_update: 2024-11-21 18:58:00.329429
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: "Representa o mês e o ano de referência na qual os dados foram utilizados.\r\
+      \n"
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  GARANTIA_FISICA_RRH:
+    type: numeric
+    description: "Corresponde a Garantia Física de Repasse do Risco Hidrológico no\
+      \ período de comercialização \"j\" (GFIS_RRHj) [MWh]\r\n\r\n"
+    label: (10,12)
+    business_rule: ''
+  GERACAO_TOTAL_MRE:
+    type: numeric
+    description: Corresponde a Geração Total das Usinas Participantes do MRE no período
+      de comercialização "j" (GMREj) [MWh]
+    label: (10,12)
+    business_rule: ''
+  AJUSTE_MRE_RRH:
+    type: numeric
+    description: Corresponde ao Ajuste do MRE para Repasse do Risco Hidrológico no
+      período de comercialização "j" (AJUSTE_MRE_RRHj) [MWh]
+    label: (10,12)
+    business_rule: ''
+  ENERGIA_SECUNDARIA_RRH:
+    type: numeric
+    description: Corresponde a Energia Secundária para fins de Repasse do Risco Hidrológico
+      no período de comercialização "j" (SEC_RRHj) [MWh]
+    label: (10,12)
+    business_rule: ''
+  TOTAL_EXCEDENTE_ENERGIA_SEC_RRH_SUB:
+    type: numeric
+    description: Corresponde ao Total de Excedente de Energia Secundária de Repasse
+      do Risco Hidrológico de todos os Submercados do submercado "s", no período de
+      comercialização "j" (T_EXCED_SEC_RRHs,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,40 @@
+name: montante_mensal_mcp_agente
+description: Dados de valores à liquidar dos agentes, individualizado, no MCP no mês
+  de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.300760'
+source:
+- created: '2023-08-09T21:14:01.573138'
+  id: f7177b27-74f2-49d6-b74d-817d82b846a0
+  name: montante_mensal_mcp_agente_2023
+- created: '2024-03-05T01:18:13.660963'
+  id: 36ae5272-3399-424c-9dbf-10857aa0b4cc
+  name: montante_mensal_mcp_agente_2024
+last_update: 2024-11-21 18:58:00.300766
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CODIGO_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o agente em seus sistemas.
+    label: (10)
+    business_rule: ''
+  SIGLA_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente em
+      seus sistemas.
+    label: '40'
+    business_rule: ''
+  VALOR_LIQUIDAR:
+    type: numeric
+    description: Corresponde ao Valor Total a ser Liquidado, do agente “α”, no mês
+      de apuração “m”. (V_TOT_LIQUIα,m) [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

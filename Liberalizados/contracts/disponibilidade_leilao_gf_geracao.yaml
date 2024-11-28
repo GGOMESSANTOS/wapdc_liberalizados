@@ -1,0 +1,98 @@
+name: disponibilidade_leilao_gf_geracao
+description: Dados com os valores de garantia física, contratos, geração, geração
+  destinada ao leilão e geração livre por leilão de energia e perfil de agente.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.350066'
+source:
+- created: '2024-05-03T02:20:02.041392'
+  id: 133cfca0-9578-4ae0-9073-69c294cbeda4
+  name: disponibilidade_leilao_gf_geracao_2024
+last_update: 2024-11-21 18:58:00.350072
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  CEG:
+    type: text
+    description: Corresponde ao Código Único de Empreendimentos de Geração (CEG).
+    label: '40'
+    business_rule: ''
+  COD_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      a parcela de usina em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PARCELA_USINA:
+    type: text
+    description: Corresponde a sigla utilizada pela CCEE para identificar a parcela
+      de usina em seus sistemas.
+    label: '40'
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  PRODUTO:
+    type: text
+    description: Corresponde ao produto negociado entre as contrapartes em um leilão
+      de energia.
+    label: '40'
+    business_rule: ''
+  SIGLA_LEILAO:
+    type: text
+    description: Corresponde a sigla atribuída para o leilão de energia no qual o
+      contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  FONTE_ENERGIA_PRIMARIA:
+    type: text
+    description: Corresponde a fonte de energia primária da usina geradora.
+    label: '40'
+    business_rule: ''
+  DATA_LEILAO:
+    type: text
+    description: Corresponde a data em que o leilão de energia foi realizado.
+    label: DD/MM/AAAA
+    business_rule: ''
+  GARANTIA_FISICA:
+    type: numeric
+    description: Corresponde a garantia física do empreendimento [MW med]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_COMPROMETIDA:
+    type: numeric
+    description: Corresponde a garantia física comprometida do empreendimento com
+      o leilão [MW med]
+    label: (10,12)
+    business_rule: ''
+  CONTRATO:
+    type: numeric
+    description: Corresponde ao montante contratual negociado no leilão de energia.
+      [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: Corresponde a geração do empreendimento participante do leilão de
+      energia. [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_DESTINADA_LEILAO:
+    type: numeric
+    description: Corresponde a geração do empreendimento destinada ao leilão de energia.
+      [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_LIVRE:
+    type: numeric
+    description: Corresponde a geração destinada ao ambiente livre de comercialização
+      (ACL) [MW med]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,175 @@
+name: parcela_usina_montante_mensal
+description: Dados de parcela de usina e respectivos montantes mensais.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.208741'
+source:
+- created: '2024-05-28T14:27:44.033600'
+  id: 5c64e360-0252-4849-9dbb-8a61cb2af8f0
+  name: parcela_usina_montante_mensal_2024
+last_update: 2024-11-21 18:58:00.208747
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_ATIVO:
+    type: numeric
+    description: Corresponde ao Código do Ativo
+    label: (20)
+    business_rule: ''
+  SIGLA_ATIVO:
+    type: text
+    description: Corresponde a Sigla do Ativo
+    label: '40'
+    business_rule: ''
+  CEG:
+    type: text
+    description: Corresponde ao CEG do Empreendimento
+    label: '40'
+    business_rule: ''
+  COD_PARCELA_USINA:
+    type: numeric
+    description: Corresponde ao código da parcela de usina
+    label: (20)
+    business_rule: ''
+  SIGLA_PARCELA_USINA:
+    type: text
+    description: Corresponde a sigla da parcela de usina na CCEE
+    label: '40'
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código da sigla do perfil de agente utilizado pela
+      CCEE em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL:
+    type: text
+    description: Corresponde a sigla do perfil de agente utilizado pela CCEE em seus
+      sistemas.
+    label: '40'
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde ao nome da usina cadastrada na CCEE.
+    label: '40'
+    business_rule: ''
+  TIPO_DESPACHO:
+    type: text
+    description: Corresponde ao tipo de despacho aplicado a usina
+    label: '40'
+    business_rule: ''
+  PARTICIPA_RATEIO_PERDAS:
+    type: text
+    description: Corresponde a marcação de participante do rateio de perdas
+    label: '40'
+    business_rule: ''
+  FONTE_ENERGIA_PRIMARIA:
+    type: text
+    description: Corresponde a fonte de energia primária da usina geradora.
+    label: '40'
+    business_rule: ''
+  COMBUSTIVEL:
+    type: text
+    description: Corresponde ao combustível utilizado pela usina
+    label: '40'
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Corresponde ao submercado de geração da energia
+    label: '40'
+    business_rule: ''
+  ESTADO_UF:
+    type: text
+    description: Corresponde a UF em que a fonte está localizada
+    label: '40'
+    business_rule: ''
+  CARACTERISTICA_PARCELA:
+    type: text
+    description: Corresponde a característica da parcela de usina
+    label: '40'
+    business_rule: ''
+  PARTICIPANTE_MRE:
+    type: text
+    description: Corresponde ao sinalizador de participação no MRE
+    label: '40'
+    business_rule: ''
+  PARTICIPANTE_REGIME_COTAS:
+    type: text
+    description: Corresponde ao sinalizador de participação no regime de cotas
+    label: '40'
+    business_rule: ''
+  DATA_INICIO_OP_COM:
+    type: text
+    description: Corresponde a data de entrada em operação comercial
+    label: DD/MM/AAAA
+    business_rule: ''
+  PERCENTUAL_DESCONTO_USINA:
+    type: text
+    description: Corresponde ao percentual de desconto atrelado a geração da usina
+    label: '40'
+    business_rule: ''
+  CAP_T:
+    type: numeric
+    description: Corresponde a capacidade da usina (CAP_T) [MW]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA:
+    type: numeric
+    description: Corresponde a garantia física (GF) [MW med]
+    label: (10,12)
+    business_rule: ''
+  FATOR_OPERACAO_COMERCIAL:
+    type: numeric
+    description: Corresponde ao fator de operação comercial da usina (F_COMERCIALp,j)
+    label: (10,12)
+    business_rule: ''
+  FATOR_ABATIMENTO_PERDAS:
+    type: numeric
+    description: Corresponde ao fator de abatimento de perdas internas instantâneas
+      (F_PDI p,j)
+    label: (10,12)
+    business_rule: ''
+  GERACAO_CENTRO_GRAVIDADE:
+    type: numeric
+    description: Corresponde ao Geração no Centro de Gravidade (Gp,j) [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_TESTE:
+    type: numeric
+    description: Corresponde a Geração em Teste no Centro de Gravidade (GFT p,j) [MW
+      med]
+    label: (10,12)
+    business_rule: ''
+  GF_CENTRO_GRAVIDADE:
+    type: numeric
+    description: Corresponde a Garantia Física no Centro de Gravidade Apurada para
+      Fins de Lastro (GFISp,j) [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_SEG_ENEG:
+    type: numeric
+    description: Corresponde a Geração por Segurança Energética (G_SE p,j) [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_REST_OPERACAO:
+    type: numeric
+    description: Corresponde a Geração por Restrição de Operação Constrained-On (G_CONST_ON
+      p,j) [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_RES_OPERATIVA:
+    type: numeric
+    description: Corresponde a Geração para Manutenção de Reserva Operativa (G_RESPOP
+      p,j) [MW med]
+    label: (10,12)
+    business_rule: ''
+  GERACAO_UNIT_COMMITMENT:
+    type: numeric
+    description: Corresponde a Geração por Unit Commitment (G_UNIT p,j)
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

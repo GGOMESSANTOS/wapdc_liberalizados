@@ -1,0 +1,41 @@
+name: garantia_fisica_sazo_lastro
+description: Dados com a quantidade de garantia física sazonalizada para fins de lastro
+  de usinas participantes/não participantes do MRE, no mês de referência "m".
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.239110'
+source:
+- created: '2024-01-04T14:28:13.608560'
+  id: e8740eaf-abb2-4441-8f39-e1672047a263
+  name: garantia_fisica_sazo_lastro_2023
+- created: '2024-03-04T02:05:49.415702'
+  id: 0440293b-cacf-4a2a-8f01-d1a0b641ad34
+  name: garantia_fisica_sazo_lastro_2024
+last_update: 2024-11-21 18:58:00.239116
+periodice: Mensal
+fields:
+  DATA_ATUALIZACAO:
+    type: text
+    description: Refere-se a data de consulta para divulgação das informações.
+    label: AAAAMMDD
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GF_SAZO_USINAS_MRE:
+    type: numeric
+    description: Corresponde a Quantidade Mensal de Garantia Física Sazonalizada para
+      fins de Lastro da parcela de usina "p" participante do MRE, no mês de referência
+      "m" (QM_GF_LASp,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GF_SAZO_USINAS_FORA_DO_MRE:
+    type: numeric
+    description: Corresponde a Quantidade Mensal de Garantia Física Sazonalizada para
+      fins de Lastro da parcela de usina "p" não participante do MRE, no mês de referência
+      "m" (QM_GF_LASp,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

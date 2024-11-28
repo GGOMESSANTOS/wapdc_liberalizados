@@ -1,0 +1,111 @@
+name: ccc_ctg_beneficiario
+description: Dados mensais de custo total de geração e reembolso mensal de CCC por
+  beneficiário.
+owner: Gerência de Contas Setoriais - GCSE
+version:
+- '1': '2024-11-21T18:58:00.220111'
+source:
+- created: '2024-04-01T20:44:17.937720'
+  id: 3b23cb49-edfe-47aa-8ce2-7e7f5f0fd6c6
+  name: ccc_ctg_beneficiario_2023
+- created: '2024-04-01T20:55:15.140069'
+  id: 4031de3e-e049-4455-8833-70ae12d8fd0d
+  name: ccc_ctg_beneficiario_2024
+last_update: 2024-11-21 18:58:00.220116
+periodice: Mensal
+fields:
+  COMPETENCIA:
+    type: numeric
+    description: Representa o ano e o mês de competência dos dados apurados.
+    label: AAAAMM
+    business_rule: ''
+  BENEFICIARIO:
+    type: text
+    description: É o titular de concessão, autorização ou permissão de serviço público
+      de distribuição de energia elétrica ou produtor independente de energia que,
+      atuando nos Sistemas Isolados, utiliza-se da sistemática de reembolso dos custos
+      de geração pela CCC - Conta de Consumo de Combustíveis.
+    label: '20'
+    business_rule: ''
+  TIPO_BENEFICIARIO:
+    type: text
+    description: 'Representa o perfil do beneficiário da CCC: distribuidora ou geradora.'
+    label: '13'
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: Corresponde a geração liquida de energia elétrica total das usinas
+      reembolsadas associadas ao beneficiário no mês de apuração. [MWh]
+    label: (8,3)
+    business_rule: ''
+  CTCOMB:
+    type: numeric
+    description: Corresponde ao custo total com consumo de combustível, apurado em
+      função do montante de energia gerado, da quantidade de combustível consumida,
+      do preço do combustível e de despesas acessórias, de cada usina no mês de apuração.
+      [R$]
+    label: (11,2)
+    business_rule: ''
+  CTGP:
+    type: numeric
+    description: Corresponde ao custo total com geração de energia própria do beneficiário,
+      referente à custos de locação de grupos geradores, receita fixa e operação e
+      manutenção, excluindo-se qualquer custo associado à compra e venda de combustíveis,
+      de cada usina no mês de apuração. Podem contemplar custos associados a ativos
+      próprios e/ou alugados. [R$]
+    label: (11,2)
+    business_rule: ''
+  CTCE:
+    type: numeric
+    description: Corresponde ao custo total com contratação de potência e energia
+      elétrica, apurado conforme a medição da geração de energia registrada e as condições
+      dos contratos homologados ou aprovados pela ANEEL, observadas as parcelas de
+      receita fixa e de receita variável, de cada usina no mês de apuração. [R$]
+    label: (11,2)
+    business_rule: ''
+  CTG:
+    type: numeric
+    description: Corresponde ao custo total de geração (CTcomb + CTgp + CTce) de cada
+      usina no mês de apuração, passível de reembolso após o abatimento dos tributos
+      recuperados pelo beneficiário. [R$]
+    label: (12,2)
+    business_rule: ''
+  DESC_ACR:
+    type: numeric
+    description: Corresponde ao desconto do custo médio da energia e potência comercializadas
+      pelos agentes de distribuição no âmbito do Ambiente de Contratação Regulada
+      - ACRméd, apurado pela ANEEL, com base nos valores considerados no cálculo das
+      tarifas de fornecimento de energia elétrica vigentes das concessionárias de
+      distribuição interligadas ao SIN. [R$]
+    label: (12,2)
+    business_rule: ''
+  DESC_FC:
+    type: numeric
+    description: Corresponde ao desconto para aplicação do Fator de Corte de Perdas
+      Regulatórias - fc, estabelecido para limitar o reembolso da CCC às concessionárias
+      de distribuição, observado o nível eficiente de perdas da área de concessão.
+      [R$]
+    label: (12,2)
+    business_rule: ''
+  REEMBOLSO:
+    type: numeric
+    description: Corresponde ao valor reembolsado mensalmente aos agentes beneficiários
+      da CCC no montante igual à diferença entre o custo total de geração de energia
+      elétrica para o atendimento ao serviço público de distribuição de energia elétrica
+      nos Sistemas Isolados e o produto da quantidade correspondente de energia elétrica
+      pelo custo médio do ACR no SIN, observado o nível eficiente de perdas elétricas
+      [R$]
+    label: (12,2)
+    business_rule: ''
+  REPROCESSAMENTO:
+    type: text
+    description: Identifica se o custo de geração do beneficiário foi reprocessado
+      (SIM/NÃO).
+    label: '3'
+    business_rule: ''
+  ULTIMO_REPROCESSAMENTO:
+    type: numeric
+    description: Corresponde ao último mês (AAAAMM) em que o reembolso foi (re)processado.
+    label: AAAAMM
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

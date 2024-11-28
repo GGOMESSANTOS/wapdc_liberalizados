@@ -1,0 +1,67 @@
+name: sazonalizacao_mre_gf_fator_ajuste
+description: Dados com os montantes sazonalizados de garantia física e fatores de
+  ajuste do MRE.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.198927'
+source:
+- created: '2024-02-01T20:16:15.301630'
+  id: 0673a6b4-1916-4666-8739-e6d968e9f83d
+  name: sazonalizacao_mre_gf_fator_ajuste_2024
+last_update: 2024-11-21 18:58:00.198933
+periodice: Anual
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GARANTIA_FISICA_SAZONALIZADA:
+    type: numeric
+    description: "Corresponde a garantia física sazonalizada pelo agente proporcional\
+      \ às unidades geradoras em operação comercial. (MGFIS_Hp,j) [MWmed]\r\n"
+    label: (10,12)
+    business_rule: ''
+  FATOR_PERDAS_INTERNAS:
+    type: numeric
+    description: Corresponde ao valor médio do fator de perdas internas que é aplicado
+      sobre a garantia física proporcional às unidades geradoras em operação.
+    label: (10,12)
+    business_rule: ''
+  FATOR_PERDAS_REDE_BASICA:
+    type: numeric
+    description: Corresponde ao valor médio do fator de perdas de rede básica que
+      é aplicado sobre a garantia física mensal ajustada em função das perdas internas.
+    label: (10,12)
+    business_rule: ''
+  FATOR_DISPONIBILIDADE:
+    type: text
+    description: "Corresponde ao valor médio do fator de disponibilidade que é aplicado\
+      \ sobre a garantia física modulada ajustada em função das perdas da rede básica.\r\
+      \n"
+    label: (10,12)
+    business_rule: ''
+  FATOR_REDUCAO_ACUMULADO:
+    type: numeric
+    description: Corresponde ao fator de redução acumulado.
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_MODULADA_FATOR_DISP:
+    type: numeric
+    description: "Corresponde à garantia física modulada ajustada pelo fator de disponibilidade.\
+      \ (GFIS_2p,r,w)\r\n"
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_LASTRO_USINA_MRE:
+    type: numeric
+    description: Corresponde à quantidade mensal de garantia física sazonalizada para
+      fins de lastro de usinas fora do MRE. (QM_GF_LASp,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GARANTIA_FISICA_LASTRO_USINA_FORA_MRE:
+    type: numeric
+    description: Corresponde à quantidade mensal de garantia física sazonalizada para
+      fins de lastro de usinas do MRE. (QM_GF_LASp,m) [MWmed]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

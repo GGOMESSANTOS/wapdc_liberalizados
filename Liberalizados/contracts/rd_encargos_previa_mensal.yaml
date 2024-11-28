@@ -1,0 +1,29 @@
+name: rd_encargos_previa_mensal
+description: 'Objetivo: Monitorar encargo associado à RD para repasse em forma de
+  ESS para os consumidores. Dados prévios, consolidados por mês e submercado.'
+owner: Gerência de Informações ao Mercado - GAIM
+version:
+- '1': '2024-11-21T18:58:00.278615'
+source:
+- created: '2024-08-01T20:58:08.350491'
+  id: d2211642-4c1b-4161-b2d9-47d1d10586ab
+  name: rd_encargos_previa_mensal_2024
+last_update: 2024-11-21 18:58:00.278621
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  RECEBIMENTO_ENCARGO_RD:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

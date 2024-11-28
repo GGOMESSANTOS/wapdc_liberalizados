@@ -1,0 +1,49 @@
+name: mcsd_montante_recebido_leilao
+description: Dados com os valores de recebimento atribuído ao agente cessionário no
+  MCSD.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.234331'
+source:
+- created: '2024-06-11T20:32:01.801314'
+  id: dc46f5eb-868f-4385-b499-148c7e37e76e
+  name: mcsd_montante_recebido_leilao_2023
+- created: '2024-09-12T19:10:04.546306'
+  id: b78f7270-ca77-4ca9-a4ae-d974f98cf6d0
+  name: mcsd_montante_recebido_leilao_2024
+last_update: 2024-11-21 18:58:00.234337
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PROCESSAMENTO:
+    type: text
+    description: Corresponde ao evento de MCSD realizado pela CCEE.
+    label: '40'
+    business_rule: ''
+  SIGLA_AGENTE_CESSIONARIO:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o agente cessionário
+      em seus sistemas.
+    label: '40'
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  PRODUTO:
+    type: text
+    description: Corresponde ao produto negociado entre as contrapartes em um leilão
+      de energia.
+    label: '40'
+    business_rule: ''
+  RECEBIMENTO_MENSAL:
+    type: numeric
+    description: Corresponde ao Recebimento Mensal calculado no MCSD.
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

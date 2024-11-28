@@ -1,0 +1,149 @@
+name: contabilizacao_montante_perfil_agente
+description: Dados de montantes dos resultados consolidados da contabilização por
+  perfil de agente.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.343632'
+source:
+- created: '2024-04-03T17:33:03.586557'
+  id: d47f9660-28d6-4542-9dbc-9648e13b3c67
+  name: contabilizacao_montante_perfil_agente_2024
+last_update: 2024-11-21 18:58:00.343638
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  COD_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  NOME_EMPRESARIAL:
+    type: text
+    description: Corresponde a razão social cadastrada pelo agente na CCEE.
+    label: '40'
+    business_rule: ''
+  COD_PERF_AGENTE:
+    type: numeric
+    description: Corresponde ao código numérico inteiro utilizado pela CCEE para identificar
+      o perfil do agente em seus sistemas.
+    label: (20)
+    business_rule: ''
+  SIGLA_PERFIL_AGENTE:
+    type: text
+    description: Corresponde a sigla adotada pela CCEE para identificar o perfil de
+      agente em seus sistemas.
+    label: '40'
+    business_rule: ''
+  CNPJ:
+    type: text
+    description: Corresponde ao CNPJ cadastrado pelo agente nos sistemas da CCEE.
+    label: XX.XXX.XXX/0001-XX
+    business_rule: ''
+  VALOR_TM_MCP:
+    type: numeric
+    description: Corresponde ao Total Mensal do Resultado no Mercado de Curto Prazo
+      do perfil de agente “a”, no mês de apuração “m” TM_MCPa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  COMPENSACAO_MRE:
+    type: numeric
+    description: Corresponde a Compensação do MRE do perfil de agente “a”, no mês
+      de apuração “m” COMPENSAÇÃO_MREa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_ENCARGO:
+    type: numeric
+    description: Corresponde ao Total de Encargos Consolidado do perfil de agente
+      “a”, no mês de apuração “m” ENCARGOSa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_AJUSTE_EXPOSICAO:
+    type: numeric
+    description: Corresponde ao total de ajustes a serem efetuados na contabilização
+      de um perfil de agente “a” face às exposições financeiras positivas e negativas
+      apuradas e em função dos recursos disponíveis para alocação. É calculado no
+      mês de apuração “m” TAJ_EFa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  VALOR_AJUSTE_ALIVIO_RET:
+    type: numeric
+    description: Corresponde ao Total de Ajustes Referente ao Alívio Retroativo do
+      perfil de agente “a”, no mês de apuração “m” TAJ_ARa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRAT_DISP:
+    type: numeric
+    description: Corresponde ao Efeito do CCEAR por disponibilidade ou CER para cada
+      perfil de agente “a”, no mês de apuração “m” ECDa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRAT_COTA_GF:
+    type: numeric
+    description: Corresponde ao Efeito do CCGF para cada perfil de agente “a”, no
+      mês de apuração “m” ECCGFa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CONTRAT_NUCLEAR:
+    type: numeric
+    description: Corresponde ao Efeito do CCEN para o perfil de agente “a”, no mês
+      de apuração “m” ECCENa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_RECONTAB:
+    type: numeric
+    description: Corresponde ao Valor calculado pela CCEE referente a ajustes, decorrentes
+      de recontabilizações, em montantes a pagar ou a receber, atribuído ao perfil
+      de agente “a”, no mês de apuração “m” AJU_RECONa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_MCSD_EX:
+    type: numeric
+    description: Corresponde ao Valor resultante ao processamento do Mecanismo de
+      Compensação de Sobras e Déficits Ex-Post, referente às trocas de energia entre
+      os agentes cedentes (positivos) e cessionários (negativos) de CCEARs por quantidade,
+      atribuído ao perfil de agente “a”, no mês de janeiro de cada ano MCSD_XPa,m
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  RESULTADO_FINANCEIRO_ER:
+    type: numeric
+    description: Corresponde ao Montante financeiro restituído aos agentes pagadores
+      de Encargos de Energia de Reserva por sobras previstas na CONER, apurada para
+      cada perfil de agente “a”, no mês “m” RES_EXCD_ERα,m [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_CCEARQ:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  EFEITO_CONTRAT_ITAIPU:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação de Itaipu, para cada perfil
+      de agente “a”, no mês de apuração “m” EC_ITa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_REPASSE_RISCO_HIDRO:
+    type: numeric
+    description: Corresponde ao Efeito do Repasse do Risco Hidrológico do ACR, para
+      cada perfil de agente “a”, no mês de apuração “m” ERRHa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  EFEITO_DESLOC_PLD_CMO:
+    type: numeric
+    description: Corresponde ao Efeito total dos custos devido ao descolamento entre
+      PLD e CMO do perfil de agente “a”, no mês de apuração “m” E_DESCa,m [R$]
+    label: (10,2)
+    business_rule: ''
+  RESULTADO_FINAL:
+    type: numeric
+    description: Corresponde ao Resultado Final do perfil de agente “a”, no mês de
+      apuração “m” RESULTADOa,m [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

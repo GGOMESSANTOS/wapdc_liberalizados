@@ -1,0 +1,50 @@
+name: consumo_horario_submercado
+description: Dados de consumo reconciliado e de geração utilizados na contabilização
+  do MCP - Mercado de Curto Prazo, discretizados por período de comercialização no
+  mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.374184'
+source:
+- created: '2023-06-26T13:53:42.011723'
+  id: 1060a8b6-84ad-4594-b3ac-53a9cfedcb46
+  name: consumo_horario_submercado_2023
+- created: '2024-03-04T01:24:14.484429'
+  id: 98a49a3a-9d82-4c0d-a868-2bd1db7bfc19
+  name: consumo_horario_submercado_2024
+last_update: 2024-11-21 18:58:00.374190
+periodice: Mensal
+fields:
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN  - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  CONSUMO_RECONCILIADO:
+    type: numeric
+    description: Consumo de energia ajustado de uma parcela de carga “c”, por período
+      de comercialização “j”
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_GERACAO:
+    type: numeric
+    description: Informação consolidada correspondente ao consumo da geração de cada
+      perfil de agente “a” no submercado “s” (Sul, Sudeste/Centro-Oeste, Norte e Nordeste),
+      por período de comercialização “j”
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

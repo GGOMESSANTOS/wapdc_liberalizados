@@ -1,0 +1,42 @@
+name: pld_horario_submercado
+description: Dados de Preços de Liquidação das Diferenças por Submercado, mês de referência
+  e período de comercialização.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.261450'
+source:
+- created: '2023-06-26T14:41:03.956665'
+  id: 3bb08fc6-e7c0-4091-80ad-7846e5df6ee4
+  name: pld_horario_submercado_2023
+- created: '2024-03-04T02:04:53.723046'
+  id: f95004bf-fc09-427b-8cf5-8e802bb020f0
+  name: pld_horario_submercado_2024
+last_update: 2024-11-21 18:58:00.261456
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN  - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  PLD:
+    type: numeric
+    description: Corresponde ao Preço de Liquidação das Diferenças, determinado por
+      submercado “s”, por período de comercialização “j”
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

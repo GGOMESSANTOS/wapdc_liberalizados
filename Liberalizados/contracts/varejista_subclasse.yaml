@@ -1,0 +1,79 @@
+name: varejista_subclasse
+description: Dados pertencentes ao comercializador varejista que detalham a quantidade
+  de perfis de agente representados, ativos, montantes de compra e venda e o resultado
+  financeiro no MCP.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.307359'
+source:
+- created: '2024-02-05T17:35:10.026695'
+  id: f4b5e5ea-23da-43b9-ba35-f7f26caa3530
+  name: varejista_subclasse_2023
+- created: '2024-03-04T01:17:05.914223'
+  id: d1f3af77-3ed8-4411-ab90-6b1a3333a54e
+  name: varejista_subclasse_2024
+last_update: 2024-11-21 18:58:00.307365
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBCLASSE:
+    type: text
+    description: Corresponde a subclasse de atividade no mercado de energia.
+    label: '40'
+    business_rule: ''
+  CONSUMO:
+    type: numeric
+    description: Corresponde ao Consumo Reconciliado da parcela de carga “c”, por
+      período de comercialização “j” (RCc,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  GERACAO:
+    type: numeric
+    description: Corresponde a Geração de energia de uma parcela de usina “p”, ajustada
+      por período de comercialização “j” (Gp,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  QUANTIDADE_PERFIL_AGENTE:
+    type: numeric
+    description: Corresponde a quantidade de perfis de agente representados pelo varejista.
+    label: (10)
+    business_rule: ''
+  QUANTIDADE_ATIVO_VAREJISTA:
+    type: numeric
+    description: Corresponde a quantidade de ativos representada pelo comercializador
+      varejista.
+    label: (10)
+    business_rule: ''
+  MONTANTE_CONTRATO_COMPRA:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” em operações de compra. (CQe,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_CONTRATO_VENDA:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” em operações de venda. (CQe,j) [MWmed]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_MCP:
+    type: numeric
+    description: Corresponde ao Montante a liquidar resultante do processo de contabilização
+      da CCEE, atribuída ao perfil de agente “a”, no mês de apuração, “m”. Valores
+      positivos para esta variável representam a posição credora do agente enquanto
+      valores negativos representam um saldo devedor atribuído ao agente. [R$]
+    label: (10,2)
+    business_rule: ''
+  RESULTADO_FINAL:
+    type: numeric
+    description: Corresponde ao Montante a liquidar resultante do processo de contabilização
+      da CCEE, atribuída ao perfil de agente “a”, no mês de apuração, “m”. Valores
+      positivos para esta variável representam a posição credora do agente enquanto
+      valores negativos representam um saldo devedor atribuído ao agente. [R$]
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,67 @@
+name: itaipu_resultado_mensal
+description: Dados de resultados mensais da apuração de Itaipu no MCP.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.298301'
+source:
+- created: '2023-09-06T20:26:35.771496'
+  id: 9b46a8d5-c4cb-48db-a4b6-03d79efb3eb7
+  name: itaipu_resultado_mensal_2023
+- created: '2024-03-04T01:17:36.667101'
+  id: 8cfb0fa8-8479-4281-a52d-8f2b015ad27f
+  name: itaipu_resultado_mensal_2024
+last_update: 2024-11-21 18:58:00.298307
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  RESULTADO_FINAL_ITAIPU:
+    type: numeric
+    description: Corresponde ao Resultado Final do Comprador comprometido com contrato
+      de cotas de Itaipu para cada perfil de agente “a”, no mês de apuração “m” (RFINC_ITa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_FINAL_VENDEDOR_ITAIPU:
+    type: numeric
+    description: Corresponde ao Resultado Final do Vendedor comprometido com contrato
+      de cotas de Itaipu para cada perfil de agente “a”, no mês de apuração “m” (RFINV_ITa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  EFEITO_CONTRATACAO_ITAIPU:
+    type: numeric
+    description: Corresponde ao Efeito da Contratação de Itaipu, para cada perfil
+      de agente “a”, no mês de apuração “m” (EC_ITa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_PRELIMINAR_MCP_ITAIPU:
+    type: numeric
+    description: Corresponde ao Resultado Preliminar dos Efeitos de Curto Prazo para
+      Repasse de Itaipu do perfil de agente “a”, no mês de apuração “m” (RP_IT_MCPa,m)
+      [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_PRELIMINAR_MRE_ITAIPU:
+    type: numeric
+    description: Corresponde ao Resultado Preliminar dos Efeitos do MRE para Repasse
+      de Itaipu do perfil de agente “a”, no mês de apuração “m” (RP_IT_MREa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_PRELIMINAR_ALIV_RETR_ITAIPU:
+    type: numeric
+    description: Corresponde ao Resultado Preliminar do Alívio Retroativo para Repasse
+      de Itaipu do perfil de agente “a”, no mês de apuração “m” (RP_IT_ARa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+  RESULTADO_PRELIMINAR_EF_S_ITAIPU:
+    type: numeric
+    description: Corresponde ao Resultado Preliminar de Exposições Financeiras de
+      Submercados para Repasse de Itaipu do perfil de agente “a”, no mês de apuração
+      “m” (RP_IT_EFa,m) [R$]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

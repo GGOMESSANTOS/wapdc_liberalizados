@@ -1,0 +1,42 @@
+name: reserva_inadimplencia
+description: Dados que compõe as inadimplências apuradas no processo de liquidação
+  de energia de reserva no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.277279'
+source:
+- created: '2023-11-21T13:31:08.414730'
+  id: 72cc21d7-b67e-4103-b9b1-c57903e12430
+  name: reserva_inadimplencia_2023
+- created: '2024-03-04T02:05:45.030899'
+  id: 26b10a31-442a-4bde-81db-26233cd1e5fd
+  name: reserva_inadimplencia_2024
+last_update: 2024-11-21 18:58:00.277284
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  INADIMPLENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  MULTA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  JUROS:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  CORRECAO_MONETARIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

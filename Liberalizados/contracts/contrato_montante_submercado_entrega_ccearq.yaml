@@ -1,0 +1,38 @@
+name: contrato_montante_submercado_entrega_ccearq
+description: Dados com os montantes modulados do contratos do tipo CCEAR-Q utilizados
+  na contabilização do MCP - Mercado de Curto Prazo divididos por submercado e consolidados
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.200133'
+source:
+- created: '2023-11-21T13:04:05.483763'
+  id: b2e91b1b-917f-43b8-af89-a3c0f4f5552f
+  name: contrato_montante_submercado_entrega_ccearq_2023
+- created: '2024-03-04T01:23:18.053396'
+  id: ba6b3d1a-9ade-4979-878f-179f4e95dd53
+  name: contrato_montante_submercado_entrega_ccearq_2024
+last_update: 2024-11-21 18:58:00.200139
+periodice: Mensal
+fields:
+  DATA_ATUALIZACAO:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  MES_REFERENCIA:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: ''
+    label: ''
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CCEARQ:
+    type: numeric
+    description: ''
+    label: ''
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

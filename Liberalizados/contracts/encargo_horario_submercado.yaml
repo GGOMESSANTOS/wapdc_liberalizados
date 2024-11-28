@@ -1,0 +1,92 @@
+name: encargo_horario_submercado
+description: Dados de encargos gerados no MCP por período de comercialização em cada
+  um dos 4 submercados do SIN no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.203059'
+source:
+- created: '2023-08-09T20:34:18.272972'
+  id: 41a519bf-67b0-469c-8356-3fcbe5f8484b
+  name: encargo_horario_submercado_2023
+- created: '2024-03-04T01:42:28.064788'
+  id: 7ffaa369-e3b0-43c2-bf88-37002afc0bf8
+  name: encargo_horario_submercado_2024
+last_update: 2024-11-21 18:58:00.203065
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  PERIODO_COMERCIALIZACAO:
+    type: numeric
+    description: Representa o período de comercialização, equivalente a uma hora,
+      dentro do mês e o ano de referência da contabilização do MCP na qual os dados
+      de geração foram utilizados.
+    label: (4)
+    business_rule: ''
+  ENCARGO_CONST_ON_REST_OP_LOCAL:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-Off
+      da parcela de usina não hidráulica “p”, por período de comercialização “j”,
+      sujeita a restrição de operação local em cada submercado (ENC_CONST_ONp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_CONST_ON_REST_MULTI:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-Off
+      da parcela de usina não hidráulica “p”, por período de comercialização “j”,
+      sujeita a restrição de operação em multi-submercado (ENC_CONST_ONp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_CONST_OFF_REST_OP_LOCAL:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-Off
+      da parcela de usina não hidráulica “p”, por período de comercialização “j”,
+      sujeita a restrição de operação local em cada submercado (ENC_CONST_OFFp,j)
+      [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_CONST_OFF_REST_MULTI:
+    type: numeric
+    description: Corresponde ao Encargo por Restrição de Operação Constrained-Off
+      da parcela de usina não hidráulica “p”, por período de comercialização “j”,
+      sujeita a restrição de operação em multi-submercados. (ENC_CONST_OFFp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  ENCARGO_CS:
+    type: numeric
+    description: Corresponde ao Encargo por Compensação Síncrona, da parcela de usina
+      “p”, por período de comercialização “j”. (ENC_CSp,j) [R$]
+    label: (10,2)
+    business_rule: ''
+  TOTAL_NAO_AJUSTADO_ESS:
+    type: numeric
+    description: "Corresponde ao Total não ajustado de encargos de serviços do sistema,\
+      \ por submercado “s”, no período de comercialização “j”. (VE_ESSs,j * TRC_ESSa,s,j)\
+      \ [R$]\r\n"
+    label: (10,12)
+    business_rule: ''
+  VALOR_AJUSTADO_DEMAIS_ESS:
+    type: numeric
+    description: Corresponde ao Valor ajustado dos demais encargos de serviços do
+      sistema, por submercado “s”, no período de comercialização “j”. (VE_ESSs,j *
+      TRC_ESSa,s,j) [R$]
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_REFERENCIA_ESS:
+    type: numeric
+    description: Corresponde ao Consumo de Referência para Pagamento de Encargos de
+      Serviços do Sistema do perfil de agente “a”, por submercado “s”, no período
+      de Comercialização “j”. (TRC_ESSs,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

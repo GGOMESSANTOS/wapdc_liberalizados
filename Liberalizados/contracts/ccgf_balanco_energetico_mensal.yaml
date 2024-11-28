@@ -1,0 +1,53 @@
+name: ccgf_balanco_energetico_mensal
+description: Dados de de geração e consumo;  modulação contratual; balanço energético
+  positivo e negativo de contratos CCGF no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.294391'
+source:
+- created: '2023-11-21T13:04:19.084407'
+  id: 550ca2b1-7d9d-4fd2-a24f-89b96f409fd1
+  name: ccgf_balanco_energetico_mensal_2023
+- created: '2024-03-04T01:27:31.572711'
+  id: 7fc59cc5-e668-4cf7-a997-0dbdbbf335a6
+  name: ccgf_balanco_energetico_mensal_2024
+last_update: 2024-11-21 18:58:00.294397
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_TOTAL_DISP_CCGF:
+    type: numeric
+    description: Corresponde a Geração Total Disponível para Atendimento ao Contrato
+      de cota de garantia física da parcela de usina “p”, no submercado “s”, no período
+      de comercialização “j” (G_CCGF_TOT_p,s,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  CONSUMO_USINA_CCGF:
+    type: numeric
+    description: Corresponde ao Consumo associado a uma parcela de usina “p” ajustado,
+      no período de comercialização “j” (CGFp,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  MONTANTE_MODULADO_CONTRATO_CCGF:
+    type: numeric
+    description: Corresponde a Quantidade Modulada do Contrato “e” no período de comercialização
+      “j” de CCGF (CQe,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  BALANCO_ENERGETICO_PRODUTO_P_CCGF:
+    type: numeric
+    description: Corresponde ao Balanço Energético do Produto positivo, de cada parcela
+      de usina “p”, comprometida com o produto “t”, do leilão “l”, por período de
+      comercialização “j” (NET_PRODp,t,l,j) [MWh]
+    label: (10,12)
+    business_rule: ''
+  BALANCO_ENERGETICO_PRODUTO_N_CCGF:
+    type: numeric
+    description: null
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

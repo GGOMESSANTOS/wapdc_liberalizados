@@ -1,0 +1,38 @@
+name: geracao_horaria_usina
+description: Dados de de geração individualizado por agente, por período de comercialização
+  no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.237061'
+source:
+- created: '2024-05-21T15:07:13.805395'
+  id: b772caf9-0320-4e4b-9398-6532a26c91f4
+  name: geracao_horaria_usina_202403
+- created: '2024-06-03T20:40:20.739750'
+  id: d3aa90cb-5dfb-4163-b9f4-9724a6d431b5
+  name: geracao_horaria_usina_202404
+- created: '2024-07-02T14:57:18.076028'
+  id: 6d585bef-8dea-4914-9fea-171af535092b
+  name: geracao_horaria_usina_202405
+- created: '2024-07-31T01:35:23.636914'
+  id: 17bf2149-3302-463b-9eb9-4d207afa8e73
+  name: geracao_horaria_usina_202406
+- created: '2024-09-03T03:24:47.935421'
+  id: bfb44276-66e1-40da-a504-bbdf55b33261
+  name: geracao_horaria_usina_202407
+- created: '2024-10-04T17:52:53.867910'
+  id: e68cd70b-6080-4132-bf14-5ee0e62d5e39
+  name: geracao_horaria_usina_202408
+- created: '2024-10-31T15:08:03.606444'
+  id: b35cd9f5-917f-468a-ba06-6eb25a9cb031
+  name: geracao_horaria_usina_202409
+last_update: 2024-11-21 18:58:00.237066
+periodice: Mensal
+fields:
+  field1:
+    type: datetime
+    description: ''
+    label: ''
+    'null': true
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

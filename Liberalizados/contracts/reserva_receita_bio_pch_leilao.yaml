@@ -1,0 +1,86 @@
+name: reserva_receita_bio_pch_leilao
+description: Dados de receita mensal de usinas a biomassa e PCHs por leilão de energia
+  de reserva agrupados no mês de referência.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.274726'
+source:
+- created: '2024-01-12T18:08:46.847938'
+  id: 1d1f491e-f37b-4c96-8891-7a9a6c0910a6
+  name: reserva_receita_bio_pch_leilao_2023
+- created: '2024-02-14T18:47:38.111278'
+  id: 95690d5b-4b2b-4f4a-80f4-fa5895466c05
+  name: reserva_receita_bio_pch_leilao_2024
+last_update: 2024-11-21 18:58:00.274732
+periodice: Mensal
+fields:
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  LEILAO:
+    type: text
+    description: Corresponde ao leilão de energia no qual o contrato foi negociado.
+    label: '40'
+    business_rule: ''
+  RECEITA_VENDA_EMPR_CER_BIO_PCH:
+    type: numeric
+    description: Corresponde a a Receita de Venda Total do Empreendimento Comprometido
+      com CER, da parcela de usina “p”, para cada produto “t”, do leilão “l”, para
+      o período de apuração da entrega de energia do CER associada ao ano de entrega
+      “fCER”, no mês de apuração “m” para fontes térmicas a biomassa e PCH (RVET_CERp,t,l,fCER,m)
+    label: (10,2)
+    business_rule: ''
+  RECEITA_VENDA_EMPR_BIO_PCH:
+    type: numeric
+    description: Corresponde a Receita de Venda Total do Empreendimento, da parcela
+      de usina “p”, para cada produto “t”, do leilão “l”, no mês de apuração “m” para
+      fontes térmicas a biomassa e PCH (RVETp,t,l,m)
+    label: (10,2)
+    business_rule: ''
+  RECEITA_FIXA_RETIDA_EMPR_BIO_PCH:
+    type: numeric
+    description: Corresponde ao Total de Receita Fixa Retida por conta do atraso da
+      parcela de usina “p”, para cada produto “t”, do leilão “l”, para o período de
+      apuração da entrega de energia do CER associada ao ano de entrega “fCER”, no
+      mês de apuração “m” para fontes térmicas a biomassa e PCH (RF_RETp,t,l,fCER,m)
+    label: (10,2)
+    business_rule: ''
+  RESSARCIMENTO_CER_BIO_PCH:
+    type: numeric
+    description: Corresponde ao Ressarcimento Final pela Energia não Fornecida ao
+      CER, da parcela de usina, “p”, comprometida com o produto “t”, do leilão “l”,
+      para o período de apuração da entrega de energia do CER associada ao ano de
+      entrega “fCER”, no mês de apuração “m” (RESS_CERp,t,l,fCER,m)
+    label: (10,2)
+    business_rule: ''
+  EFEITO_MCP_CESSAO_CEDENTE_CER_BIO_PCH:
+    type: numeric
+    description: Corresponde ao Efeito Total no Mercado de Curto Prazo referente à
+      Cessão para fonte biomassa que deve ser deduzido da parcela de usina cedente
+      “pcd”, associada ao produto “t” do cedente, do leilão “l”, no mês de apuração
+      “m” (TOT_EMCP_CEDp,t,l,m)
+    label: (10,2)
+    business_rule: ''
+  EFEITO_MCP_CESSAO_CESSIONARIA_CER_BIO_PCH:
+    type: numeric
+    description: Corresponde ao Efeito Total no Mercado de Curto Prazo referente à
+      Cessão para fonte biomassa que deve ser creditado à parcela de usina cessionária
+      “pcs”, associada ao produto “t” do cessionário, do leilão “l”, no mês de apuração
+      “m” (TOT_EMCP_CEDp,t,l,m)
+    label: (10,2)
+    business_rule: ''
+  AJUSTE_CER:
+    type: numeric
+    description: Corresponde ao Ajuste Financeiro aplicado na Receita de Venda
+    label: (10,2)
+    business_rule: ''
+  RECEITA_LIQUIDA_CER:
+    type: numeric
+    description: Corresponde a Receita Líquida da parcela de usina “p”, para cada
+      produto “t”, do leilão “l”, para o período de apuração da entrega de energia
+      do CER “fCER”, no mês de apuração “m” (REC_LIQp,t,l,fCER,m)
+    label: (10,2)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx

@@ -1,0 +1,41 @@
+name: geracao_submercado
+description: Dados de geração utilizados na contabilização do MCP - Mercado de Curto
+  Prazo, com foco nos parâmetros de geração utilizados pelo MRE por submercado.
+owner: CCEE-GAIM
+version:
+- '1': '2024-11-21T18:58:00.338448'
+source:
+- created: '2023-06-22T19:38:02.740435'
+  id: be1bd507-4ab2-4d36-a91d-1ee46a134790
+  name: geracao_submercado_2023
+- created: '2024-03-04T01:21:36.866305'
+  id: 4c4cf968-99f2-4d21-9339-039a6eb078c5
+  name: geracao_submercado_2024
+last_update: 2024-11-21 18:58:00.338454
+periodice: Mensal
+fields:
+  SUBMERCADO:
+    type: text
+    description: Representa os quatro (4) submercados de atuação no SIN  - Sistema
+      Interligado Nacional correspondentes a Norte (N), Nordeste (NE), Sul (S) e Sudeste
+      (SE).
+    label: '40'
+    business_rule: ''
+  MES_REFERENCIA:
+    type: text
+    description: Representa o mês e o ano de referência na qual os dados foram utilizados.
+    label: AAAAMM
+    business_rule: ''
+  GERACAO_MRE:
+    type: numeric
+    description: Geração no centro de gravidade por fonte primária para usinas participantes
+      do MRE.
+    label: (10,12)
+    business_rule: ''
+  GERACAO_MRE_COTA_GF:
+    type: numeric
+    description: Geração no centro de gravidade de usinas do MRE que participam do
+      Regime de Cotas de Garantia Física.
+    label: (10,12)
+    business_rule: ''
+sync: s3://xxxxxxxxxxxxxxxx/xxxxxxxxxxx
